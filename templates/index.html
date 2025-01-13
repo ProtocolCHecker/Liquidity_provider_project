@@ -1,0 +1,227 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liquidity Providers - Liquidity Pool</title> -->
+    <!-- Add any CSS styling you need -->
+    <!-- <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;  /* Light background to match the "pool" theme */
+            color: #333;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #1e90ff;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        .ranking-list {
+            width: 30%;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+        }
+        .ranking-list h3 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .ranking-list table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .ranking-list table th, .ranking-list table td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .ranking-list table th {
+            background-color: #f0f8ff;
+        }
+        .pool-area {
+            width: 70%;
+        }
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            margin-top: 50px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Liquidity Providers in the Liquidity Pool</h1>
+
+    <div class="container">
+        <div class="pool-area"> -->
+            <!-- Insert the generated bubble map (HTML figure) here -->
+            <!-- {{ bubble_map | safe }}
+        </div>
+
+        <div class="ranking-list">
+            <h3>Ranking of Liquidity Providers</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Address</th>
+                        <th>Percentage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for address, percentage in ranking_list %}
+                        <tr>
+                            <td>{{ address }}</td>
+                            <td>{{ percentage }}%</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Data as of {{ current_date }}</p>
+    </div>
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liquidity Providers - Liquidity Pool</title>
+    <!-- Add any CSS styling you need -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;  /* Light background to match the "pool" theme */
+            color: #333;
+            padding: 20px;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1e90ff;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        .ranking-list {
+            flex: 1;
+            min-width: 280px;  /* Ensures responsiveness on small screens */
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .ranking-list h3 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .ranking-list table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .ranking-list table th, .ranking-list table td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .ranking-list table th {
+            background-color: #f0f8ff;
+        }
+
+        .ranking-list table tr:hover {
+            background-color: #f0f8ff; /* Slight hover effect */
+        }
+
+        .pool-area {
+            flex: 2;
+            min-width: 400px;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            margin-top: 50px;
+            color: #555;
+        }
+
+        /* Add responsive design for smaller screens */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .ranking-list, .pool-area {
+                width: 100%;
+            }
+        }
+
+    </style>
+    <!-- Include Plotly library -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+
+    <h1>Liquidity Providers in the Liquidity Pool</h1>
+
+    <div class="container">
+        <div class="pool-area">
+            <!-- Insert the generated bubble map (HTML figure) here -->
+            {{ bubble_map | safe }}
+        </div>
+
+        <div class="ranking-list">
+            <h3>Ranking of Liquidity Providers</h3>
+            {% if ranking_list %}
+            <table>
+                <thead>
+                    <tr>
+                        <th>Address</th>
+                        <th>Percentage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for address, percentage in ranking_list %}
+                        <tr>
+                            <td>{{ address }}</td>
+                            <td>{{ percentage }}%</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            {% else %}
+                <p>No data available for liquidity providers at this time.</p>
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Data as of {{ current_date }}</p>
+    </div>
+
+</body>
+</html>

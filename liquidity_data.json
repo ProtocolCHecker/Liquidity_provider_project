@@ -1,0 +1,112 @@
+{
+  "pairAddress": "0x3041cbd36888becc7bbcbc0045e3b1f144466f5f",
+  "reserves": {
+    "0": "2352077480955",
+    "1": "2355631470451",
+    "2": "1735932371",
+    "_reserve0": "2352077480955",
+    "_reserve1": "2355631470451",
+    "_blockTimestampLast": "1735932371"
+  },
+  "token0": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+  "token1": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+  "totalSupply": "1773659286230",
+  "liquidityProviders": [
+    {
+      "lpAddress": "0x0000000000000000000000000000000000000000",
+      "balance": "1000"
+    },
+    {
+      "lpAddress": "0xdFE201CeDC41f970D43f95674d6b4bE02dE784dD",
+      "balance": "0"
+    },
+    {
+      "lpAddress": "0xB7bcE3d071771A4DF148cfE4a77F4F1c26d8675c",
+      "balance": "0"
+    },
+    {
+      "lpAddress": "0x71F12a5b0E60d2Ff8A87FD34E7dcff3c10c914b0",
+      "balance": "0"
+    },
+    {
+      "lpAddress": "0x6eC21f46899FFf3020332c7E7fF1f2e79e3d98A0",
+      "balance": "0"
+    },
+    {
+      "lpAddress": "0xE1fd5CDd0C0B2804B32ab94e03346c78826980AE",
+      "balance": "0"
+    },
+    {
+      "lpAddress": "0x7eF4943BaE01E059d7c9318bc2ae840829577281",
+      "balance": "0"
+    },
+    {
+      "lpAddress": "0xC71602ab7a7507f7cC0687AE1586F4729A1Edd6f",
+      "balance": "0"
+    },
+    {
+      "lpAddress": "0x3444ecC6425B8Cf1bbEb1A0e67D5A3Ed51771501",
+      "balance": "0"
+    },
+    {
+      "lpAddress": "0x901C8AA790db5F93aE8775DE818Da0043f598152",
+      "balance": "0"
+    },
+    {
+      "lpAddress": "0xacb8FE4A7b6a6389512Cd6692F80F53099AE8Ab8",
+      "balance": "0"
+    },
+    {
+      "lpAddress": "0x37Fb2ca49e1F7D8Cee4b0871B2139751af21463f",
+      "balance": "0"
+    },
+    {
+      "lpAddress": "0xF28D35ee2cD7Ed1605D0f6C4e7e781720502533b",
+      "balance": "0"
+    },
+    {
+      "lpAddress": "0xEd2cE5a6D488B5c3AF864f17a124319816130bEb",
+      "balance": "0"
+    },
+    {
+      "lpAddress": "0xB35663Ad1e88f1e21E6DbbE3F50a4974385b2f88",
+      "balance": "97325087"
+    },
+    {
+      "lpAddress": "0x4DAe8D034ad1df2e3d6EFe57412b7E2366A67511",
+      "balance": "0"
+    },
+    {
+      "lpAddress": "0x54aa4537e30497aB0dbEC28D9af8AFa225bFC7d6",
+      "balance": "9694175"
+    },
+    {
+      "lpAddress": "0xd324907085Fa2264c6637ceabBc07C8DA7007c65",
+      "balance": "0"
+    },
+    {
+      "lpAddress": "0xf3Cfc051A1DEF18B6816257C7a3b4283367715c5",
+      "balance": "0"
+    },
+    {
+      "lpAddress": "0x98D447871a0Fc7abf41fc03D8dC895d6bB94D19C",
+      "balance": "0"
+    },
+    {
+      "lpAddress": "0xd68F1fE54fAa811700E1f63d8A51da91d8D9729b",
+      "balance": "0"
+    },
+    {
+      "lpAddress": "0xD738cF6C8858F72d39FB651b75481B172da9f8c8",
+      "balance": "0"
+    },
+    {
+      "lpAddress": "0xd3308B3DcfFD1dD3d00BFb079100b1A479787086",
+      "balance": "0"
+    },
+    {
+      "lpAddress": "0xbCc492DF37bD4ec651D46d72230E340c9ec1950c",
+      "balance": "0"
+    }
+  ]
+}

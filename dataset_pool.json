@@ -1,0 +1,436 @@
+[
+    {
+        "pool_name": "PEPE-WETH",
+        "protocol": "Uniswap",
+        "version": "v2",
+        "chain": "Ethereum",
+        "address": "0xA43fe16908251ee70EF74718545e4FE6C5cCEc9f"
+    },
+    {
+        "pool_name": "MOG-WETH",
+        "protocol": "Uniswap",
+        "version": "v2",
+        "chain": "Ethereum",
+        "address": "0xc2eaB7d33d3cB97692eCB231A5D0e4A649Cb539d"
+    },
+    {
+        "pool_name": "SPX-WETH",
+        "protocol": "Uniswap",
+        "version": "v2",
+        "chain": "Ethereum",
+        "address": "0x52c77b0CB827aFbAD022E6d6CAF2C44452eDbc39"
+    },
+    {
+        "pool_name": "WISE-WETH",
+        "protocol": "Uniswap",
+        "version": "v2",
+        "chain": "Ethereum",
+        "address": "0x21b8065d10f73EE2e260e5B47D3344d3Ced7596E"
+    },
+    {
+        "pool_name": "WETH-USDT",
+        "protocol": "Uniswap",
+        "version": "v2",
+        "chain": "Ethereum",
+        "address": "0x0d4a11d5eeaac28ec3f61d100daf4d40471f1852"
+    },
+    {
+        "pool_name": "USDC-WETH",
+        "protocol": "Uniswap",
+        "version": "v2",
+        "chain": "Ethereum",
+        "address": "0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc"
+    },
+    {
+        "pool_name": "OxO-WETH",
+        "protocol": "Uniswap",
+        "version": "v2",
+        "chain": "Ethereum",
+        "address": "0x9Ec9367b8c4Dd45ec8E7b800b1F719251053AD60"
+    },
+    {
+        "pool_name": "NEIRO-WETH",
+        "protocol": "Uniswap",
+        "version": "v2",
+        "chain": "Ethereum",
+        "address": "0xC555D55279023E732CcD32D812114cAF5838fD46"
+    },
+    {
+        "pool_name": "$PAAL-WETH",
+        "protocol": "Uniswap",
+        "version": "v2",
+        "chain": "Ethereum",
+        "address": "0x2a6c340bCbb0a79D3deecD3bc5cBc2605ea9259f"
+    },
+    {
+        "pool_name": "DSYNC-WETH",
+        "protocol": "Uniswap",
+        "version": "v2",
+        "chain": "Ethereum",
+        "address": "0x1ffEc7119e315B15852557f654AE0052f76e6ae1"
+    },
+    {
+        "pool_name": "TRUMP-WETH",
+        "protocol": "Uniswap",
+        "version": "v2",
+        "chain": "Ethereum",
+        "address": "0xE4b8583cCB95b25737C016ac88E539D0605949e8"
+    },
+    {
+        "pool_name": "DOGE-WETH",
+        "protocol": "Uniswap",
+        "version": "v2",
+        "chain": "Ethereum",
+        "address": "0x308C6fbD6a14881Af333649f17f2FdE9cd75e2a6"
+    },
+    {
+        "pool_name": "ANDY-WETH",
+        "protocol": "Uniswap",
+        "version": "v2",
+        "chain": "Ethereum",
+        "address": "0xa1bF0e900FB272089c9fd299EA14BFccb1D1C2c0"
+    },
+    {
+        "pool_name": "GME-WETH",
+        "protocol": "Uniswap",
+        "version": "v2",
+        "chain": "Ethereum",
+        "address": "0x2aEEe741fa1e21120a21E57Db9ee545428E683C9"
+    },
+    {
+        "pool_name": "APU-WETH",
+        "protocol": "Uniswap",
+        "version": "v2",
+        "chain": "Ethereum",
+        "address": "0x5CEd44F03ff443BBE14d8eA23bc24425FB89E3ED"
+    },
+    {
+        "pool_name": "NPC-WETH",
+        "protocol": "Uniswap",
+        "version": "v2",
+        "chain": "Ethereum",
+        "address": "0x69C7bd26512f52bF6F76faB834140D13Dda673Ca"
+    },
+    {
+        "pool_name": "HASHAI-WETH",
+        "protocol": "Uniswap",
+        "version": "v2",
+        "chain": "Ethereum",
+        "address": "0xf07a84F0732dFe8EEa0D3961bcD8F62c761fF508"
+    },
+    {
+        "pool_name": "NEURAL-WETH",
+        "protocol": "Uniswap",
+        "version": "v2",
+        "chain": "Ethereum",
+        "address": "0x1112956589a2BEa1B038732db4eA6B0c416ef130"
+    },
+    {
+        "pool_name": "XMW-WETH",
+        "protocol": "Uniswap",
+        "version": "v2",
+        "chain": "Ethereum",
+        "address": "0x0Da7096F14303EdDD634C0241963c064e0244984"
+    },
+    {
+        "pool_name": "BOBO-WETH",
+        "protocol": "Uniswap",
+        "version": "v2",
+        "chain": "Ethereum",
+        "address": "0xe945683B3462D2603a18BDfBB19261C6a4f03aD1"
+    },
+    {
+        "pool_name": "WOLF-WETH",
+        "protocol": "Uniswap",
+        "version": "v2",
+        "chain": "Ethereum",
+        "address": "0x67324985B5014B36B960273353DEb3D96F2F18C2"
+    },
+    {
+        "pool_name": "RAI-WETH",
+        "protocol": "Uniswap",
+        "version": "v2",
+        "chain": "Ethereum",
+        "address": "0x4dE8c60541fdaDD33404CCB2c8b83907CE617341"
+    },
+    {
+        "pool_name": "KEKIUS-WETH",
+        "protocol": "Uniswap",
+        "version": "v2",
+        "chain": "Ethereum",
+        "address": "0xFFf8D5fFF6Ee3226fa2F5d7D5D8C3Ff785be9C74"
+    },
+    {
+        "pool_name": "VERTAI-WETH",
+        "protocol": "Uniswap",
+        "version": "v2",
+        "chain": "Ethereum",
+        "address": "0x19D1B048c8CDb4Cc280676627CE8c05756C5519e"
+    },
+    {
+        "pool_name": "PATRIOT-WETH",
+        "protocol": "Uniswap",
+        "version": "v2",
+        "chain": "Ethereum",
+        "address": "0x32c6D4F8C4E905F0218D2E8dCa7E56d3D0aCFf09"
+    },
+    {
+        "pool_name": "PEIPEI-WETH",
+        "protocol": "Uniswap",
+        "version": "v2",
+        "chain": "Ethereum",
+        "address": "0xbF16540c857B4e32cE6C37d2F7725C8eEC869B8b"
+    },
+    {
+        "pool_name": "HOPPY-WETH",
+        "protocol": "Uniswap",
+        "version": "v2",
+        "chain": "Ethereum",
+        "address": "0x5c6919B79FAC1C3555675ae59A9ac2484f3972F5"
+    },
+    {
+        "pool_name": "SEN-WETH",
+        "protocol": "Uniswap",
+        "version": "v2",
+        "chain": "Ethereum",
+        "address": "0x468795E031c173942C9387AEd0a302E26bDD0460"
+    },
+    {
+        "pool_name": "TAOBOT-WETH",
+        "protocol": "Uniswap",
+        "version": "v2",
+        "chain": "Ethereum",
+        "address": "0x8fE9203c12e797cAC7E901d63CaCC022b68B50c3"
+    },
+    {
+        "pool_name": "SHRUB-WETH",
+        "protocol": "Uniswap",
+        "version": "v2",
+        "chain": "Ethereum",
+        "address": "0x6a63bE37A5501dC0f88ed3FA21d3cf9a64eB618e"
+    },
+    {
+        "pool_name": "USD0++-USD0",
+        "protocol": "Curve",
+        "version": "v1",
+        "chain": "Ethereum",
+        "address": "0x1d08E7adC263CfC70b1BaBe6dC5Bb339c16Eec52"
+    },
+    {
+        "pool_name": "stETH-ETH",
+        "protocol": "Curve",
+        "version": "v1",
+        "chain": "Ethereum",
+        "address": "0xDC24316b9AE028F1497c275EB9192a3Ea0f67022"
+    },
+    {
+        "pool_name": "sDAI-FRAX",
+        "protocol": "Curve",
+        "version": "v1",
+        "chain": "Ethereum",
+        "address": "0xcE6431D21E3fb1036CE9973a3312368ED96F5CE7"
+    },
+    {
+        "pool_name": "DAI-USDC-USDC",
+        "protocol": "Curve",
+        "version": "v1",
+        "chain": "Ethereum",
+        "address": "0x6c3f90f043a72fa612cbac8115ee7e52bde6e490"
+    },
+    {
+        "pool_name": "USD0-USDC",
+        "protocol": "Curve",
+        "version": "v1",
+        "chain": "Ethereum",
+        "address": "0x14100f81e33C33Ecc7CDac70181Fb45B6E78569F"
+    },
+    {
+        "pool_name": "FRAX-USDe",
+        "protocol": "Curve",
+        "version": "v1",
+        "chain": "Ethereum",
+        "address": "0x5dc1BF6f1e983C0b21EfB003c105133736fA0743"
+    },
+    {
+        "pool_name": "sDAI-sUSDe",
+        "protocol": "Curve",
+        "version": "v1",
+        "chain": "Ethereum",
+        "address": "0x167478921b907422F8E88B43C4Af2B8BEa278d3A"
+    },
+    {
+        "pool_name": "frxETH-stETH",
+        "protocol": "Curve",
+        "version": "v1",
+        "chain": "Ethereum",
+        "address": "0x4d9f9D15101EEC665F77210cB999639f760F831E"
+    },
+    {
+        "pool_name": "cvxCRV-CRV",
+        "protocol": "Curve",
+        "version": "v1",
+        "chain": "Ethereum",
+        "address": "0x971add32Ea87f10bD192671630be3BE8A11b8623"
+    },
+    {
+        "pool_name": "cbBTC-WBTC",
+        "protocol": "Curve",
+        "version": "v1",
+        "chain": "Ethereum",
+        "address": "0x6a63bE37A5501dC0f88ed3FA21d3cf9a64eB618e"
+    },
+    {
+        "pool_name": "USR-USDC",
+        "protocol": "Curve",
+        "version": "v1",
+        "chain": "Ethereum",
+        "address": "0x3eE841F47947FEFbE510366E4bbb49e145484195"
+    },
+    {
+        "pool_name": "AAVE-wstETH",
+        "protocol": "Balancer",
+        "version": "v2",
+        "chain": "Ethereum",
+        "address": "0x3de27EFa2F1AA663Ae5D458857e731c129069F29"
+    },
+    {
+        "pool_name": "osETH-WETH",
+        "protocol": "Balancer",
+        "version": "v2",
+        "chain": "Ethereum",
+        "address": "0xDACf5Fa19b1f720111609043ac67A9818262850c"
+    },
+    {
+        "pool_name": "BAL-WETH",
+        "protocol": "Balancer",
+        "version": "v2",
+        "chain": "Ethereum",
+        "address": "0x5c6Ee304399DBdB9C8Ef030aB642B10820DB8F56"
+    },
+    {
+        "pool_name": "rETH-WETH",
+        "protocol": "Balancer",
+        "version": "v2",
+        "chain": "Ethereum",
+        "address": "0x1E19CF2D73a72Ef1332C882F20534B6519Be0276"
+    },
+    {
+        "pool_name": "pxEHT-WETH",
+        "protocol": "Balancer",
+        "version": "v2",
+        "chain": "Ethereum",
+        "address": "0x88794C65550DeB6b4087B7552eCf295113794410"
+    },
+    {
+        "pool_name": "ILV-WETH",
+        "protocol": "Sushiswap",
+        "version": "v2",
+        "chain": "Ethereum",
+        "address": "0x6a091a3406E0073C3CD6340122143009aDac0EDa"
+    },
+    {
+        "pool_name": "PUNK-WETH",
+        "protocol": "Sushiswap",
+        "version": "v2",
+        "chain": "Ethereum",
+        "address": "0x0463a06fBc8bF28b3F120cd1BfC59483F099d332"
+    },
+    {
+        "pool_name": "ILV-WETH",
+        "protocol": "Sushiswap",
+        "version": "v2",
+        "chain": "Ethereum",
+        "address": "0x6a091a3406E0073C3CD6340122143009aDac0EDa"
+    },
+    {
+        "pool_name": "LON-USDT",
+        "protocol": "Sushiswap",
+        "version": "v2",
+        "chain": "Ethereum",
+        "address": "0x6a091a3406E0073C3CD6340122143009aDac0EDa"
+    },
+    {
+        "pool_name": "SUSHI-WETH",
+        "protocol": "Sushiswap",
+        "version": "v2",
+        "chain": "Ethereum",
+        "address": "0x795065dCc9f64b5614C407a6EFDC400DA6221FB0"
+    },
+    {
+        "pool_name": "AERO-USDC",
+        "protocol": "Aerodrome",
+        "version": "v1",
+        "chain": "Base",
+        "address": "0x6cDcb1C4A4D1C3C6d054b27AC5B77e89eAFb971d"
+    },
+    {
+        "pool_name": "cbBTC-VIRTUAL",
+        "protocol": "Aerodrome",
+        "version": "v1",
+        "chain": "Base",
+        "address": "0xb909F567c5c2Bb1A4271349708CC4637D7318b4A"
+    },
+    {
+        "pool_name": "cbBTC-WETH",
+        "protocol": "Aerodrome",
+        "version": "v1",
+        "chain": "Base",
+        "address": "0x70aCDF2Ad0bf2402C957154f944c19Ef4e1cbAE1"
+    },
+    {
+        "pool_name": "AERO-USDC",
+        "protocol": "Aerodrome",
+        "version": "v1",
+        "chain": "Base",
+        "address": "0x6cDcb1C4A4D1C3C6d054b27AC5B77e89eAFb971d"
+    },
+    {
+        "pool_name": "AERO-USDC",
+        "protocol": "Aerodrome",
+        "version": "v1",
+        "chain": "Base",
+        "address": "0x6cDcb1C4A4D1C3C6d054b27AC5B77e89eAFb971d"
+    },
+    {
+        "pool_name": "GAME-VIRTUAL",
+        "protocol": "Uniswap",
+        "version": "v2",
+        "chain": "Base",
+        "address": "0xD418dfE7670c21F682E041F34250c114DB5D7789"
+    },
+    {
+        "pool_name": "LUNA-VIRTUAL",
+        "protocol": "Uniswap",
+        "version": "v2",
+        "chain": "Base",
+        "address": "0xa8e64FB120CE8796594670BAE72279C8aA1e5359"
+    },
+    {
+        "pool_name": "CONVO-VIRTUAL",
+        "protocol": "Uniswap",
+        "version": "v2",
+        "chain": "Base",
+        "address": "0x3268d7eFA254E648Ffe968664E47Ca226E27CD04"
+    },
+    {
+        "pool_name": "GAME-VIRTUAL",
+        "protocol": "Uniswap",
+        "version": "v2",
+        "chain": "Base",
+        "address": "0x7464850CC1cFb54A2223229b77B1BCA2f888D946"
+    },
+    {
+        "pool_name": "AIXBT-VIRTUAL",
+        "protocol": "Uniswap",
+        "version": "v2",
+        "chain": "Base",
+        "address": "0xc2eaB7d33d3cB97692eCB231A5D0e4A649Cb539d"
+    },
+    {
+        "pool_name": "VIRTUAL-WETH",
+        "protocol": "Uniswap",
+        "version": "v2",
+        "chain": "Base",
+        "address": "0xE31c372a7Af875b3B5E0F3713B17ef51556da667"
+    }
+]
