@@ -87,104 +87,180 @@
 #     else:
 #         st.write("No pools found.")
 
-import streamlit as st
-import subprocess
-import json
+
+
 import os
-from PIL import Image
 import requests
+import json
+import streamlit as st
+from datetime import datetime
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
+from web3 import Web3
 
-# Function to run the Bubblemap Python script and display the results
-def run_bubblemap_script(pool_address):
-    # Run the bubblemap_v4.py script and capture the output
-    result = subprocess.run(
-        ['python3', 'bubblemap_v4.py', pool_address],  # Use relative path for portability
-        stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE
+
+def check_address_type(address):
+    # Connect to Infura using your project ID
+    infura_url = 'https://mainnet.infura.io/v3/8c803623898743dc9747fe8e33694d5b'
+    w3 = Web3(Web3.HTTPProvider(infura_url))
+
+    # Convert address to checksum address
+    checksum_address = w3.to_checksum_address(address)
+
+    # Check if the address is valid
+    if not w3.is_address(checksum_address):
+        return f"{address} is not a valid Ethereum address."
+
+    # Check if the address is an EOA or a smart contract
+    code = w3.eth.get_code(checksum_address)
+    if code == b'':
+        return "EOA"
+    else:
+        return "Smart Contract"
+
+
+def oAuth_example(smart_contract_address):
+    # Step 1: Obtain the access token
+    url = "https://oauth2.bitquery.io/oauth2/token"
+    payload = 'grant_type=client_credentials&client_id=2ce4e182-5cc8-4d02-b47d-3f550afa6cdb&client_secret=BMzqn0VSq1Y-rN-33W5lLn1a02&scope=api'
+    headers = {'Content-Type': 'application/x-www-form-urlencoded'}
+
+    response = requests.post(url, headers=headers, data=payload)
+    resp = json.loads(response.text)
+
+    if response.status_code != 200:
+        raise Exception(f"OAuth Error: {response.status_code}, {response.text}")
+
+    access_token = response.json().get('access_token')
+
+    # Step 2: Make the GraphQL query
+    url_graphql = "https://streaming.bitquery.io/graphql"
+    headers_graphql = {
+        'Content-Type': 'application/json',
+        'Authorization': f'Bearer {access_token}'
+    }
+
+    graphql_query = f"""
+    {{
+        EVM(dataset: archive, network: eth) {{
+        TokenHolders(
+            date: "2025-05-01"
+            tokenSmartContract: "{smart_contract_address}"
+            limit: {{ count: 100 }}
+            orderBy: {{ descending: Balance_Amount }}
+        ) {{
+            Holder {{
+            Address
+            }}
+            Balance {{
+            Amount
+            }}
+        }}
+        }}
+    }}
+    """
+
+    payload_graphql = json.dumps({'query': graphql_query})
+
+    # Step 3: Send the request to the GraphQL API
+    response_graphql = requests.post(url_graphql, headers=headers_graphql, data=payload_graphql)
+
+    if response_graphql.status_code != 200:
+        raise Exception(f"GraphQL request failed: {response_graphql.status_code} {response_graphql.text}")
+
+    data = response_graphql.json()
+    token_holders = data['data']['EVM']['TokenHolders']
+
+    # Calculate total supply
+    total_supply = sum(float(holder['Balance']['Amount']) for holder in token_holders)
+
+    holders_data = []
+
+    for holder in token_holders:
+        address = holder['Holder']['Address']
+        balance = float(holder['Balance']['Amount'])
+        percentage_of_supply = (balance / total_supply) * 100 if total_supply > 0 else 0
+        address_type = check_address_type(address)
+
+        holders_data.append({
+            'address': address,
+            'balance': balance,
+            'percentage': percentage_of_supply,
+            'type': address_type
+        })
+
+    # Save to JSON file with additional metadata
+    with open('token_holders.json', 'w') as json_file:
+        json.dump({"timestamp": datetime.now().isoformat(), "data": holders_data}, json_file)
+
+    # Create the plot with rectangles
+    plot_liquidity_map(holders_data, total_supply)
+
+    return holders_data, total_supply
+
+
+def plot_liquidity_map(holders_data, total_supply):
+    labels = [f"{holder['address'][:3]}...{holder['address'][-3:]}" for holder in holders_data]
+    parents = [""] * len(holders_data)
+    values = [holder['percentage'] for holder in holders_data]
+    texts = [f"{holder['percentage']:.2f}%" for holder in holders_data]  # Show percentage on the treemap
+
+    # Create subplots
+    fig = make_subplots(rows=1, cols=2, specs=[[{'type': 'treemap'}, {'type': 'table'}]],
+                        column_widths=[0.7, 0.3])
+
+    # Add treemap
+    fig.add_trace(go.Treemap(
+        labels=labels,
+        parents=parents,
+        values=values,
+        text=texts,  # Add percentage text on the treemap
+        textposition='middle center',  # Center the text
+        marker=dict(
+            colorscale='Blues',
+            line=dict(width=1, color='white')
+        ),
+        hovertemplate='<b>%{label}</b><br>Percentage: %{value:.2f}%<extra></extra>'
+    ), row=1, col=1)
+
+    # Add ranking table
+    ranking_data = [
+        [f"#{i+1} - {holder['address'][:3]}...{holder['address'][-3:]}", f"{holder['percentage']:.2f}%", holder['type']]
+        for i, holder in enumerate(holders_data)
+    ]
+    ranking_headers = ["Wallet", "Percentage", "Type"]
+
+    fig.add_trace(go.Table(
+        header=dict(values=ranking_headers),
+        cells=dict(values=list(zip(*ranking_data)))
+    ), row=1, col=2)
+
+    # Update layout
+    fig.update_layout(
+        title={
+            'text': 'Top 100 Token Holders',
+            'x': 0.5,   # Center the title
+            'xanchor': 'center',
+            'yanchor': 'top',
+            'font': dict(size=18, weight='bold')  # Make the title bold
+        },
+        margin=dict(t=50, l=25, r=25, b=25)
     )
 
-    # Check if the script executed successfully
-    if result.returncode == 0:
-        st.write("Bubble map generated successfully!")
-        image_path = "path/to/save/plot.png"  # Replace this with the actual path where the image is saved
-        if os.path.exists(image_path):
-            img = Image.open(image_path)
-            st.image(img)
-        else:
-            st.error("Plot image not found at the specified location.")
+    st.plotly_chart(fig)
+
+
+# Streamlit UI
+st.title('Ethereum Token Holders Analysis')
+
+# Input field for smart contract address
+smart_contract_address = st.text_input('Enter Smart Contract Address', '0x3041cbd36888becc7bbcbc0045e3b1f144466f5f')
+
+if st.button('Fetch Token Holders Data'):
+    # Use the existing check_address_type function to validate the address
+    address_type = check_address_type(smart_contract_address)
+    
+    if "is not a valid Ethereum address" in address_type:
+        st.error(f'Invalid Ethereum address entered: {smart_contract_address}')
     else:
-        st.error(f"Error running bubblemap_v4.py: {result.stderr.decode()}")
-
-# Function to run the Token Holders Python script and display the results
-def run_token_holder_script(pool_address):
-    # Run the test_age_&_holders.py script and capture the output
-    result = subprocess.run(
-        ['python3', 'test_age_&_holders.py', pool_address],  # Use relative path for portability
-        stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE
-    )
-
-    # Check if the script executed successfully
-    if result.returncode == 0:
-        data = json.loads(result.stdout.decode())
-        st.write("Token holders data:")
-        st.json(data)  # Display the data in JSON format
-    else:
-        st.error(f"Error running test_age_&_holders.py: {result.stderr.decode()}")
-
-# Function to load pool data (Assuming it's a local JSON file or API)
-def load_data(file_path):
-    with open(file_path, 'r') as file:
-        return json.load(file)
-
-# Banner Section: Search and pool selection
-st.set_page_config(page_title="Liquidity Pool Analysis", layout="wide")
-
-# Banner styling and layout
-search_term = st.text_input("Search", placeholder="Search", key="search_term")
-
-# Styling for the banner section using Streamlit's markdown (keep it simple and more consistent with Streamlit style)
-st.markdown(
-    f"""
-    <div style="background-color: #4CAF50; height: 15vh; display: flex; justify-content: space-between; align-items: center; padding: 0 20px;">
-        <div>
-            <select id="blockchain-select" style="font-size: 16px;">
-                <option value="Ethereum">Ethereum</option>
-                <option value="Base">Base</option>
-            </select>
-        </div>
-        <div style="display: flex; align-items: center;">
-            <span style="color: white; font-size: 20px; margin-right: 10px;">Pool Verified ✔️</span>
-            <input type="text" placeholder="Search" value="{search_term}" style="margin-right: 10px; padding: 10px; font-size: 16px;" onkeypress="if(event.key === 'Enter'){{this.dispatchEvent(new Event('change'))}}">
-            <button style="padding: 10px; font-size: 16px;">Log in</button>
-        </div>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
-
-# Load pool data from JSON (example path, change as needed)
-file_path = 'dataset_pool.json'  # Use relative path for portability
-if os.path.exists(file_path):
-    pools_data = load_data(file_path)
-else:
-    st.error(f"Pool data file not found at {file_path}")
-    pools_data = []
-
-# Filter pools based on the search term (if entered)
-filtered_pools = [pool for pool in pools_data if search_term.lower() in pool["pool_name"].lower()] if search_term else []
-
-# Display filtered pools with action buttons
-if filtered_pools:
-    st.write("Suggestions:")
-    for pool in filtered_pools:
-        if st.button(pool["pool_name"]):
-            pool_address = pool["address"]
-            st.write(f"Selected pool address: {pool_address}")
-            run_bubblemap_script(pool_address)  # Run the bubblemap script
-            run_token_holder_script(pool_address)  # Run the token holders script
-else:
-    if search_term:
-        st.write("No pools found matching your search.")
-    else:
-        st.write("Please enter a search term.")
+        oAuth_example(smart_contract_address)
