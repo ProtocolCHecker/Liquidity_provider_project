@@ -385,13 +385,6 @@
         "address": "0x6cDcb1C4A4D1C3C6d054b27AC5B77e89eAFb971d"
     },
     {
-        "pool_name": "AERO-USDC",
-        "protocol": "Aerodrome",
-        "version": "v1",
-        "chain": "Base",
-        "address": "0x6cDcb1C4A4D1C3C6d054b27AC5B77e89eAFb971d"
-    },
-    {
         "pool_name": "GAME-VIRTUAL",
         "protocol": "Uniswap",
         "version": "v2",
