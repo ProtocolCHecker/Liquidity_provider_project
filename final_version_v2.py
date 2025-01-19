@@ -3,15 +3,19 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import pandas as pd
 import json
-from dune_client.client import DuneClient
 from web3 import Web3
 import requests
 from bs4 import BeautifulSoup
 import re
 
 # Load the JSON data
-with open('/Users/barguesflorian/Documents/LP_project/dataset_lending.json') as f:
-    assets_data = json.load(f)
+# with open('/Users/barguesflorian/Documents/LP_project/dataset_lending.json') as f:
+#     assets_data = json.load(f)
+
+# Load the JSON data from the GitHub raw URL
+url = 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/refs/heads/main/dataset_lending.json?token=GHSAT0AAAAAAC4XUEG34MDYW6TOR4BWQEEIZ4MUMRQ'
+response = requests.get(url)
+assets_data = response.json()
 
 def borrowing_and_lending_rate(base_rate, slope1, slope2, U_optimal, reserve_factor, utilization_rate):
     if utilization_rate <= U_optimal:
@@ -133,7 +137,7 @@ def plot_bar_chart(holders_data, top_10, top_25, top_75, top_100):
             #y=1.1,   # Position the legend above the plot
             xanchor='center',
             yanchor='top',
-            font=dict(size=25),  # Increase the font size of the legend
+            font=dict(size=20),  # Increase the font size of the legend
             orientation="h"
         )
     )
@@ -141,7 +145,7 @@ def plot_bar_chart(holders_data, top_10, top_25, top_75, top_100):
           # Position the annotation above the legend
         text=f"Top 10 holds: {top_10:.2f}%<br>Top 25 holds: {top_25:.2f}%<br>Top 75 holds: {top_75:.2f}%<br>Top 100 holds: {top_100:.2f}%",
         showarrow=False,
-        font=dict(size=25, color='white'),
+        font=dict(size=20, color='white'),
         align='center',
         bgcolor='rgba(0,0,0,0.8)',
         bordercolor='#c7c7c7',
@@ -149,7 +153,6 @@ def plot_bar_chart(holders_data, top_10, top_25, top_75, top_100):
         borderpad=4
     )
     st.plotly_chart(fig, use_container_width=True)
-
 
 
 def get_token_holder_chart(chain, contract_address, range_value=100):
