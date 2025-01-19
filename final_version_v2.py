@@ -9,10 +9,25 @@ from bs4 import BeautifulSoup
 import re
 
 
-# Load the JSON data from the GitHub raw URL
-url = 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/refs/heads/main/dataset_lending.json?token=GHSAT0AAAAAAC4XUEG34MDYW6TOR4BWQEEIZ4MUMRQ'
+
+# Replace this URL with the raw URL of your JSON file on GitHub
+url = 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/dataset_lending.json'
+
+# Send a GET request to the URL
 response = requests.get(url)
-assets_data = response.json()
+
+# Check if the request was successful
+if response.status_code == 200:
+    try:
+        # Try to parse the JSON data
+        assets_data = response.json()
+        print("JSON data loaded successfully.")
+    except json.JSONDecodeError:
+        # If JSON decoding fails, print the response content
+        print(f"Failed to decode JSON. Response content: {response.content}")
+else:
+    # If the request was not successful, print the status code and response content
+    print(f"Failed to fetch data. Status code: {response.status_code}, Response content: {response.content}")
 
 def borrowing_and_lending_rate(base_rate, slope1, slope2, U_optimal, reserve_factor, utilization_rate):
     if utilization_rate <= U_optimal:
