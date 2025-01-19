@@ -8,9 +8,6 @@ import requests
 from bs4 import BeautifulSoup
 import re
 
-# Load the JSON data
-# with open('/Users/barguesflorian/Documents/LP_project/dataset_lending.json') as f:
-#     assets_data = json.load(f)
 
 # Load the JSON data from the GitHub raw URL
 url = 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/refs/heads/main/dataset_lending.json?token=GHSAT0AAAAAAC4XUEG34MDYW6TOR4BWQEEIZ4MUMRQ'
