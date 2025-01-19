@@ -446,7 +446,7 @@ if user_input:
 
                 # Plot the bar chart
                 st.write("### Top Wallets by % of Borrowing Pool Supply")
-                plot_bar_chart(a_holders_data, top_10, top_25, top_75, top_100)
+                plot_bar_chart(debt_holders_data, top_10, top_25, top_75, top_100)
 
     else:
         st.sidebar.write('No matching assets found.')
