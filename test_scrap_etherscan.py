@@ -271,35 +271,36 @@
 # print(get_token_holder_chart(chain, contract_address))
 
 
-import streamlit as st
-import plotly.graph_objects as go
-from plotly.subplots import make_subplots
-import pandas as pd
-import json
-from web3 import Web3
-import requests
-from bs4 import BeautifulSoup
-import re
+# import streamlit as st
+# import plotly.graph_objects as go
+# from plotly.subplots import make_subplots
+# import pandas as pd
+# import json
+# from web3 import Web3
+# import requests
+# from bs4 import BeautifulSoup
+# import re
 
 
-# Load the JSON data from the GitHub raw URL
-url = 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/dataset_lending.json'
+# # Load the JSON data from the GitHub raw URL
+# url = 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/dataset_lending.json'
 
-# Send a GET request to the URL
-response = requests.get(url)
-#url = 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/refs/heads/main/dataset_lending.json?token=GHSAT0AAAAAAC4XUEG34MDYW6TOR4BWQEEIZ4MUMRQ'
-#response = requests.get(url)
+# # Send a GET request to the URL
+# response = requests.get(url)
+# #url = 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/refs/heads/main/dataset_lending.json?token=GHSAT0AAAAAAC4XUEG34MDYW6TOR4BWQEEIZ4MUMRQ'
+# #response = requests.get(url)
 
-# Check if the request was successful
-if response.status_code == 200:
-    try:
-        # Try to parse the JSON data
-        assets_data = response.json()
-        print(assets_data)
-        print("JSON data loaded successfully.")
-    except json.JSONDecodeError:
-        # If JSON decoding fails, print the response content
-        print(f"Failed to decode JSON. Response content: {response.content}")
-else:
-    # If the request was not successful, print the status code and response content
-    print(f"Failed to fetch data. Status code: {response.status_code}, Response content: {response.content}")
+# # Check if the request was successful
+# if response.status_code == 200:
+#     try:
+#         # Try to parse the JSON data
+#         assets_data = response.json()
+#         print(assets_data)
+#         print("JSON data loaded successfully.")
+#     except json.JSONDecodeError:
+#         # If JSON decoding fails, print the response content
+#         print(f"Failed to decode JSON. Response content: {response.content}")
+# else:
+#     # If the request was not successful, print the status code and response content
+#     print(f"Failed to fetch data. Status code: {response.status_code}, Response content: {response.content}")
+
