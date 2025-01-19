@@ -20,7 +20,7 @@
         "protocol": "AAVE",
         "version": "v3",
         "chain": "Ethereum",
-        "aWETH": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "aWETH": "0x4d5F47FA6A74757f35C14fD3a6Ef8E3C9BC514E8",
         "debtWETH": "0xeA51d7853EEFb32b6ee06b1C12E6dcCA88Be0fFE",
         "base_rate": 0,
         "s1": 0.027,

@@ -348,7 +348,6 @@ if user_input:
             if st.sidebar.button(f"Select {unique_key}"):
 
                 a_token_address = asset[f'a{asset["pool_name"]}']
-                print(a_token_address)
                 debt_token_address = asset[f'debt{asset["pool_name"]}']
                 chain = asset['chain']
                 protocol = asset['protocol']
