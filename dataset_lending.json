@@ -14,7 +14,7 @@
         "dune_a_id": 4579059,
         "dune_debt_id": 4579088,
         "coef": 1000000,
-        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=usd-coin&vs_currencies=usd').json()['usd-coin']['usd']"
+        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=usd-coin&vs_currencies=usd'"
     },
     {
         "pool_name": "WETH",
@@ -31,7 +31,7 @@
         "dune_a_id": 4579093,
         "dune_debt_id": 4579100,
         "coef": 1000000000000000000,
-        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd').json()['ethereum']['usd']"
+        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd'"
     },
     {
         "pool_name": "wstETH",
@@ -48,7 +48,7 @@
         "dune_a_id": 4579108,
         "dune_debt_id": 4579125,
         "coef": 1000000000000000000,
-        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd').json()['ethereum']['usd']"
+        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd'"
     },
     {
         "pool_name": "weETH",
@@ -65,7 +65,7 @@
         "dune_a_id": 4579133,
         "dune_debt_id": 4579215,
         "coef": 1000000000000000000,
-        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd').json()['ethereum']['usd']"
+        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd'"
     },
     {
         "pool_name": "WBTC",
@@ -82,7 +82,7 @@
         "dune_a_id": 4579219,
         "dune_debt_id": 4579222,
         "coef": 100000000,
-        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd').json()['bitcoin']['usd']"
+        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd'"
     },
     {
         "pool_name": "USDT",
@@ -99,7 +99,7 @@
         "dune_a_id": 4579228,
         "dune_debt_id": 4579234,
         "coef": 1000000,
-        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=tether&vs_currencies=usd').json()['tether']['usd']"
+        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=tether&vs_currencies=usd'"
     },
     {
         "pool_name": "WETH",
@@ -116,7 +116,7 @@
         "dune_a_id": 4579240,
         "dune_debt_id": 4579265,
         "coef": 1000000000000000000,
-        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd').json()['ethereum']['usd']"
+        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd'"
     },
     {
         "pool_name": "weETH",
@@ -133,7 +133,7 @@
         "dune_a_id": 4579273,
         "dune_debt_id": 4579278,
         "coef": 1000000000000000000,
-        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd').json()['ethereum']['usd']"
+        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd'"
     },
     {
         "pool_name": "USDC",
@@ -150,7 +150,7 @@
         "dune_a_id": 4579281,
         "dune_debt_id": 4579295,
         "coef": 1000000,
-        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=usd-coin&vs_currencies=usd').json()['usd-coin']['usd']"       
+        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=usd-coin&vs_currencies=usd'"       
     },
     {
         "pool_name": "cbBTC",
@@ -167,7 +167,7 @@
         "dune_a_id": 4579297,
         "dune_debt_id": 4579298,
         "coef": 100000000,
-        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd').json()['bitcoin']['usd']"
+        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd'"
     },
     {
         "pool_name": "wstETH",
@@ -184,7 +184,7 @@
         "dune_a_id": 4579302,
         "dune_debt_id": 4579306,
         "coef": 1000000000000000000,
-        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd').json()['ethereum']['usd']"
+        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd'"
     },
     {
         "pool_name": "WETH",
@@ -201,7 +201,7 @@
         "dune_a_id": 4579480,
         "dune_debt_id": 4579483,
         "coef": 1000000000000000000,
-        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd').json()['ethereum']['usd']"
+        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd'"
     },
     {
         "pool_name": "weETH",
@@ -218,7 +218,7 @@
         "dune_a_id": 4579497,
         "dune_debt_id": 4579499,
         "coef": 1000000000000000000,
-        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd').json()['ethereum']['usd']"
+        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd'"
     },
     {
         "pool_name": "USDC",
@@ -235,7 +235,7 @@
         "dune_a_id": 4579507,
         "dune_debt_id": 4579508,
         "coef": 1000000,
-        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=usd-coin&vs_currencies=usd').json()['usd-coin']['usd']"
+        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=usd-coin&vs_currencies=usd'"
     },
     {
         "pool_name": "WBTC",
@@ -252,7 +252,7 @@
         "dune_a_id": 4579516,
         "dune_debt_id": 4579522,
         "coef": 100000000,
-        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd').json()['bitcoin']['usd']"
+        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd'"
     },
     {
         "pool_name": "wstETH",
@@ -269,7 +269,7 @@
         "dune_a_id": 4579527,
         "dune_debt_id": 4579531,
         "coef": 1000000000000000000,
-        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd').json()['ethereum']['usd']"
+        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd'"
     },
     {
         "pool_name": "wstETH",
@@ -286,7 +286,7 @@
         "dune_a_id": 4579547,
         "dune_debt_id": 4579549,
         "coef": 1000000000000000000,
-        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd').json()['ethereum']['usd']"
+        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd'"
     },
     {
         "pool_name": "WETH",
@@ -303,7 +303,7 @@
         "dune_a_id": 4579553,
         "dune_debt_id": 4579558,
         "coef": 1000000000000000000,
-        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd').json()['ethereum']['usd']"
+        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd'"
     },
     {
         "pool_name": "USDC",
@@ -320,7 +320,7 @@
         "dune_a_id": 4579563,
         "dune_debt_id": 4579566,
         "coef": 1000000,
-        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=usd-coin&vs_currencies=usd').json()['usd-coin']['usd']"
+        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=usd-coin&vs_currencies=usd'"
     },
     {
         "pool_name": "WBTC",
@@ -337,7 +337,7 @@
         "dune_a_id": 4579576,
         "dune_debt_id": 4579585,
         "coef": 100000000,
-        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd').json()['bitcoin']['usd']"
+        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd'"
     },
     {
         "pool_name": "OP",
@@ -354,7 +354,7 @@
         "dune_a_id": 4579588,
         "dune_debt_id": 4579590,
         "coef": 1000000000000000000,
-        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=optimism&vs_currencies=usd').json()['optimism']['usd']"
+        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=optimism&vs_currencies=usd'"
     },
     {
         "pool_name": "WBTC",
@@ -371,7 +371,7 @@
         "dune_a_id": 4579617,
         "dune_debt_id": 4579625,
         "coef": 100000000,
-        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd').json()['bitcoin']['usd']"
+        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd'"
     },
     {
         "pool_name": "WETH",
@@ -388,7 +388,7 @@
         "dune_a_id": 4579636,
         "dune_debt_id": 4579644,
         "coef": 1000000000000000000,
-        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd').json()['ethereum']['usd']"
+        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd'"
     },
     {
         "pool_name": "USDT",
@@ -405,7 +405,7 @@
         "dune_a_id": 4579647,
         "dune_debt_id": 4579649,
         "coef": 1000000,
-        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=tether&vs_currencies=usd').json()['tether']['usd']"
+        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=tether&vs_currencies=usd'"
     },
     {
         "pool_name": "USDC",
@@ -422,7 +422,7 @@
         "dune_a_id": 4579652,
         "dune_debt_id": 4579661,
         "coef": 1000000,
-        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=usd-coin&vs_currencies=usd').json()['usd-coin']['usd']"
+        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=usd-coin&vs_currencies=usd'"
     },
     {
         "pool_name": "wstETH",
@@ -439,7 +439,7 @@
         "dune_a_id": 4579666,
         "dune_debt_id": 4579670,
         "coef": 1000000000000000000,
-        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd').json()['ethereum']['usd']"
+        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd'"
     },
     {
         "pool_name": "WBTC",
@@ -456,7 +456,7 @@
         "dune_a_id": 4579675,
         "dune_debt_id": 4579678,
         "coef": 100000000,
-        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd').json()['bitcoin']['usd']"
+        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd'"
     },
     {
         "pool_name": "WETH",
@@ -473,7 +473,7 @@
         "dune_a_id": 4579682,
         "dune_debt_id": 4579686,
         "coef": 1000000000000000000,
-        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd').json()['ethereum']['usd']"
+        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd'"
     },
     {
         "pool_name": "USDC",
@@ -490,7 +490,7 @@
         "dune_a_id": 4579689,
         "dune_debt_id": 4579694,
         "coef": 1000000,
-        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=usd-coin&vs_currencies=usd').json()['usd-coin']['usd']"
+        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=usd-coin&vs_currencies=usd'"
     },
     {
         "pool_name": "USDT",
@@ -507,7 +507,7 @@
         "dune_a_id": 4579701,
         "dune_debt_id": 4579702,
         "coef": 1000000,
-        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=tether&vs_currencies=usd').json()['tether']['usd']"
+        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=tether&vs_currencies=usd'"
     },
     {
         "pool_name": "WBTC",
@@ -524,7 +524,7 @@
         "dune_a_id": 4579709,
         "dune_debt_id": 4579763,
         "coef": 100000000,
-        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd').json()['bitcoin']['usd']"
+        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd'"
     },
     {
         "pool_name": "WETH",
@@ -541,7 +541,7 @@
         "dune_a_id": 4579769,
         "dune_debt_id": 4579771,
         "coef": 1000000000000000000,
-        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd').json()['ethereum']['usd']"
+        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd'"
     },
     {
         "pool_name": "DAI",
@@ -558,7 +558,7 @@
         "dune_a_id": 4579781,
         "dune_debt_id": 4579783,
         "coef": 1000000000000000000,
-        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=dai&vs_currencies=usd').json()['dai']['usd']"
+        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=dai&vs_currencies=usd'"
     },
     {
         "pool_name": "USDC",
@@ -575,7 +575,7 @@
         "dune_a_id": 4579787,
         "dune_debt_id": 4579789,
         "coef": 1000000,
-        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=usd-coin&vs_currencies=usd').json()['usd-coin']['usd']"
+        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=usd-coin&vs_currencies=usd'"
     },
     {
         "pool_name": "USDT",
@@ -592,6 +592,6 @@
         "dune_a_id": 4579790,
         "dune_debt_id": 4579793,
         "coef": 1000000,
-        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=tether&vs_currencies=usd').json()['tether']['usd']"
+        "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=tether&vs_currencies=usd'"
     }
 ]
