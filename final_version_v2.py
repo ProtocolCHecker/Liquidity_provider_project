@@ -100,7 +100,7 @@ def plot_sunburst_chart(holders_data, total_supply, asset, borrow_rate, lending_
     ), row=1, col=1)
     fig.add_trace(go.Table(
         header=dict(values=ranking_headers),
-        cells=dict(values=[[item["address"] for item in holders_data],
+        cells=dict(values=[[item["address"][:3] + "..." + item["address"][38:40] + item["address"][40:] for item in holders_data],
                            [item["current_balance"] for item in holders_data],
                            [item["percentage_of_supply"] for item in holders_data]])
     ), row=2, col=1)
@@ -224,6 +224,17 @@ def get_token_holder_chart(chain, contract_address, range_value=100):
     # Parse the HTML content
     soup = BeautifulSoup(response.text, 'html.parser')
 
+    # Find all script tags
+    script_tags = soup.find_all('script')
+
+    js_code = script_tags[-2].text
+
+    # Regular expression pattern to match Ethereum addresses with optional descriptions
+    pattern = r"\['(0x[a-fA-F0-9]{40}(?: \([^)]+\))?)'"
+
+    # Find all matches in the JavaScript code
+    matches = re.findall(pattern, js_code)
+
     # Find the table in the HTML
     table = soup.find('table')
 
@@ -232,8 +243,9 @@ def get_token_holder_chart(chain, contract_address, range_value=100):
 
     # Iterate through each row in the table body
     for row in table.tbody.find_all('tr'):
+
         # Extract relevant columns (adjust index based on your needs)
-        token_address = row.find_all('td')[2].text.strip()  # Assuming token address is in the third column
+        balance_holder = row.find_all('td')[2].text.strip()  # Assuming token address is in the third column
         amount_str = row.find_all('td')[3].text.strip()  # Assuming amount is in the fourth column
 
         # Handle percentage conversion if applicable
@@ -242,7 +254,7 @@ def get_token_holder_chart(chain, contract_address, range_value=100):
         else:
             amount = float(amount_str.replace(',', ''))  # Convert to float after removing commas
 
-        data_list.append([token_address, amount])
+        data_list.append([matches[table.tbody.find_all('tr').index(row)],balance_holder, amount])
 
     # Print the retrieved data
     return data_list
@@ -397,20 +409,20 @@ if user_input:
                 debt_holders_data = []
 
                 for row in a_results[:100]:
-                    #address = row['address']
-                    current_balance = float(row[0].strip("'").replace(",", ""))
-                    percentage_of_supply = row[1]
+                    address = row[0]
+                    current_balance = float(row[1].strip("'").replace(",", ""))
+                    percentage_of_supply = row[2]
                     a_holders_data.append({
-                        'address': f"Wallet #{a_results[:100].index(row)+1}",
+                        'address': address,
                         'current_balance': current_balance,
                         'percentage_of_supply': percentage_of_supply
                     })
                 for row in debt_results[:100]:
-                    #address = row['address']
-                    current_balance = float(row[0].strip("'").replace(",", ""))
-                    percentage_of_supply = row[1]
+                    address = row[0]
+                    current_balance = float(row[1].strip("'").replace(",", ""))
+                    percentage_of_supply = row[2]
                     debt_holders_data.append({
-                        'address': f"Wallet #{debt_results[:100].index(row)+1}",
+                        'address': address,
                         'current_balance': current_balance,
                         'percentage_of_supply': percentage_of_supply
                     })
