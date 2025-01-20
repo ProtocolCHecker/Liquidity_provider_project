@@ -527,12 +527,11 @@ if user_input:
                 amount_to_borrow = st.number_input('Amount to Borrow', min_value=0.0, format="%.2f")
                 amount_to_lend = st.number_input('Amount to Lend', min_value=0.0, format="%.2f")
 
-                print(asset)
                 requete = asset["request"].strip('"')
                 price_asset = requests.get(requete).json()[symbol]['usd']
 
-                debt_token_supply = debt_token_supply * price
-                a_token_supply = a_token_supply * price
+                debt_token_supply = debt_token_supply * price_asset
+                a_token_supply = a_token_supply * price_asset
 
                 # Recalculate the utilization rate based on the user's input
                 new_debt_token_supply = debt_token_supply + amount_to_borrow
