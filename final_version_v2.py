@@ -556,6 +556,8 @@ if user_input:
                 # Display the new rates
                 st.markdown(f"""
                     <div class='container' style='padding: 10px; margin-bottom: 10px;'>
+                        <h3 style='text-align: center; color: white;'>Current lending supply: ${a_token_supply/10**8:.2f}</h3>
+                        <h3 style='text-align: center; color: white;'>Current borrow supply: ${debt_token_supply/10**8:.2f}</h3>
                         <h3 style='text-align: center; color: white;'>New Utilization Rate: {new_utilization_rate_percent:.2f}%</h3>
                         <h3 style='text-align: center; color: white;'>New Borrow Rate: {new_borrow_rate:.2f}%</h3>
                         <h3 style='text-align: center; color: white;'>New Lending Rate: {new_lending_rate:.2f}%</h3>
