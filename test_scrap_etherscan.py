@@ -304,3 +304,41 @@
 #     # If the request was not successful, print the status code and response content
 #     print(f"Failed to fetch data. Status code: {response.status_code}, Response content: {response.content}")
 
+
+import requests
+from bs4 import BeautifulSoup
+import re
+
+# URL to fetch
+url = 'https://etherscan.io/token/tokenholderchart/0x23878914EFE38d27C4D67Ab83ed1b93A74D4086a'
+
+# Headers to mimic a browser request
+headers = {
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
+    'accept-language': 'en-GB,en;q=0.8',
+    'cache-control': 'max-age=0',
+    'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
+}
+
+# Fetch the webpage
+response = requests.get(url, headers=headers)
+
+# Check if the request was successful
+if response.status_code == 200:
+    # Parse the HTML content
+    soup = BeautifulSoup(response.content, 'html.parser')
+
+    # Find all script tags
+    script_tags = soup.find_all('script')
+
+    js_code = script_tags[-2].text
+
+    # Regular expression pattern to match Ethereum addresses with optional descriptions
+    pattern = r"\['(0x[a-fA-F0-9]{40}(?: \([^)]+\))?)'"
+
+    # Find all matches in the JavaScript code
+    matches = re.findall(pattern, js_code)
+
+    # Print the list of smart contract addresses with details
+    for match in matches:
+        print(match)
