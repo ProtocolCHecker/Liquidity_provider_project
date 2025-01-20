@@ -129,7 +129,7 @@ def calculate_cumulative_percentages(holders_data):
     return top_10, top_25, top_75, top_100
 
 
-def plot_bar_chart(holders_data, top_10, top_25, top_75, top_100):
+def plot_bar_chart(holders_data, top_10, top_25, top_75, top_100, asset):
     df = pd.DataFrame(holders_data, columns=['address', 'percentage_of_supply'])
     fig = go.Figure()
     fig.add_trace(go.Bar(
@@ -138,7 +138,7 @@ def plot_bar_chart(holders_data, top_10, top_25, top_75, top_100):
         marker=dict(color='#007BFF')
     ))
     fig.update_layout(
-        title='Top Wallets by % of Token Supply Hold',
+        title=f"Top Wallets distribution for {asset}",
         xaxis_title='Wallet Address',
         yaxis_title='% of Token Supply Hold',
         margin=dict(t=50, l=25, r=25, b=25),
@@ -227,13 +227,23 @@ def get_token_holder_chart(chain, contract_address, range_value=100):
     # Find all script tags
     script_tags = soup.find_all('script')
 
-    js_code = script_tags[-2].text
+    if chain == "Polygon" or chain == "Base" or chain == "Arbitrum":
+        js_code = script_tags[-1].text
+
+    else:
+        js_code = script_tags[-2].text
 
     # Regular expression pattern to match Ethereum addresses with optional descriptions
     pattern = r"\['(0x[a-fA-F0-9]{40}(?: \([^)]+\))?)'"
 
     # Find all matches in the JavaScript code
     matches = re.findall(pattern, js_code)
+
+    if len(matches)<100:
+        pattern = r"'OTHER ACCOUNTS'"
+        new_match  = re.findall(pattern, js_code)
+        matches = matches + new_match
+        
 
     # Find the table in the HTML
     table = soup.find('table')
@@ -451,14 +461,16 @@ if user_input:
 
                 # Plot the bar chart
                 st.write("### Top Wallets by % of Lending Pool Supply")
-                plot_bar_chart(a_holders_data, top_10, top_25, top_75, top_100)
+                name = "a" + asset["pool_name"]
+                plot_bar_chart(a_holders_data, top_10, top_25, top_75, top_100, name)
 
                 # Calculate cumulative percentages borrowing
                 top_10, top_25, top_75, top_100 = calculate_cumulative_percentages(debt_holders_data)
 
                 # Plot the bar chart
                 st.write("### Top Wallets by % of Borrowing Pool Supply")
-                plot_bar_chart(debt_holders_data, top_10, top_25, top_75, top_100)
+                name = "debt" + asset["pool_name"]
+                plot_bar_chart(debt_holders_data, top_10, top_25, top_75, top_100, name)
 
     else:
         st.sidebar.write('No matching assets found.')
