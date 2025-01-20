@@ -345,30 +345,28 @@
 #         print(match)
 
 
-# import requests
-# import time 
+import requests
+import time 
 
-# # List of cryptocurrency symbols and their corresponding CoinGecko IDs
-# crypto_symbols = {
-#     'Bitcoin': 'bitcoin',
-#     'Ethereum': 'ethereum',
-#     'Tether': 'tether',
-#     'USD Coin': 'usd-coin',
-#     'Dai': 'dai',
-#     'Optimism': 'optimism',
-#     'Aave': 'aave',
-#     'Lido Staked Ether': 'lido-staked-ether',
-#     'Wrapped stETH': 'wrapped-steth',
-#     'WETH': 'weth',
-#     'Wrapped Bitcoin': 'wrapped-bitcoin'
-# }
+# List of cryptocurrency symbols and their corresponding CoinGecko IDs
+crypto_symbols = {
+    'Bitcoin': 'bitcoin',
+    'Optimism': 'optimism',
+    'Ethereum': 'ethereum',
+    'Tether': 'tether',
+    'USD Coin': 'usd-coin',
+    'Dai': 'dai',
+    'Lido Staked Ether': 'lido-staked-ether',
+    'Wrapped stETH': 'wrapped-steth',
+    'WETH': 'weth',
+    'Wrapped Bitcoin': 'wrapped-bitcoin'
+}
 
-# # Fetch and print the price for each cryptocurrency
-# for name, symbol in crypto_symbols.items():
-#     time.sleep(2)
-#     price = requests.get(f'https://api.coingecko.com/api/v3/simple/price?ids={symbol}&vs_currencies=usd').json()[symbol]['usd']
-#     print(type(price))
-#     print(f"{name}: ${price}")
+# Fetch and print the price for each cryptocurrency
+for name, symbol in crypto_symbols.items():
+    time.sleep(2)
+    price = requests.get(f'https://api.coingecko.com/api/v3/simple/price?ids={symbol}&vs_currencies=usd').json()[symbol]['usd']
+    print(f"{name}: ${price}")
 
 # import re
 

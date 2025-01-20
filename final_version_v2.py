@@ -527,8 +527,8 @@ if user_input:
                 amount_to_borrow = st.number_input('Amount to Borrow', min_value=0.0, format="%.2f")
                 amount_to_lend = st.number_input('Amount to Lend', min_value=0.0, format="%.2f")
 
-                requete = asset["request"].strip('"')
-                price_asset = requests.get(requete).json()[asset["symbol"]]['usd']
+                symbol = asset["symbol"]
+                price_asset = requests.get(f'https://api.coingecko.com/api/v3/simple/price?ids={symbol}&vs_currencies=usd').json()[symbol]['usd']
 
                 debt_token_supply = debt_token_supply * price_asset
                 a_token_supply = a_token_supply * price_asset
