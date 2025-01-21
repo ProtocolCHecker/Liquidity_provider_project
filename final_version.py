@@ -64,13 +64,6 @@ def get_token_total_supply(chain, token_address, abi):
         return None
     return total_supply
 
-# Function to fetch and process data
-def fetch_and_process_data(query_id):
-    dune = DuneClient(api_key='bDYuuMloPmsCwKEERSOkZajlJCkQYt9Z')
-    results_response = dune.get_latest_result(query_id)
-    results = results_response.result.rows
-    total_supply = sum(row['current_balance'] for row in results) / 1000000
-    return results, total_supply
 
 # Function to plot Sunburst charts with tables
 def plot_sunburst_chart(holders_data, total_supply, asset, borrow_rate, lending_rate, utilization_rate, token_type):
@@ -100,7 +93,7 @@ def plot_sunburst_chart(holders_data, total_supply, asset, borrow_rate, lending_
     ), row=1, col=1)
     fig.add_trace(go.Table(
         header=dict(values=ranking_headers),
-        cells=dict(values=[[item["address"] for item in holders_data],
+        cells=dict(values=[[item["address"][:3] + "..." + item["address"][38:40] + item["address"][40:] for item in holders_data],
                            [item["current_balance"] for item in holders_data],
                            [item["percentage_of_supply"] for item in holders_data]])
     ), row=2, col=1)
@@ -129,7 +122,7 @@ def calculate_cumulative_percentages(holders_data):
     return top_10, top_25, top_75, top_100
 
 
-def plot_bar_chart(holders_data, top_10, top_25, top_75, top_100):
+def plot_bar_chart(holders_data, top_10, top_25, top_75, top_100, asset):
     df = pd.DataFrame(holders_data, columns=['address', 'percentage_of_supply'])
     fig = go.Figure()
     fig.add_trace(go.Bar(
@@ -138,7 +131,7 @@ def plot_bar_chart(holders_data, top_10, top_25, top_75, top_100):
         marker=dict(color='#007BFF')
     ))
     fig.update_layout(
-        title='Top Wallets by % of Token Supply Hold',
+        title=f"Top Wallets distribution for {asset}",
         xaxis_title='Wallet Address',
         yaxis_title='% of Token Supply Hold',
         margin=dict(t=50, l=25, r=25, b=25),
@@ -177,15 +170,6 @@ def get_token_holder_chart(chain, contract_address, range_value=100):
         'Base': 'https://basescan.org/token/tokenholderchart/'
     }
 
-    # Define the cookies for different chains
-    cookies = {
-        'Ethereum': 'ASP.NET_SessionId=d212cjpgl5zazkufnnaezfzv; etherscan_offset_datetime=-3; etherscan_switch_token_amount_value=value; etherscan_hidepoortokenalert=True; etherscan_hidezeroalert=True; __stripe_mid=69c4398a-9735-4550-a705-f760fd3a309c7be9ad; __cflb=02DiuFnsSsHWYH8WqVXbZzkeTrZ6gtmGUrqFkD4VCumWt; cf_clearance=mzwrR48P2aRwOw1Dd3g1XdExQajASCtP.60my97Etro-1737263390-1.2.1.1-iWIpA.KnEApkB6388lPQ0W0K.ZW7F4gxUaB7OOTIjzMxxEs6tMF2Gl.q0xatieydswrPJYIFVfDBCWwq_WWeoUrNDzbG2KxX6Mur7Hey73UxYnqcztQu95cVoqiiD_RpR3SJ5WE5MJNZXalch7p.7WAIlZVOf.rf0.GIDUwzFS9tN14j7meq3Kg5SADToc4XvgJVdp0SWi8sCACmz7n0wjmViTbahYTsYJH_f2qpmh4y_QueCJipbONigUCIPNVfuEpbmI_0dWI6bW5JJtPZkhGQfw2XT9ngfSPXu_DR5lidVvpv5pv4jL4ESElGhvs5kWZUBdgCU6KxWFk_uQCzaw',
-        'Optimism': 'ASP.NET_SessionId=20o34auacn5snbgujxcdrjix; op mainnet etherscan_offset_datetime=-3; op mainnet etherscan_switch_token_amount_value=value; __stripe_mid=69c4398a-9735-4550-a705-f760fd3a309c7be9ad; __cflb=02DiuJ7NLBYKjsZtxjRR4QggQcq1CaL9Q7kUxbnvtjycQ; cf_clearance=bAWAdCKBS9Z1EfvbLTUqyCEbUC0p47GMN34rAJKBAOk-1737264993-1.2.1.1-mOuGv2YgUpgME.LMqhobcNuqrZx7AjDomHvpARWSRBYhcHVL7gtfOR1.vDmhn1d90aPfKhgOlDUGQkxhakaSt.17xRF6RsWSiFh92fI6eaMsj0LvZ76CtRnE1NvWRcEU2OP9k37biPQcEfKRjOAmKRzZ7jATxuqM_nt8oRkkn63tMOHbqVK7uuMGRq6nPlOZ17nryNFNXfH77umUqUdzqUzKM.R3j1VSF9zwMr58oQbeVA25TGMXH1mGuDmw1eGO_1tLiKakOE.06aYzjgVNVv.Ml2CVJ9g7DuAartYNshIRWdbeKO8SLMIeiLZvUc.Co6D6rBegI3k_pcT_jKnCTQ',
-        'Polygon': 'ASP.NET_SessionId=zen30zd42soml15bbdxdv4pt; polygonscan_offset_datetime=-3; polygonscan_switch_token_amount_value=value; __cflb=0H28vYYxgAifymwG4Xt78Bvs2KmKYds75LU77NckDX2',
-        'Arbitrum': 'ASP.NET_SessionId=z5tw5gppprxwuogbo0kehcs5; arbitrum one_offset_datetime=-3; arbitrum one_switch_token_amount_value=value; _ga=GA1.1.972759942.1736862088; _ga_KD34MKJY8D=GS1.1.1736862087.1.0.1736862087.0.0.0; cf_clearance=QrPf36WjIxcosACeUCUzJyhN77BS.ebyZGkbX8WxAwM-1737055489-1.2.1.1-kKH2vOYp88TkgUnN20our9UJ1xMm40i3R6vqTPSbahi9rmRddxTIw56SNo0DYgQolcjX3zaKGUnBvLL6XrVAYHXZa5sYENpEZwrD2M9vObvT6jfODu.QXKiV95HgInWfq49NFETccYN0_FtSeCY19NuDTEQKRJFwKWmeUuLhOvAtgBlbhOJgYWn2l3TOk.Id1Axh48W.arGD.G4MMHwbkF3Llvg2br5DHyqHex6YXP5ilp5yjSzVw93BOfs1.EU76P4tPCSgaOci_h7pgZ4tj8H8NAC7TT3.Vy4nKRE2CNUWaL5EJ7dQaD210Sv10cm.xpHO1Iio3rXO6.xpxqJawQ; __cflb=02DiuJLycbJL3fMraug7KdEi8GAxienVNSKUy1xT1iaJY',
-        'Base': 'ASP.NET_SessionId=syjjkhlthnrk2n2vc5nxdhsf; basescan_offset_datetime=-3; basescan_switch_token_amount_value=value; __cflb=02DiuJ1fCRi484mKRwML12UraygpucsySf7Q3gY684tVz; cf_clearance=f2H1ps2b7PSX9SylscTKyFhfrlIue..YFPYvrYUfO5E-1737264686-1.2.1.1-x0TlUDTsM5ixWGLGu8yVkF66xQ8MU.RNShyc_0eE6krZEVkAxksOEsEbh0zhS96VDEdfV1.6zp_o3T2Ft22Wzh14LaKyA9qFkulL51AuE9rHSTnJ9cE0YZufa6WCMFljhSvmgctaSZ31wc8hiqVxNP15c89KNcrERNsRWrvBQ9_mTvmvoMu.IUfnPvORJCPyCjG9zct.a3YxQySVoJpI1Lz7aRAFHjbQFmIJsTvGiMGCs7u_XkMyzFexM1TrBa4ivsGuQcSHQRSgdfdlkBSQrIKnJcVOZBV81_ZWnHhOg.U7HLB02PS1CpMEaleJUJ79OUby0HmskjPKVpmPdU8OxA'
-    }
-
     # Validate the chain parameter
     if chain not in base_urls:
         raise ValueError(f"Unsupported chain: {chain}")
@@ -198,7 +182,6 @@ def get_token_holder_chart(chain, contract_address, range_value=100):
         'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
         'accept-language': 'en-GB,en;q=0.9',
         'cache-control': 'max-age=0',
-        'cookie': cookies[chain],
         'priority': 'u=0, i',
         'referer': url,
         'sec-ch-ua': '"Brave";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
@@ -224,6 +207,27 @@ def get_token_holder_chart(chain, contract_address, range_value=100):
     # Parse the HTML content
     soup = BeautifulSoup(response.text, 'html.parser')
 
+    # Find all script tags
+    script_tags = soup.find_all('script')
+
+    if chain == "Polygon" or chain == "Base" or chain == "Arbitrum":
+        js_code = script_tags[-1].text
+
+    else:
+        js_code = script_tags[-2].text
+
+    # Regular expression pattern to match Ethereum addresses with optional descriptions
+    pattern = r"\['(0x[a-fA-F0-9]{40}(?: \([^)]+\))?)'"
+
+    # Find all matches in the JavaScript code
+    matches = re.findall(pattern, js_code)
+
+    if len(matches)<100:
+        pattern = r"'OTHER ACCOUNTS'"
+        new_match  = re.findall(pattern, js_code)
+        matches = matches + new_match
+        
+
     # Find the table in the HTML
     table = soup.find('table')
 
@@ -232,8 +236,9 @@ def get_token_holder_chart(chain, contract_address, range_value=100):
 
     # Iterate through each row in the table body
     for row in table.tbody.find_all('tr'):
+
         # Extract relevant columns (adjust index based on your needs)
-        token_address = row.find_all('td')[2].text.strip()  # Assuming token address is in the third column
+        balance_holder = row.find_all('td')[2].text.strip()  # Assuming token address is in the third column
         amount_str = row.find_all('td')[3].text.strip()  # Assuming amount is in the fourth column
 
         # Handle percentage conversion if applicable
@@ -242,17 +247,144 @@ def get_token_holder_chart(chain, contract_address, range_value=100):
         else:
             amount = float(amount_str.replace(',', ''))  # Convert to float after removing commas
 
-        data_list.append([token_address, amount])
+        data_list.append([matches[table.tbody.find_all('tr').index(row)],balance_holder, amount])
 
     # Print the retrieved data
     return data_list
+
+
+# Function to plot the lending and borrowing rate simulator
+def plot_rate_simulator(base_rate, slope1, slope2, U_optimal, reserve_factor, current_utilization_rate, current_borrow_rate, current_lending_rate, a_token_supply, debt_token_supply, max_supply, loan_to_value, price):
+    # Initialize session state variables if they don't exist
+    if 'amount_to_borrow' not in st.session_state:
+        st.session_state.amount_to_borrow = 0
+    if 'amount_to_lend' not in st.session_state:
+        st.session_state.amount_to_lend = 0
+
+    max_supply = max_supply * price
+    max_borrow = loan_to_value * max_supply
+    # Sliders for the user to enter the amount they want to borrow or lend
+    st.session_state.amount_to_borrow = st.slider('Amount to Borrow (USD)', 0, max_borrow, st.session_state.amount_to_borrow, key='borrow_slider')
+    st.session_state.amount_to_lend = st.slider('Amount to Lend (USD)', 0, max_supply, st.session_state.amount_to_lend, key='lend_slider')
+
+
+    # Recalculate the utilization rate based on the user's input
+    new_debt_token_supply = debt_token_supply + st.session_state.amount_to_borrow
+    new_a_token_supply = a_token_supply + st.session_state.amount_to_lend
+    new_utilization_rate = new_debt_token_supply / new_a_token_supply if new_a_token_supply else 0
+    new_utilization_rate_percent = new_utilization_rate * 100
+
+    # Calculate the new borrow and lending rates
+    new_borrow_rate, new_lending_rate = borrowing_and_lending_rate(
+        base_rate, slope1, slope2, U_optimal, reserve_factor, new_utilization_rate
+    )
+    new_borrow_rate = new_borrow_rate * 100
+    new_lending_rate = new_lending_rate * 100
+
+    utilization_rates = list(range(0, 101))
+    borrow_rates = []
+    lending_rates = []
+
+    for utilization_rate in utilization_rates:
+        b_rate, l_rate = borrowing_and_lending_rate(base_rate, slope1, slope2, U_optimal, reserve_factor, utilization_rate / 100)
+        borrow_rates.append(b_rate * 100)
+        lending_rates.append(l_rate * 100)
+
+    fig = go.Figure()
+
+    fig.add_trace(go.Scatter(
+        x=utilization_rates,
+        y=borrow_rates,
+        mode='lines',
+        name='Borrow Rate',
+        line=dict(color='#0056b3', width=3)
+    ))
+
+    fig.add_trace(go.Scatter(
+        x=utilization_rates,
+        y=lending_rates,
+        mode='lines',
+        name='Lending Rate',
+        line=dict(color='#ADD8E6', width=3)
+    ))
+
+    fig.add_trace(go.Scatter(
+        x=[current_utilization_rate],
+        y=[current_borrow_rate],
+        mode='markers',
+        name='Current Borrow Rate',
+        marker=dict(color='#0056b3', size=14)
+    ))
+
+    fig.add_trace(go.Scatter(
+        x=[current_utilization_rate],
+        y=[current_lending_rate],
+        mode='markers',
+        name='Current Lending Rate',
+        marker=dict(color='#ADD8E6', size=14)
+    ))
+
+    # Add a vertical line for the optimal utilization rate
+    fig.add_shape(
+        type="line",
+        x0=U_optimal * 100,
+        y0=0,
+        x1=U_optimal * 100,
+        y1=max(borrow_rates + lending_rates),
+        line=dict(color="red", width=2, dash="dash")
+    )
+
+    # Add a label for the optimal utilization rate
+    fig.add_annotation(
+        x=U_optimal * 100,
+        y=max(borrow_rates + lending_rates),
+        text=f"Optimal Utilization Rate: {U_optimal * 100:.2f}%",
+        showarrow=True,
+        arrowhead=2,
+        ax=0,
+        ay=-40,
+        font=dict(size=14, color="red")
+    )
+
+    fig.update_layout(
+        xaxis=dict(
+            title='Utilization Rate (%)',
+            titlefont=dict(size=18),  # Increased font size for x-axis label
+            tickfont=dict(size=14)  # Increased font size for x-axis ticks
+        ),
+        yaxis=dict(
+            title='Rate (%)',
+            titlefont=dict(size=18),  # Increased font size for y-axis label
+            tickfont=dict(size=14)  # Increased font size for y-axis ticks
+        ),
+        margin=dict(t=50, l=25, r=25, b=25),
+        height=600,
+        width=800,
+        legend=dict(
+            x=0.5,
+            y=1.1,
+            xanchor='center',
+            yanchor='top',
+            orientation="h",
+            font=dict(size=19)  # Increased font size for legends
+        )
+    )
+
+    st.plotly_chart(fig, use_container_width=True)
+
+    # Display the new rates
+    st.markdown(f"""
+        <div class='container' style='padding: 10px; margin-bottom: 10px;'>
+            <h3 style='text-align: center; color: white;'>New Utilization Rate: {new_utilization_rate_percent:.2f}%</h3>
+            <h3 style='text-align: center; color: white;'>New Borrow Rate: {new_borrow_rate:.2f}%</h3>
+            <h3 style='text-align: center; color: white;'>New Lending Rate: {new_lending_rate:.2f}%</h3>
+        </div>
+    """, unsafe_allow_html=True)
 
 abi = '''[{"inputs":[{"internalType":"contract IPool","name":"pool","type":"address"}],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"owner","type":"address"},{"indexed":true,"internalType":"address","name":"spender","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"}],"name":"Approval","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"from","type":"address"},{"indexed":true,"internalType":"address","name":"to","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"},{"indexed":false,"internalType":"uint256","name":"index","type":"uint256"}],"name":"BalanceTransfer","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"from","type":"address"},{"indexed":true,"internalType":"address","name":"target","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"},{"indexed":false,"internalType":"uint256","name":"balanceIncrease","type":"uint256"},{"indexed":false,"internalType":"uint256","name":"index","type":"uint256"}],"name":"Burn","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"underlyingAsset","type":"address"},{"indexed":true,"internalType":"address","name":"pool","type":"address"},{"indexed":false,"internalType":"address","name":"treasury","type":"address"},{"indexed":false,"internalType":"address","name":"incentivesController","type":"address"},{"indexed":false,"internalType":"uint8","name":"aTokenDecimals","type":"uint8"},{"indexed":false,"internalType":"string","name":"aTokenName","type":"string"},{"indexed":false,"internalType":"string","name":"aTokenSymbol","type":"string"},{"indexed":false,"internalType":"bytes","name":"params","type":"bytes"}],"name":"Initialized","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"caller","type":"address"},{"indexed":true,"internalType":"address","name":"onBehalfOf","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"},{"indexed":false,"internalType":"uint256","name":"balanceIncrease","type":"uint256"},{"indexed":false,"internalType":"uint256","name":"index","type":"uint256"}],"name":"Mint","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"from","type":"address"},{"indexed":true,"internalType":"address","name":"to","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"}],"name":"Transfer","type":"event"},{"inputs":[],"name":"ATOKEN_REVISION","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"DOMAIN_SEPARATOR","outputs":[{"internalType":"bytes32","name":"","type":"bytes32"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"EIP712_REVISION","outputs":[{"internalType":"bytes","name":"","type":"bytes"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"PERMIT_TYPEHASH","outputs":[{"internalType":"bytes32","name":"","type":"bytes32"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"POOL","outputs":[{"internalType":"contract IPool","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"RESERVE_TREASURY_ADDRESS","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"UNDERLYING_ASSET_ADDRESS","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"owner","type":"address"},{"internalType":"address","name":"spender","type":"address"}],"name":"allowance","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"approve","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"user","type":"address"}],"name":"balanceOf","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"from","type":"address"},{"internalType":"address","name":"receiverOfUnderlying","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"},{"internalType":"uint256","name":"index","type":"uint256"}],"name":"burn","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"decimals","outputs":[{"internalType":"uint8","name":"","type":"uint8"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"subtractedValue","type":"uint256"}],"name":"decreaseAllowance","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"getIncentivesController","outputs":[{"internalType":"contract IAaveIncentivesController","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"user","type":"address"}],"name":"getPreviousIndex","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"user","type":"address"}],"name":"getScaledUserBalanceAndSupply","outputs":[{"internalType":"uint256","name":"","type":"uint256"},{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"user","type":"address"},{"internalType":"address","name":"onBehalfOf","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"handleRepayment","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"addedValue","type":"uint256"}],"name":"increaseAllowance","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"contract IPool","name":"initializingPool","type":"address"},{"internalType":"address","name":"treasury","type":"address"},{"internalType":"address","name":"underlyingAsset","type":"address"},{"internalType":"contract IAaveIncentivesController","name":"incentivesController","type":"address"},{"internalType":"uint8","name":"aTokenDecimals","type":"uint8"},{"internalType":"string","name":"aTokenName","type":"string"},{"internalType":"string","name":"aTokenSymbol","type":"string"},{"internalType":"bytes","name":"params","type":"bytes"}],"name":"initialize","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"caller","type":"address"},{"internalType":"address","name":"onBehalfOf","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"},{"internalType":"uint256","name":"index","type":"uint256"}],"name":"mint","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"amount","type":"uint256"},{"internalType":"uint256","name":"index","type":"uint256"}],"name":"mintToTreasury","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"name","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"owner","type":"address"}],"name":"nonces","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"owner","type":"address"},{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"value","type":"uint256"},{"internalType":"uint256","name":"deadline","type":"uint256"},{"internalType":"uint8","name":"v","type":"uint8"},{"internalType":"bytes32","name":"r","type":"bytes32"},{"internalType":"bytes32","name":"s","type":"bytes32"}],"name":"permit","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"token","type":"address"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"rescueTokens","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"user","type":"address"}],"name":"scaledBalanceOf","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"scaledTotalSupply","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"contract IAaveIncentivesController","name":"controller","type":"address"}],"name":"setIncentivesController","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"symbol","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"totalSupply","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"recipient","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"transfer","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"sender","type":"address"},{"internalType":"address","name":"recipient","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"transferFrom","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"from","type":"address"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"value","type":"uint256"}],"name":"transferOnLiquidation","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"target","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"transferUnderlyingTo","outputs":[],"stateMutability":"nonpayable","type":"function"}]'''  # Use the full ABI provided
 
 # Streamlit app layout
 st.set_page_config(page_title="Asset Borrowing and Lending Rates", layout="wide")
-
-
 
 st.markdown("""
     <style>
@@ -346,107 +478,123 @@ if user_input:
         for asset in matched_assets:
             unique_key = f"{asset['pool_name']} - {asset['chain']} - {asset['protocol']} {asset['version']}"
             if st.sidebar.button(f"Select {unique_key}"):
+                st.session_state.selected_asset = asset
 
-                a_token_address = asset[f'a{asset["pool_name"]}']
-                debt_token_address = asset[f'debt{asset["pool_name"]}']
-                chain = asset['chain']
-                protocol = asset['protocol']
-                version = asset['version']
+if 'selected_asset' in st.session_state:
+    asset = st.session_state.selected_asset
+    a_token_address = asset[f'a{asset["pool_name"]}']
+    debt_token_address = asset[f'debt{asset["pool_name"]}']
+    chain = asset['chain']
+    protocol = asset['protocol']
+    version = asset['version']
 
-                a_token_supply = get_token_total_supply(chain, a_token_address, abi)
-                debt_token_supply = get_token_total_supply(chain, debt_token_address, abi)
-                utilization_rate = debt_token_supply / a_token_supply if a_token_supply else 0
-                utilization_rate_percent = utilization_rate * 100
+    a_token_supply = get_token_total_supply(chain, a_token_address, abi)
+    debt_token_supply = get_token_total_supply(chain, debt_token_address, abi)
+    utilization_rate = debt_token_supply / a_token_supply if a_token_supply else 0
+    utilization_rate_percent = utilization_rate * 100
 
-                borrow_rate, lending_rate = borrowing_and_lending_rate(
-                    asset['base_rate'], asset['s1'], asset['s2'], asset['Uopt'],
-                    asset['Rf'], utilization_rate
-                )
-                borrow_rate = borrow_rate * 100
-                lending_rate = lending_rate * 100
+    borrow_rate, lending_rate = borrowing_and_lending_rate(
+        asset['base_rate'], asset['s1'], asset['s2'], asset['Uopt'],
+        asset['Rf'], utilization_rate
+    )
+    borrow_rate = borrow_rate * 100
+    lending_rate = lending_rate * 100
 
-                #st.markdown(f"<h3 style='text-align: center;'>{asset['pool_name']} - {asset['chain']} - {asset['version']} - {asset['protocol']}</h3>", unsafe_allow_html=True)
-                st.markdown(f"""
-                    <div style="background-color: #282828; border: 2px solid #007BFF; border-radius: 10px; padding: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); margin-bottom: 20px;">
-                        <h3 style="text-align: center; color: #007BFF; font-size: 36px;">{asset['pool_name']} - {asset['chain']} - {asset['version']} - {asset['protocol']}</h3>
-                    </div>
-                """, unsafe_allow_html=True)
+    st.markdown(f"""
+        <div style="background-color: #282828; border: 2px solid #007BFF; border-radius: 10px; padding: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); margin-bottom: 20px;">
+            <h3 style="text-align: center; color: #007BFF; font-size: 36px;">{asset['pool_name']} - {asset['chain']} - {asset['version']} - {asset['protocol']}</h3>
+        </div>
+    """, unsafe_allow_html=True)
 
+    st.markdown(f"""
+        <div class='container' style='padding: 10px; margin-bottom: 10px;'>
+            <div style='text-align: center;'>
+                <h3 style='color: white; margin-bottom: 5px;'>Utilization Rate: {utilization_rate_percent:.2f}%</h3>
+            </div>
+            <div style='width: 100%;'>
+                <progress value="{utilization_rate_percent}" max="100" style="width: 100%; height: 30px;"></progress>
+            </div>
+        </div>
+    """, unsafe_allow_html=True)
 
-                # Display the borrow and lending rates
-                #st.write(f"### Borrow Rate: {borrow_rate:.2f}% | Lending Rate: {lending_rate:.2f}%")
+    a_results, a_total_supply = get_token_holder_chart(chain, a_token_address), a_token_supply
+    debt_results, debt_total_supply = get_token_holder_chart(chain, debt_token_address), debt_token_supply
 
-                st.markdown(f"""
-                    <div class='container' style='padding: 10px; margin-bottom: 10px;'>
-                        <div style='text-align: center;'>
-                            <h3 style='color: white; margin-bottom: 5px;'>Utilization Rate: {utilization_rate_percent:.2f}%</h3>
-                        </div>
-                        <div style='width: 100%;'>
-                            <progress value="{utilization_rate_percent}" max="100" style="width: 100%; height: 30px;"></progress>
-                        </div>
-                    </div>
-                """, unsafe_allow_html=True)
+    a_holders_data = []
+    debt_holders_data = []
 
-                a_query_id = asset['dune_a_id']
-                debt_query_id = asset['dune_debt_id']
+    for row in a_results[:100]:
+        address = row[0]
+        current_balance = float(row[1].strip("'").replace(",", ""))
+        percentage_of_supply = row[2]
+        a_holders_data.append({
+            'address': address,
+            'current_balance': current_balance,
+            'percentage_of_supply': percentage_of_supply
+        })
+    for row in debt_results[:100]:
+        address = row[0]
+        current_balance = float(row[1].strip("'").replace(",", ""))
+        percentage_of_supply = row[2]
+        debt_holders_data.append({
+            'address': address,
+            'current_balance': current_balance,
+            'percentage_of_supply': percentage_of_supply
+        })
 
-                a_results, a_total_supply = get_token_holder_chart(chain, a_token_address), a_token_supply
-                debt_results, debt_total_supply = get_token_holder_chart(chain, debt_token_address), debt_token_supply
+    col1, col2 = st.columns(2)
 
-                a_holders_data = []
-                debt_holders_data = []
+    with col1:
+        st.markdown(f"""
+            <div class='container' style='padding: 10px; margin-bottom: 10px;'>
+                <h3 style='text-align: center; color: white;'>Lending Pool Distribution - rate : {lending_rate:.2f}%</h3>
+            </div>
+        """, unsafe_allow_html=True)
+        plot_sunburst_chart(a_holders_data, a_total_supply, asset, borrow_rate, lending_rate, utilization_rate, 'lending')
 
-                for row in a_results[:100]:
-                    #address = row['address']
-                    current_balance = float(row[0].strip("'").replace(",", ""))
-                    percentage_of_supply = row[1]
-                    a_holders_data.append({
-                        'address': f"Wallet #{a_results[:100].index(row)+1}",
-                        'current_balance': current_balance,
-                        'percentage_of_supply': percentage_of_supply
-                    })
-                for row in debt_results[:100]:
-                    #address = row['address']
-                    current_balance = float(row[0].strip("'").replace(",", ""))
-                    percentage_of_supply = row[1]
-                    debt_holders_data.append({
-                        'address': f"Wallet #{debt_results[:100].index(row)+1}",
-                        'current_balance': current_balance,
-                        'percentage_of_supply': percentage_of_supply
-                    })
-                #st.write(f"## {asset['pool_name']} - {asset['chain']} - {asset['protocol']} - {asset['version']}")
+    with col2:
+        st.markdown(f"""
+            <div class='container' style='padding: 10px; margin-bottom: 10px;'>
+                <h3 style='text-align: center; color: white;'>Borrowing Pool Distribution - rate : {borrow_rate:.2f}%</h3>
+            </div>
+        """, unsafe_allow_html=True)
+        plot_sunburst_chart(debt_holders_data, debt_total_supply, asset, borrow_rate, lending_rate, utilization_rate, 'borrowing')
 
-                col1, col2 = st.columns(2)
+    top_10, top_25, top_75, top_100 = calculate_cumulative_percentages(a_holders_data)
 
-                with col1:
-                    st.markdown(f"""
-                        <div class='container' style='padding: 10px; margin-bottom: 10px;'>
-                            <h3 style='text-align: center; color: white;'>Lending Pool Distribution - rate : {lending_rate:.2f}%</h3>
-                        </div>
-                    """, unsafe_allow_html=True)
-                    plot_sunburst_chart(a_holders_data, a_total_supply, asset, borrow_rate, lending_rate, utilization_rate, 'lending')
+    st.write("### Top Wallets by % of Lending Pool Supply")
+    name = "a" + asset["pool_name"]
+    plot_bar_chart(a_holders_data, top_10, top_25, top_75, top_100, name)
 
-                with col2:
-                    st.markdown(f"""
-                        <div class='container' style='padding: 10px; margin-bottom: 10px;'>
-                            <h3 style='text-align: center; color: white;'>Borrowing Pool Distribution - rate : {borrow_rate:.2f}%</h3>
-                        </div>
-                    """, unsafe_allow_html=True)
-                    plot_sunburst_chart(debt_holders_data, debt_total_supply, asset, borrow_rate, lending_rate, utilization_rate, 'borrowing')
-                
-                # Calculate cumulative percentages lending
-                top_10, top_25, top_75, top_100 = calculate_cumulative_percentages(a_holders_data)
+    top_10, top_25, top_75, top_100 = calculate_cumulative_percentages(debt_holders_data)
 
-                # Plot the bar chart
-                st.write("### Top Wallets by % of Lending Pool Supply")
-                plot_bar_chart(a_holders_data, top_10, top_25, top_75, top_100)
+    st.write("### Top Wallets by % of Borrowing Pool Supply")
+    name = "debt" + asset["pool_name"]
+    plot_bar_chart(debt_holders_data, top_10, top_25, top_75, top_100, name)
 
-                # Calculate cumulative percentages borrowing
-                top_10, top_25, top_75, top_100 = calculate_cumulative_percentages(debt_holders_data)
+    symbol = asset["symbol"]
+    price_asset = requests.get(f'https://api.coingecko.com/api/v3/simple/price?ids={symbol}&vs_currencies=usd').json()[symbol]['usd']
 
-                # Plot the bar chart
-                st.write("### Top Wallets by % of Borrowing Pool Supply")
-                plot_bar_chart(debt_holders_data, top_10, top_25, top_75, top_100)
+    debt_token_supply = debt_token_supply * price_asset
+    a_token_supply = a_token_supply * price_asset
 
-    else:
-        st.sidebar.write('No matching assets found.')
+    LTV = asset["LTV"] * 100
+
+    st.markdown(f"""
+        <div class='container' style='padding: 10px; margin-bottom: 10px;'>
+            <h3 style='text-align: center; color: white;'>Lending and Borrowing Rate Simulator - LTV = {LTV:.2f} %</h3>
+        </div>
+    """, unsafe_allow_html=True)
+
+    # Call the plot_rate_simulator function with the necessary parameters
+
+    maximum_supply = asset["max_supply"]
+
+    plot_rate_simulator(
+        asset['base_rate'], asset['s1'], asset['s2'], asset['Uopt'],
+        asset['Rf'], utilization_rate_percent, borrow_rate, lending_rate,
+        a_token_supply, debt_token_supply, maximum_supply, LTV, price_asset
+    )
+
+else:
+    st.sidebar.write('No matching assets found.')

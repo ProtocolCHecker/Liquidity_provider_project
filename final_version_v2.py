@@ -561,7 +561,7 @@ if user_input:
                 if 'amount_to_lend' not in st.session_state:
                     st.session_state.amount_to_lend = 0
 
-                LTV = asset["LTV"]*100
+                LTV = asset["LTV"] * 100
 
                 # Add the simulator section
                 st.markdown(f"""
@@ -570,13 +570,23 @@ if user_input:
                     </div>
                 """, unsafe_allow_html=True)
 
-                # Sliders for the user to enter the amount they want to borrow or lend
-                st.session_state.amount_to_borrow = st.slider('Amount to Borrow (USD)', 0, 10000, st.session_state.amount_to_borrow, key='borrow_slider')
-                st.session_state.amount_to_lend = st.slider('Amount to Lend (USD)', 0, 10000, st.session_state.amount_to_lend, key='lend_slider')
+                # # Sliders for the user to enter the amount they want to borrow or lend
+                # st.session_state.amount_to_borrow = st.slider('Amount to Borrow (USD)', 0, 10000, st.session_state.amount_to_borrow, key='borrow_slider')
+                # st.session_state.amount_to_lend = st.slider('Amount to Lend (USD)', 0, 10000, st.session_state.amount_to_lend, key='lend_slider')
+
+                # Sliders for borrowing and lending
+                borrow_slider_value = st.slider('Amount to Borrow (USD)', 0, 10000, st.session_state.amount_to_borrow, key='borrow_slider')
+                lend_slider_value = st.slider('Amount to Lend (USD)', 0, 10000, st.session_state.amount_to_lend, key='lend_slider')
+
+                # Update session state with new slider values
+                if borrow_slider_value != st.session_state.amount_to_borrow:
+                    st.session_state.amount_to_borrow = borrow_slider_value
+                if lend_slider_value != st.session_state.amount_to_lend:
+                    st.session_state.amount_to_lend = lend_slider_value
 
                 # Display the selected amounts
-                st.write(f"Amount to Borrow: ${st.session_state.amount_to_borrow}")
-                st.write(f"Amount to Lend: ${st.session_state.amount_to_lend}")
+                #st.write(f"Amount to Borrow: ${st.session_state.amount_to_borrow}")
+                #st.write(f"Amount to Lend: ${st.session_state.amount_to_lend}")
 
 
                 # Recalculate the utilization rate based on the user's input
