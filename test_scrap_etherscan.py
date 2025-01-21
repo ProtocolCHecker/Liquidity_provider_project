@@ -375,40 +375,62 @@
 # # print(var)  # Output: fzvr3
 
 
+# import requests
+
+# def get_portfolio_project_list(user_addr):
+#     url = 'https://api.debank.com/portfolio/project_list'
+#     params = {
+#         'user_addr': user_addr
+#     }
+#     headers = {
+#         'accept': '*/*',
+#         'accept-language': 'en-GB,en;q=0.9',
+#         'account': '{"random_at":1716507879,"random_id":"bab5d08d32724f01b2068bd4653c0fa9","user_addr":null}',
+#         'origin': 'https://debank.com',
+#         'priority': 'u=1, i',
+#         'referer': 'https://debank.com/',
+#         'sec-ch-ua': '"Brave";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
+#         'sec-ch-ua-mobile': '?0',
+#         'sec-ch-ua-platform': '"macOS"',
+#         'sec-fetch-dest': 'empty',
+#         'sec-fetch-mode': 'cors',
+#         'sec-fetch-site': 'same-site',
+#         'sec-gpc': '1',
+#         'source': 'web',
+#         'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
+#         'x-api-nonce': 'n_MUfkx4fRxTdfK34wsGPhF07OSWCAQa4H4ZP5D4eo',
+#         'x-api-sign': 'ca14d9a9d10b3cecd1ad93aeea5a05ed55d89da4d4985111fd1c44f38ff4653c',
+#         'x-api-ts': '1737491418',
+#         'x-api-ver': 'v2'
+#     }
+
+#     response = requests.get(url, headers=headers, params=params)
+
+#     return response.json()
+
+# # Example usage
+# user_address = '0x18709E89BD403F470088aBDAcEbE86CC60dda12e'  # Replace with any address you want to study
+# project_list = get_portfolio_project_list(user_address)
+# print(project_list)
+
+
+import streamlit as st
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
+import pandas as pd
+import json
+from web3 import Web3
 import requests
+from bs4 import BeautifulSoup
+import re
+import numpy as np
 
-def get_portfolio_project_list(user_addr):
-    url = 'https://api.debank.com/portfolio/project_list'
-    params = {
-        'user_addr': user_addr
-    }
-    headers = {
-        'accept': '*/*',
-        'accept-language': 'en-GB,en;q=0.9',
-        'account': '{"random_at":1716507879,"random_id":"bab5d08d32724f01b2068bd4653c0fa9","user_addr":null}',
-        'origin': 'https://debank.com',
-        'priority': 'u=1, i',
-        'referer': 'https://debank.com/',
-        'sec-ch-ua': '"Brave";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
-        'sec-ch-ua-mobile': '?0',
-        'sec-ch-ua-platform': '"macOS"',
-        'sec-fetch-dest': 'empty',
-        'sec-fetch-mode': 'cors',
-        'sec-fetch-site': 'same-site',
-        'sec-gpc': '1',
-        'source': 'web',
-        'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
-        'x-api-nonce': 'n_MUfkx4fRxTdfK34wsGPhF07OSWCAQa4H4ZP5D4eo',
-        'x-api-sign': 'ca14d9a9d10b3cecd1ad93aeea5a05ed55d89da4d4985111fd1c44f38ff4653c',
-        'x-api-ts': '1737491418',
-        'x-api-ver': 'v2'
-    }
 
-    response = requests.get(url, headers=headers, params=params)
 
-    return response.json()
+# Replace this URL with the raw URL of your JSON file on GitHub
+url = 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/dataset_lending.json'
 
-# Example usage
-user_address = '0x18709E89BD403F470088aBDAcEbE86CC60dda12e'  # Replace with any address you want to study
-project_list = get_portfolio_project_list(user_address)
-print(project_list)
+# Send a GET request to the URL
+response = requests.get(url)
+
+print(response)
