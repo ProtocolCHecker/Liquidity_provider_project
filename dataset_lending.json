@@ -16,7 +16,8 @@
         "coef": 1000000,
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=usd-coin&vs_currencies=usd'",
         "symbol" : "usd-coin",
-        "LTV": 0.75
+        "LTV": 0.75,
+        "max_supply": 4800000000
     },
     {
         "pool_name": "WETH",
@@ -35,7 +36,8 @@
         "coef": 1000000000000000000,
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd'",
         "symbol" : "ethereum",
-        "LTV": 0.805
+        "LTV": 0.805,
+        "max_supply": 2200000
     },
     {
         "pool_name": "wstETH",
@@ -54,7 +56,8 @@
         "coef": 1000000000000000000,
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd'",
         "symbol" : "ethereum",
-        "LTV": 0.785
+        "LTV": 0.785,
+        "max_supply": 1600000
     },
     {
         "pool_name": "weETH",
@@ -73,7 +76,8 @@
         "coef": 1000000000000000000,
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd'",
         "symbol" : "ethereum",
-        "LTV": 0.775
+        "LTV": 0.775,
+        "max_supply": 1400000
     },
     {
         "pool_name": "WBTC",
@@ -92,7 +96,8 @@
         "coef": 100000000,
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd'",
         "symbol" : "bitcoin",
-        "LTV": 0.73
+        "LTV": 0.73,
+        "max_supply": 45000
     },
     {
         "pool_name": "USDT",
@@ -111,7 +116,8 @@
         "coef": 1000000,
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=tether&vs_currencies=usd'",
         "symbol" : "tether",
-        "LTV": 0.75
+        "LTV": 0.75,
+        "max_supply": 5240000000
     },
     {
         "pool_name": "WETH",
@@ -130,7 +136,8 @@
         "coef": 1000000000000000000,
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd'",
         "symbol" : "ethereum",
-        "LTV": 0.8
+        "LTV": 0.8,
+        "max_supply": 90000
     },
     {
         "pool_name": "weETH",
@@ -149,7 +156,8 @@
         "coef": 1000000000000000000,
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd'",
         "symbol" : "ethereum",
-        "LTV": 0.725
+        "LTV": 0.725,
+        "max_supply": 64000
     },
     {
         "pool_name": "USDC",
@@ -168,7 +176,8 @@
         "coef": 1000000,
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=usd-coin&vs_currencies=usd'",
         "symbol" : "usd-coin",
-        "LTV": 0.75       
+        "LTV": 0.75,
+        "max_supply": 240000000 
     },
     {
         "pool_name": "cbBTC",
@@ -187,7 +196,8 @@
         "coef": 100000000,
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd'",
         "symbol" : "bitcoin",
-        "LTV": 0.73
+        "LTV": 0.73,
+        "max_supply": 5000
     },
     {
         "pool_name": "wstETH",
@@ -206,7 +216,8 @@
         "coef": 1000000000000000000,
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd'",
         "symbol" : "ethereum",
-        "LTV": 0.75
+        "LTV": 0.75,
+        "max_supply": 14000
     },
     {
         "pool_name": "WETH",
@@ -225,7 +236,8 @@
         "coef": 1000000000000000000,
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd'",
         "symbol" : "ethereum",
-        "LTV": 0.8
+        "LTV": 0.8,
+        "max_supply": 170000
     },
     {
         "pool_name": "weETH",
@@ -244,7 +256,8 @@
         "coef": 1000000000000000000,
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd'",
         "symbol" : "ethereum",
-        "LTV": 0.725
+        "LTV": 0.725,
+        "max_supply": 110000
     },
     {
         "pool_name": "USDC",
@@ -263,7 +276,8 @@
         "coef": 1000000,
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=usd-coin&vs_currencies=usd'",
         "symbol" : "usd-coin",
-        "LTV": 0.75
+        "LTV": 0.75,
+        "max_supply": 700000000
     },
     {
         "pool_name": "WBTC",
@@ -282,7 +296,8 @@
         "coef": 100000000,
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd'",
         "symbol" : "bitcoin",
-        "LTV": 0.73
+        "LTV": 0.73,
+        "max_supply": 5000
     },
     {
         "pool_name": "wstETH",
@@ -301,7 +316,8 @@
         "coef": 1000000000000000000,
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd'",
         "symbol" : "ethereum",
-        "LTV": 0.75
+        "LTV": 0.75,
+        "max_supply": 69000
     },
     {
         "pool_name": "wstETH",
@@ -320,7 +336,8 @@
         "coef": 1000000000000000000,
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd'",
         "symbol" : "ethereum",
-        "LTV": 0.75
+        "LTV": 0.75,
+        "max_supply": 34500
     },
     {
         "pool_name": "WETH",
@@ -339,7 +356,8 @@
         "coef": 1000000000000000000,
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd'",
         "symbol" : "ethereum",
-        "LTV": 0.8
+        "LTV": 0.8,
+        "max_supply": 35900
     },
     {
         "pool_name": "USDC",
@@ -358,7 +376,8 @@
         "coef": 1000000,
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=usd-coin&vs_currencies=usd'",
         "symbol" : "usd-coin",
-        "LTV": 0.75
+        "LTV": 0.75,
+        "max_supply": 87500000
     },
     {
         "pool_name": "WBTC",
@@ -377,7 +396,8 @@
         "coef": 100000000,
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd'",
         "symbol" : "bitcoin",
-        "LTV": 0.73
+        "LTV": 0.73,
+        "max_supply": 12000
     },
     {
         "pool_name": "OP",
@@ -396,7 +416,8 @@
         "coef": 1000000000000000000,
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=optimism&vs_currencies=usd'",
         "symbol" : "optimism",
-        "LTV": 0.58
+        "LTV": 0.58,
+        "max_supply": 20000000
     },
     {
         "pool_name": "WBTC",
@@ -415,7 +436,8 @@
         "coef": 100000000,
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd'",
         "symbol" : "bitcoin",
-        "LTV": 0.73
+        "LTV": 0.73,
+        "max_supply": 3100
     },
     {
         "pool_name": "WETH",
@@ -434,7 +456,8 @@
         "coef": 1000000000000000000,
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd'",
         "symbol" : "ethereum",
-        "LTV": 0.8
+        "LTV": 0.8,
+        "max_supply": 50000
     },
     {
         "pool_name": "USDT",
@@ -453,7 +476,8 @@
         "coef": 1000000,
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=tether&vs_currencies=usd'",
         "symbol" : "tether",
-        "LTV": 0.75
+        "LTV": 0.75,
+        "max_supply": 90000000
     },
     {
         "pool_name": "USDC",
@@ -472,7 +496,8 @@
         "coef": 1000000,
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=usd-coin&vs_currencies=usd'",
         "symbol" : "usd-coin",
-        "LTV": 0.75
+        "LTV": 0.75,
+        "max_supply": 100000000
     },
     {
         "pool_name": "wstETH",
@@ -491,7 +516,8 @@
         "coef": 1000000000000000000,
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd'",
         "symbol" : "ethereum",
-        "LTV": 0.75
+        "LTV": 0.75,
+        "max_supply": 11500
     },
     {
         "pool_name": "WBTC",
@@ -510,7 +536,8 @@
         "coef": 100000000,
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd'",
         "symbol" : "bitcoin",
-        "LTV": 0.72
+        "LTV": 0.72,
+        "max_supply": 10000
     },
     {
         "pool_name": "WETH",
@@ -529,7 +556,8 @@
         "coef": 1000000000000000000,
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd'",
         "symbol" : "ethereum",
-        "LTV": 0.825
+        "LTV": 0.825,
+        "max_supply": 1400000
     },
     {
         "pool_name": "USDC",
@@ -548,7 +576,8 @@
         "coef": 1000000,
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=usd-coin&vs_currencies=usd'",
         "symbol" : "usd-coin",
-        "LTV": 0.75
+        "LTV": 0.75,
+        "max_supply": 100000000
     },
     {
         "pool_name": "USDT",
@@ -567,7 +596,8 @@
         "coef": 1000000,
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=tether&vs_currencies=usd'",
         "symbol" : "tether",
-        "LTV": 0
+        "LTV": 0,
+        "max_supply": 100000000
     },
     {
         "pool_name": "WBTC",
@@ -586,7 +616,8 @@
         "coef": 100000000,
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd'",
         "symbol" : "bitcoin",
-        "LTV": 0.7
+        "LTV": 0.7,
+        "max_supply": 10000
     },
     {
         "pool_name": "WETH",
@@ -605,7 +636,8 @@
         "coef": 1000000000000000000,
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd'",
         "symbol" : "ethereum",
-        "LTV": 0.8
+        "LTV": 0.8,
+        "max_supply": 140000
     },
     {
         "pool_name": "DAI",
@@ -624,7 +656,8 @@
         "coef": 1000000000000000000,
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=dai&vs_currencies=usd'",
         "symbol" : "dai",
-        "LTV": 0.63
+        "LTV": 0.63,
+        "max_supply": 50000000
     },
     {
         "pool_name": "USDC",
@@ -643,7 +676,8 @@
         "coef": 1000000,
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=usd-coin&vs_currencies=usd'",
         "symbol" : "usd-coin",
-        "LTV": 0.75
+        "LTV": 0.75,
+        "max_supply": 100000000
     },
     {
         "pool_name": "USDT",
@@ -662,6 +696,7 @@
         "coef": 1000000,
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=tether&vs_currencies=usd'",
         "symbol" : "tether",
-        "LTV": 0
+        "LTV": 0,
+        "max_supply": 100000000
     }
 ]
