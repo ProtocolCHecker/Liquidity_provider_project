@@ -428,9 +428,34 @@ import numpy as np
 
 
 # Replace this URL with the raw URL of your JSON file on GitHub
-url = 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/dataset_lending.json'
+url = 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/abi_library.json'
 
 # Send a GET request to the URL
 response = requests.get(url)
 
-print(response)
+# Initialize a Web3 instance
+infura_url = "https://arbitrum-mainnet.infura.io/v3/8c803623898743dc9747fe8e33694d5b"
+web3 = Web3(Web3.HTTPProvider(infura_url))
+
+# Check if connected to the network
+if not web3.is_connected():
+    raise Exception("Failed to connect to the network")
+
+# Contract address and ABI
+contract_address = response.json()[0]["arbitrum"]["smart_contract"]
+
+print(contract_address)
+
+contract_abi = response.json()[0]["arbitrum"]["abi"]
+
+# Create a contract instance
+contract = web3.eth.contract(address=contract_address, abi=contract_abi)
+
+# User address
+user_address = "0x211a42CE37b688B50dC1a7E91Cf321970274A50f"
+
+# Call the getUserAccountData function
+user_data = contract.functions.getUserAccountData(user_address).call()
+
+# Print the user data
+print("User Account Data:", user_data)
