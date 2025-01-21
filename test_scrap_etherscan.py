@@ -345,31 +345,70 @@
 #         print(match)
 
 
+# import requests
+# import time 
+
+# # List of cryptocurrency symbols and their corresponding CoinGecko IDs
+# crypto_symbols = {
+#     'Bitcoin': 'bitcoin',
+#     'Optimism': 'optimism',
+#     'Ethereum': 'ethereum',
+#     'Tether': 'tether',
+#     'USD Coin': 'usd-coin',
+#     'Dai': 'dai',
+#     'Lido Staked Ether': 'lido-staked-ether',
+#     'Wrapped stETH': 'wrapped-steth',
+#     'WETH': 'weth',
+#     'Wrapped Bitcoin': 'wrapped-bitcoin'
+# }
+
+# # Fetch and print the price for each cryptocurrency
+# for name, symbol in crypto_symbols.items():
+#     time.sleep(2)
+#     price = requests.get(f'https://api.coingecko.com/api/v3/simple/price?ids={symbol}&vs_currencies=usd').json()[symbol]['usd']
+#     print(f"{name}: ${price}")
+
+# # import re
+
+# # var = "f'https://api.coingecko.com/api/v3/simple/price?ids={symbol}&vs_currencies=usd').json()[symbol]['usd']"
+# # var = var.strip('"')  # This will remove all double quotes
+# # print(var)  # Output: fzvr3
+
+
 import requests
-import time 
 
-# List of cryptocurrency symbols and their corresponding CoinGecko IDs
-crypto_symbols = {
-    'Bitcoin': 'bitcoin',
-    'Optimism': 'optimism',
-    'Ethereum': 'ethereum',
-    'Tether': 'tether',
-    'USD Coin': 'usd-coin',
-    'Dai': 'dai',
-    'Lido Staked Ether': 'lido-staked-ether',
-    'Wrapped stETH': 'wrapped-steth',
-    'WETH': 'weth',
-    'Wrapped Bitcoin': 'wrapped-bitcoin'
-}
+def get_portfolio_project_list(user_addr):
+    url = 'https://api.debank.com/portfolio/project_list'
+    params = {
+        'user_addr': user_addr
+    }
+    headers = {
+        'accept': '*/*',
+        'accept-language': 'en-GB,en;q=0.9',
+        'account': '{"random_at":1716507879,"random_id":"bab5d08d32724f01b2068bd4653c0fa9","user_addr":null}',
+        'origin': 'https://debank.com',
+        'priority': 'u=1, i',
+        'referer': 'https://debank.com/',
+        'sec-ch-ua': '"Brave";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
+        'sec-ch-ua-mobile': '?0',
+        'sec-ch-ua-platform': '"macOS"',
+        'sec-fetch-dest': 'empty',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-site': 'same-site',
+        'sec-gpc': '1',
+        'source': 'web',
+        'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
+        'x-api-nonce': 'n_MUfkx4fRxTdfK34wsGPhF07OSWCAQa4H4ZP5D4eo',
+        'x-api-sign': 'ca14d9a9d10b3cecd1ad93aeea5a05ed55d89da4d4985111fd1c44f38ff4653c',
+        'x-api-ts': '1737491418',
+        'x-api-ver': 'v2'
+    }
 
-# Fetch and print the price for each cryptocurrency
-for name, symbol in crypto_symbols.items():
-    time.sleep(2)
-    price = requests.get(f'https://api.coingecko.com/api/v3/simple/price?ids={symbol}&vs_currencies=usd').json()[symbol]['usd']
-    print(f"{name}: ${price}")
+    response = requests.get(url, headers=headers, params=params)
 
-# import re
+    return response.json()
 
-# var = "f'https://api.coingecko.com/api/v3/simple/price?ids={symbol}&vs_currencies=usd').json()[symbol]['usd']"
-# var = var.strip('"')  # This will remove all double quotes
-# print(var)  # Output: fzvr3
+# Example usage
+user_address = '0x18709E89BD403F470088aBDAcEbE86CC60dda12e'  # Replace with any address you want to study
+project_list = get_portfolio_project_list(user_address)
+print(project_list)

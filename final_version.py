@@ -7,6 +7,7 @@ from web3 import Web3
 import requests
 from bs4 import BeautifulSoup
 import re
+import numpy as np
 
 
 
@@ -34,7 +35,7 @@ def borrowing_and_lending_rate(base_rate, slope1, slope2, U_optimal, reserve_fac
         b_rate = base_rate + slope1 * utilization_rate
     else:
         b_rate = base_rate + slope1 * utilization_rate + ((utilization_rate - U_optimal) / (1 - U_optimal))
-    l_rate = b_rate * (1 - reserve_factor)
+    l_rate = b_rate * (1 - reserve_factor) * utilization_rate
     return b_rate, l_rate
 
 # Function to match assets
@@ -415,79 +416,169 @@ def plot_rate_simulator(base_rate, slope1, slope2, U_optimal, reserve_factor, cu
 
         st.plotly_chart(fig, use_container_width=True)
 
+def remove_and_replace_extreme_values(rates, method="median"):
+    """
+    Remove extreme values from a list of rates and replace them with a reasonable value (mean or median).
+    :param rates: List of rates (borrowing or lending)
+    :param method: The method to use for replacing extreme values ("mean" or "median")
+    :return: List of rates with extreme values replaced
+    """
+    # Calculate the mean and standard deviation of the rates
+    mean_rate = np.mean(rates)
+    std_dev = np.std(rates)
 
-def plot_rates(url):
-    response = requests.get(url)
+    # Define the bounds for outliers (3 times the standard deviation)
+    lower_bound = mean_rate - 3 * std_dev
+    upper_bound = mean_rate + 3 * std_dev
 
-    # Check if the request was successful (status code 200)
-    if response.status_code == 200:
-        data = response.json()  # Parse the response as JSON
+    # Replace outliers with the chosen method (mean or median)
+    if method == "median":
+        replacement_value = np.median(rates)
+    else:
+        replacement_value = np.mean(rates)
 
-        # Extract data for plotting
-        dates = []
-        lending_rates = []  # Liquidity rate (Lending)
-        borrowing_rates = []  # Sum of variableBorrowRate + stableBorrowRate (Borrowing)
+    # Replace outliers
+    cleaned_rates = [
+        rate if lower_bound <= rate <= upper_bound else replacement_value
+        for rate in rates
+    ]
+    
+    return cleaned_rates
 
-        for entry in data:
-            # Convert year, month, day to a date string for easy plotting
+def fetch_data(url):
+    response_request_url = requests.get(url)
+    if response_request_url.status_code == 200:
+        data_url = response_request_url.json()
+        dates_url = []
+        lending_rates = []
+        borrowing_rates = []
+
+        for entry in data_url:
             date_str = f"{entry['x']['year']}-{entry['x']['month'] + 1:02d}-{entry['x']['date']:02d}"
-            dates.append(date_str)
-
-            # Lending rate is the liquidityRate_avg
+            dates_url.append(date_str)
             lending_rates.append(entry['liquidityRate_avg'] * 100)
-
-            # Borrowing rate is the sum of variableBorrowRate_avg and stableBorrowRate_avg
-            total_borrowing_rate = entry['variableBorrowRate_avg'] + entry['stableBorrowRate_avg']
+            total_borrowing_rate = entry['variableBorrowRate_avg']
             borrowing_rates.append(total_borrowing_rate * 100)
 
-        # Create subplots
-        fig = make_subplots(rows=2, cols=1, subplot_titles=("Lending Rate Over Time", "Borrowing Rate Over Time"), vertical_spacing=0.1)
+        lending_rates = remove_and_replace_extreme_values(lending_rates, method="mean")
+        borrowing_rates = remove_and_replace_extreme_values(borrowing_rates, method="mean")
 
-        # First subplot: Lending rate
-        fig.add_trace(go.Scatter(
-            x=dates,
-            y=lending_rates,
-            mode='lines+markers',
-            name='Lending Rate',
-            marker=dict(color='#ADD8E6'),  # Light blue
-            line=dict(color='#ADD8E6', width=3)
-        ), row=1, col=1)
-
-        fig.update_xaxes(title_text="Date", row=1, col=1)
-        fig.update_yaxes(title_text="Lending Rate (%)", row=1, col=1)
-
-        # Second subplot: Borrowing rate
-        fig.add_trace(go.Scatter(
-            x=dates,
-            y=borrowing_rates,
-            mode='lines+markers',
-            name='Borrowing Rate',
-            marker=dict(color='#0056b3'),  # Dark blue
-            line=dict(color='#0056b3', width=3)
-        ), row=2, col=1)
-
-        fig.update_xaxes(title_text="Date", row=2, col=1)
-        fig.update_yaxes(title_text="Borrowing Rate (%)", row=2, col=1)
-
-        # Update layout
-        fig.update_layout(
-            margin=dict(t=50, l=25, r=25, b=25),
-            height=1200,  # Increased height to accommodate both plots
-            width=800,
-            legend=dict(
-                xanchor='center',
-                yanchor='top',
-                x=0.5,
-                y=1.1,
-                font=dict(size=20),  # Increase the font size of the legend
-                orientation="h"
-            )
-        )
-
-        # Display the plot in Streamlit
-        st.plotly_chart(fig, use_container_width=True)
+        dates_url = pd.to_datetime(dates_url)
+        return dates_url, lending_rates, borrowing_rates
     else:
         st.error("Failed to fetch data. Please check the URL and try again.")
+        return None, None, None
+
+def plot_lending_rate(dates, lending_rates):
+    fig = go.Figure()
+    fig.add_trace(go.Scatter(
+        x=dates,
+        y=lending_rates,
+        mode='lines',
+        name='Lending Rate',
+        marker=dict(color='#ADD8E6'),
+        line=dict(color='#ADD8E6', width=1.5)
+    ))
+    fig.update_xaxes(title_text="Date", type='date')
+    fig.update_yaxes(title_text="Lending Rate (%)")
+    fig.update_layout(
+        margin=dict(t=50, l=25, r=25, b=25),
+        height=500,
+        width=800,
+        title=""
+    )
+    st.plotly_chart(fig, use_container_width=True)
+
+def plot_borrowing_rate(dates, borrowing_rates):
+    fig = go.Figure()
+    fig.add_trace(go.Scatter(
+        x=dates,
+        y=borrowing_rates,
+        mode='lines',
+        name='Borrowing Rate',
+        marker=dict(color='#0056b3'),
+        line=dict(color='#0056b3', width=1.5)
+    ))
+    fig.update_xaxes(title_text="Date", type='date')
+    fig.update_yaxes(title_text="Borrowing Rate (%)")
+    fig.update_layout(
+        margin=dict(t=50, l=25, r=25, b=25),
+        height=500,
+        width=800,
+        title=""
+    )
+    st.plotly_chart(fig, use_container_width=True)
+
+def plot_utilization_rate(dates, lending_rates, borrowing_rates, res_fact, U_optimal):
+
+    Utilization_rate = [(lending_rates[i] / (borrowing_rates[i] * (1 - res_fact))) * 100 for i in range(len(lending_rates))]
+
+    fig = go.Figure()
+    fig.add_trace(go.Scatter(
+        x=dates,
+        y=Utilization_rate,
+        mode='lines',
+        name='Utilization Rate',
+        marker=dict(color='#FFFFFF'),
+        line=dict(color='#FFFFFF', width=1.5)
+    ))
+
+    Uopt = U_optimal * 100
+    ymax = np.max(Utilization_rate)
+
+   # Update layout with shapes
+    fig.update_layout(
+        margin=dict(t=50, l=25, r=25, b=25),  # Padding around the plot
+        height=500,  # Height of the plot
+        width=800,   # Width of the plot
+
+        title="",
+        xaxis=dict(type='date'),  # Ensure x-axis is treated as dates
+        shapes = [
+        # First shape (below U_optimal)
+            dict(
+                type='rect',
+                x0=0,  # Left side of the chart (0% of x-axis)
+                x1=1,  # Right side of the chart (100% of x-axis)
+                y0=0,  # Bottom of the chart (0% of y-axis)
+                y1=Uopt,  # U_optimal level
+                xref="paper",  # Use normalized coordinate for x-axis
+                yref="y",  # Use y-axis value for the height
+                line=dict(color='rgba(255,255,255,0)'),  # No border
+                fillcolor="rgba(173, 216, 230, 0.3)",  # Light blue color with opacity
+                layer="below"  # Place below the chart's data
+            ),
+            # Second shape (above U_optimal)
+            dict(
+                type='rect',
+                x0=0,  # Left side of the chart (0% of x-axis)
+                x1=1,  # Right side of the chart (100% of x-axis)
+                y0=Uopt,  # Start at U_optimal
+                y1=max(ymax,100),  # End at the top of the chart (100%)
+                xref="paper",  # Use normalized coordinate for x-axis
+                yref="y",  # Use y-axis value for the height
+                line=dict(color='rgba(255,255,255,0)'),  # No border
+                fillcolor="rgba(0, 86, 179, 0.3)",  # Dark blue color with opacity
+                layer="below"  # Place below the chart's data
+            )
+        ]
+    )
+
+    # Add a horizontal line at the U_optimal level
+    fig.add_trace(go.Scatter(
+        x=dates,
+        y=[Uopt] * len(dates),
+        mode='lines',
+        name=f'U_optimal = {U_optimal * 100}%',  # Add U_optimal value in the legend
+        line=dict(color='red', dash='dash', width=2)  # Red dashed line for U_optimal
+    ))
+
+    fig.update_xaxes(title_text="Date", type='date')
+    fig.update_yaxes(title_text="Utilization Rate (%)")
+
+    st.plotly_chart(fig, use_container_width=True)
+
+
 
 abi = '''[{"inputs":[{"internalType":"contract IPool","name":"pool","type":"address"}],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"owner","type":"address"},{"indexed":true,"internalType":"address","name":"spender","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"}],"name":"Approval","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"from","type":"address"},{"indexed":true,"internalType":"address","name":"to","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"},{"indexed":false,"internalType":"uint256","name":"index","type":"uint256"}],"name":"BalanceTransfer","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"from","type":"address"},{"indexed":true,"internalType":"address","name":"target","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"},{"indexed":false,"internalType":"uint256","name":"balanceIncrease","type":"uint256"},{"indexed":false,"internalType":"uint256","name":"index","type":"uint256"}],"name":"Burn","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"underlyingAsset","type":"address"},{"indexed":true,"internalType":"address","name":"pool","type":"address"},{"indexed":false,"internalType":"address","name":"treasury","type":"address"},{"indexed":false,"internalType":"address","name":"incentivesController","type":"address"},{"indexed":false,"internalType":"uint8","name":"aTokenDecimals","type":"uint8"},{"indexed":false,"internalType":"string","name":"aTokenName","type":"string"},{"indexed":false,"internalType":"string","name":"aTokenSymbol","type":"string"},{"indexed":false,"internalType":"bytes","name":"params","type":"bytes"}],"name":"Initialized","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"caller","type":"address"},{"indexed":true,"internalType":"address","name":"onBehalfOf","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"},{"indexed":false,"internalType":"uint256","name":"balanceIncrease","type":"uint256"},{"indexed":false,"internalType":"uint256","name":"index","type":"uint256"}],"name":"Mint","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"from","type":"address"},{"indexed":true,"internalType":"address","name":"to","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"}],"name":"Transfer","type":"event"},{"inputs":[],"name":"ATOKEN_REVISION","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"DOMAIN_SEPARATOR","outputs":[{"internalType":"bytes32","name":"","type":"bytes32"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"EIP712_REVISION","outputs":[{"internalType":"bytes","name":"","type":"bytes"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"PERMIT_TYPEHASH","outputs":[{"internalType":"bytes32","name":"","type":"bytes32"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"POOL","outputs":[{"internalType":"contract IPool","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"RESERVE_TREASURY_ADDRESS","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"UNDERLYING_ASSET_ADDRESS","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"owner","type":"address"},{"internalType":"address","name":"spender","type":"address"}],"name":"allowance","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"approve","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"user","type":"address"}],"name":"balanceOf","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"from","type":"address"},{"internalType":"address","name":"receiverOfUnderlying","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"},{"internalType":"uint256","name":"index","type":"uint256"}],"name":"burn","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"decimals","outputs":[{"internalType":"uint8","name":"","type":"uint8"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"subtractedValue","type":"uint256"}],"name":"decreaseAllowance","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"getIncentivesController","outputs":[{"internalType":"contract IAaveIncentivesController","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"user","type":"address"}],"name":"getPreviousIndex","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"user","type":"address"}],"name":"getScaledUserBalanceAndSupply","outputs":[{"internalType":"uint256","name":"","type":"uint256"},{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"user","type":"address"},{"internalType":"address","name":"onBehalfOf","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"handleRepayment","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"addedValue","type":"uint256"}],"name":"increaseAllowance","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"contract IPool","name":"initializingPool","type":"address"},{"internalType":"address","name":"treasury","type":"address"},{"internalType":"address","name":"underlyingAsset","type":"address"},{"internalType":"contract IAaveIncentivesController","name":"incentivesController","type":"address"},{"internalType":"uint8","name":"aTokenDecimals","type":"uint8"},{"internalType":"string","name":"aTokenName","type":"string"},{"internalType":"string","name":"aTokenSymbol","type":"string"},{"internalType":"bytes","name":"params","type":"bytes"}],"name":"initialize","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"caller","type":"address"},{"internalType":"address","name":"onBehalfOf","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"},{"internalType":"uint256","name":"index","type":"uint256"}],"name":"mint","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"amount","type":"uint256"},{"internalType":"uint256","name":"index","type":"uint256"}],"name":"mintToTreasury","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"name","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"owner","type":"address"}],"name":"nonces","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"owner","type":"address"},{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"value","type":"uint256"},{"internalType":"uint256","name":"deadline","type":"uint256"},{"internalType":"uint8","name":"v","type":"uint8"},{"internalType":"bytes32","name":"r","type":"bytes32"},{"internalType":"bytes32","name":"s","type":"bytes32"}],"name":"permit","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"token","type":"address"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"rescueTokens","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"user","type":"address"}],"name":"scaledBalanceOf","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"scaledTotalSupply","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"contract IAaveIncentivesController","name":"controller","type":"address"}],"name":"setIncentivesController","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"symbol","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"totalSupply","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"recipient","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"transfer","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"sender","type":"address"},{"internalType":"address","name":"recipient","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"transferFrom","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"from","type":"address"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"value","type":"uint256"}],"name":"transferOnLiquidation","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"target","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"transferUnderlyingTo","outputs":[],"stateMutability":"nonpayable","type":"function"}]'''  # Use the full ABI provided
 
@@ -680,9 +771,22 @@ if 'selected_asset' in st.session_state:
     name = "debt" + asset["pool_name"]
     plot_bar_chart(debt_holders_data, top_10, top_25, top_75, top_100, name)
 
+    # Plot interest rates over time 
     request_url = asset["url"]
+    reserve_factor = asset["Rf"]
+    optimal_utilization = asset["Uopt"]
+    
+    date, lend_rate, borrow_rate = fetch_data(request_url)
 
-    plot_rates(request_url)
+    st.write("### Utilization rate in % over time")
+    plot_utilization_rate(date, lend_rate, borrow_rate, reserve_factor, optimal_utilization)
+
+    st.write("### Lending rate in % over time")
+    plot_lending_rate(date, lend_rate)
+
+    st.write("### Borrowing rate in % over time")
+    plot_borrowing_rate(date, borrow_rate)
+
 
     symbol = asset["symbol"]
     price_asset = requests.get(f'https://api.coingecko.com/api/v3/simple/price?ids={symbol}&vs_currencies=usd').json()[symbol]['usd']
