@@ -255,6 +255,7 @@ def get_token_holder_chart(chain, contract_address, range_value=100):
 
 # Function to plot the lending and borrowing rate simulator
 def plot_rate_simulator(base_rate, slope1, slope2, U_optimal, reserve_factor, current_utilization_rate, current_borrow_rate, current_lending_rate):
+    
     utilization_rates = list(range(0, 101))
     borrow_rates = []
     lending_rates = []
@@ -271,7 +272,7 @@ def plot_rate_simulator(base_rate, slope1, slope2, U_optimal, reserve_factor, cu
         y=borrow_rates,
         mode='lines',
         name='Borrow Rate',
-        line=dict(color='red')
+        line=dict(color='#0056b3', width=3)
     ))
 
     fig.add_trace(go.Scatter(
@@ -279,7 +280,7 @@ def plot_rate_simulator(base_rate, slope1, slope2, U_optimal, reserve_factor, cu
         y=lending_rates,
         mode='lines',
         name='Lending Rate',
-        line=dict(color='green')
+        line=dict(color='#ADD8E6', width=3)
     ))
 
     fig.add_trace(go.Scatter(
@@ -287,7 +288,7 @@ def plot_rate_simulator(base_rate, slope1, slope2, U_optimal, reserve_factor, cu
         y=[current_borrow_rate],
         mode='markers',
         name='Current Borrow Rate',
-        marker=dict(color='red', size=10)
+        marker=dict(color='#0056b3', size=14)
     ))
 
     fig.add_trace(go.Scatter(
@@ -295,13 +296,42 @@ def plot_rate_simulator(base_rate, slope1, slope2, U_optimal, reserve_factor, cu
         y=[current_lending_rate],
         mode='markers',
         name='Current Lending Rate',
-        marker=dict(color='green', size=10)
+        marker=dict(color='#ADD8E6', size=14)
     ))
 
+    # Add a vertical line for the optimal utilization rate
+    fig.add_shape(
+        type="line",
+        x0=U_optimal * 100,
+        y0=0,
+        x1=U_optimal * 100,
+        y1=max(borrow_rates + lending_rates),
+        line=dict(color="red", width=2, dash="dash")
+    )
+
+    # Add a label for the optimal utilization rate
+    fig.add_annotation(
+        x=U_optimal * 100,
+        y=max(borrow_rates + lending_rates),
+        text=f"Optimal Utilization Rate: {U_optimal * 100:.2f}%",
+        showarrow=True,
+        arrowhead=2,
+        ax=0,
+        ay=-40,
+        font=dict(size=14, color="red")
+    )
+
     fig.update_layout(
-        title='Lending and Borrowing Rate Simulator',
-        xaxis_title='Utilization Rate (%)',
-        yaxis_title='Rate (%)',
+        xaxis=dict(
+            title='Utilization Rate (%)',
+            titlefont=dict(size=18),  # Increased font size for x-axis label
+            tickfont=dict(size=14)  # Increased font size for x-axis ticks
+        ),
+        yaxis=dict(
+            title='Rate (%)',
+            titlefont=dict(size=18),  # Increased font size for y-axis label
+            tickfont=dict(size=14)  # Increased font size for y-axis ticks
+        ),
         margin=dict(t=50, l=25, r=25, b=25),
         height=600,
         width=800,
@@ -310,9 +340,11 @@ def plot_rate_simulator(base_rate, slope1, slope2, U_optimal, reserve_factor, cu
             y=1.1,
             xanchor='center',
             yanchor='top',
-            orientation="h"
+            orientation="h",
+            font=dict(size=19)  # Increased font size for legends
         )
     )
+    
 
     st.plotly_chart(fig, use_container_width=True)
 
@@ -516,16 +548,6 @@ if user_input:
                 name = "debt" + asset["pool_name"]
                 plot_bar_chart(debt_holders_data, top_10, top_25, top_75, top_100, name)
 
-                # Add the simulator section
-                st.markdown(f"""
-                    <div class='container' style='padding: 10px; margin-bottom: 10px;'>
-                        <h3 style='text-align: center; color: white;'>Lending and Borrowing Rate Simulator</h3>
-                    </div>
-                """, unsafe_allow_html=True)
-
-                # Input fields for the user to enter the amount they want to borrow or lend
-                amount_to_borrow = st.number_input('Amount to Borrow', min_value=0.0, format="%.2f")
-                amount_to_lend = st.number_input('Amount to Lend', min_value=0.0, format="%.2f")
 
                 symbol = asset["symbol"]
                 price_asset = requests.get(f'https://api.coingecko.com/api/v3/simple/price?ids={symbol}&vs_currencies=usd').json()[symbol]['usd']
@@ -533,9 +555,33 @@ if user_input:
                 debt_token_supply = debt_token_supply * price_asset
                 a_token_supply = a_token_supply * price_asset
 
+                # Initialize session state variables if they don't exist
+                if 'amount_to_borrow' not in st.session_state:
+                    st.session_state.amount_to_borrow = 0
+                if 'amount_to_lend' not in st.session_state:
+                    st.session_state.amount_to_lend = 0
+
+                LTV = asset["LTV"]*100
+
+                # Add the simulator section
+                st.markdown(f"""
+                    <div class='container' style='padding: 10px; margin-bottom: 10px;'>
+                        <h3 style='text-align: center; color: white;'>Lending and Borrowing Rate Simulator - LTV = {LTV:.2f} %</h3>
+                    </div>
+                """, unsafe_allow_html=True)
+
+                # Sliders for the user to enter the amount they want to borrow or lend
+                st.session_state.amount_to_borrow = st.slider('Amount to Borrow (USD)', 0, 10000, st.session_state.amount_to_borrow, key='borrow_slider')
+                st.session_state.amount_to_lend = st.slider('Amount to Lend (USD)', 0, 10000, st.session_state.amount_to_lend, key='lend_slider')
+
+                # Display the selected amounts
+                st.write(f"Amount to Borrow: ${st.session_state.amount_to_borrow}")
+                st.write(f"Amount to Lend: ${st.session_state.amount_to_lend}")
+
+
                 # Recalculate the utilization rate based on the user's input
-                new_debt_token_supply = debt_token_supply + amount_to_borrow
-                new_a_token_supply = a_token_supply + amount_to_lend
+                new_debt_token_supply = debt_token_supply + st.session_state.amount_to_borrow
+                new_a_token_supply = a_token_supply + st.session_state.amount_to_lend
                 new_utilization_rate = new_debt_token_supply / new_a_token_supply if new_a_token_supply else 0
                 new_utilization_rate_percent = new_utilization_rate * 100
 
@@ -550,14 +596,12 @@ if user_input:
                 # Plot the rate simulator
                 plot_rate_simulator(
                     asset['base_rate'], asset['s1'], asset['s2'], asset['Uopt'],
-                    asset['Rf'], utilization_rate_percent, borrow_rate, lending_rate
+                    asset['Rf'], new_utilization_rate_percent, new_borrow_rate, new_lending_rate
                 )
 
                 # Display the new rates
                 st.markdown(f"""
                     <div class='container' style='padding: 10px; margin-bottom: 10px;'>
-                        <h3 style='text-align: center; color: white;'>Current lending supply: ${a_token_supply/10**8:.2f}</h3>
-                        <h3 style='text-align: center; color: white;'>Current borrow supply: ${debt_token_supply/10**8:.2f}</h3>
                         <h3 style='text-align: center; color: white;'>New Utilization Rate: {new_utilization_rate_percent:.2f}%</h3>
                         <h3 style='text-align: center; color: white;'>New Borrow Rate: {new_borrow_rate:.2f}%</h3>
                         <h3 style='text-align: center; color: white;'>New Lending Rate: {new_lending_rate:.2f}%</h3>
