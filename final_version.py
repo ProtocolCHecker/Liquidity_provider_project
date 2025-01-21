@@ -254,32 +254,12 @@ def get_token_holder_chart(chain, contract_address, range_value=100):
 
 
 # Function to plot the lending and borrowing rate simulator
-def plot_rate_simulator(base_rate, slope1, slope2, U_optimal, reserve_factor, current_utilization_rate, current_borrow_rate, current_lending_rate, a_token_supply, debt_token_supply, max_supply, loan_to_value, price):
+def plot_rate_simulator(base_rate, slope1, slope2, U_optimal, reserve_factor, current_utilization_rate, current_borrow_rate, current_lending_rate, a_token_supply, debt_token_supply, max_supply, loan_to_value, price, decimal):
     # Initialize session state variables if they don't exist
-    if 'amount_to_borrow' not in st.session_state:
-        st.session_state.amount_to_borrow = 0
-    if 'amount_to_lend' not in st.session_state:
-        st.session_state.amount_to_lend = 0
-
-    max_supply = max_supply * price
-    max_borrow = loan_to_value * max_supply
-    # Sliders for the user to enter the amount they want to borrow or lend
-    st.session_state.amount_to_borrow = st.slider('Amount to Borrow (USD)', 0, max_borrow, st.session_state.amount_to_borrow, key='borrow_slider')
-    st.session_state.amount_to_lend = st.slider('Amount to Lend (USD)', 0, max_supply, st.session_state.amount_to_lend, key='lend_slider')
-
-
-    # Recalculate the utilization rate based on the user's input
-    new_debt_token_supply = debt_token_supply + st.session_state.amount_to_borrow
-    new_a_token_supply = a_token_supply + st.session_state.amount_to_lend
-    new_utilization_rate = new_debt_token_supply / new_a_token_supply if new_a_token_supply else 0
-    new_utilization_rate_percent = new_utilization_rate * 100
-
-    # Calculate the new borrow and lending rates
-    new_borrow_rate, new_lending_rate = borrowing_and_lending_rate(
-        base_rate, slope1, slope2, U_optimal, reserve_factor, new_utilization_rate
-    )
-    new_borrow_rate = new_borrow_rate * 100
-    new_lending_rate = new_lending_rate * 100
+    # if 'amount_to_borrow' not in st.session_state:
+    #     st.session_state.amount_to_borrow = 0
+    # if 'amount_to_lend' not in st.session_state:
+    #     st.session_state.amount_to_lend = 0
 
     utilization_rates = list(range(0, 101))
     borrow_rates = []
@@ -289,7 +269,7 @@ def plot_rate_simulator(base_rate, slope1, slope2, U_optimal, reserve_factor, cu
         b_rate, l_rate = borrowing_and_lending_rate(base_rate, slope1, slope2, U_optimal, reserve_factor, utilization_rate / 100)
         borrow_rates.append(b_rate * 100)
         lending_rates.append(l_rate * 100)
-
+    
     fig = go.Figure()
 
     fig.add_trace(go.Scatter(
@@ -370,16 +350,124 @@ def plot_rate_simulator(base_rate, slope1, slope2, U_optimal, reserve_factor, cu
         )
     )
 
-    st.plotly_chart(fig, use_container_width=True)
+    max_supply = int(max_supply * price)
+    max_borrow = int(loan_to_value * max_supply)
+    # Sliders for the user to enter the amount they want to borrow or lend
 
-    # Display the new rates
-    st.markdown(f"""
-        <div class='container' style='padding: 10px; margin-bottom: 10px;'>
-            <h3 style='text-align: center; color: white;'>New Utilization Rate: {new_utilization_rate_percent:.2f}%</h3>
-            <h3 style='text-align: center; color: white;'>New Borrow Rate: {new_borrow_rate:.2f}%</h3>
-            <h3 style='text-align: center; color: white;'>New Lending Rate: {new_lending_rate:.2f}%</h3>
-        </div>
-    """, unsafe_allow_html=True)
+    # # Sliders for the user to enter the amount they want to borrow or lend
+    # amount_to_lend = st.slider('Amount to Lend (USD)', 0, max_supply)
+    # amount_to_borrow = st.slider('Amount to Borrow (USD)', 0, max_borrow, st.session_state.amount_to_borrow)
+
+    
+    # #Update session state variables
+    # st.session_state.amount_to_lend = amount_to_lend
+    # st.session_state.amount_to_borrow = amount_to_borrow
+    
+
+    # print(st.session_state.amount_to_lend)
+
+    # Create a form to group the sliders
+    with st.form(key='my_form'):
+        # Slider for Amount to Lend
+        amount_to_lend = st.slider('Amount to Lend (USD)', 0, max_supply)
+        print(amount_to_lend)
+        # Slider for Amount to Borrow
+        amount_to_borrow = st.slider('Amount to Borrow (USD)', 0, max_borrow)
+        
+        # Submit button for the form
+        submit_button = st.form_submit_button(label='Submit')
+
+    if submit_button:
+        
+        print(amount_to_lend)
+        # Recalculate the utilization rate based on the user's input
+        # new_debt_token_supply = debt_token_supply + st.session_state.amount_to_borrow
+        new_debt_token_supply = debt_token_supply + amount_to_borrow * decimal
+        new_a_token_supply = a_token_supply + amount_to_lend * decimal
+        new_utilization_rate = new_debt_token_supply / new_a_token_supply if new_a_token_supply else 0
+        new_utilization_rate_percent = new_utilization_rate * 100
+
+        # Calculate the new borrow and lending rates
+        new_borrow_rate, new_lending_rate = borrowing_and_lending_rate(
+            base_rate, slope1, slope2, U_optimal, reserve_factor, new_utilization_rate
+        )
+        new_borrow_rate = new_borrow_rate * 100
+        new_lending_rate = new_lending_rate * 100
+
+
+        # Add markers for the new rates
+        fig.add_trace(go.Scatter(
+            x=[new_utilization_rate_percent],
+            y=[new_borrow_rate],
+            mode='markers',
+            name='New Borrow Rate',
+            marker=dict(color='#FFA500', size=14)  # Orange color for new rates
+        ))
+
+        fig.add_trace(go.Scatter(
+            x=[new_utilization_rate_percent],
+            y=[new_lending_rate],
+            mode='markers',
+            name='New Lending Rate',
+            marker=dict(color='#FFD700', size=14)  # Gold color for new rates
+        ))
+
+
+        st.plotly_chart(fig, use_container_width=True)
+
+
+def plot_rates(url):
+    response = requests.get(url)
+
+    # Check if the request was successful (status code 200)
+    if response.status_code == 200:
+        data = response.json()  # Parse the response as JSON
+
+        # Extract data for plotting
+        dates = []
+        lending_rates = []  # Liquidity rate (Lending)
+        borrowing_rates = []  # Sum of variableBorrowRate + stableBorrowRate (Borrowing)
+
+        for entry in data:
+            # Convert year, month, day to a date string for easy plotting
+            date_str = f"{entry['x']['year']}-{entry['x']['month'] + 1:02d}-{entry['x']['date']:02d}"
+            dates.append(date_str)
+
+            # Lending rate is the liquidityRate_avg
+            lending_rates.append(entry['liquidityRate_avg'] * 100)
+
+            # Borrowing rate is the sum of variableBorrowRate_avg and stableBorrowRate_avg
+            total_borrowing_rate = entry['variableBorrowRate_avg'] + entry['stableBorrowRate_avg']
+            borrowing_rates.append(total_borrowing_rate * 100)
+
+        # Plotting the Lending Rate
+        fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 6))
+
+        # First subplot: Lending rate
+        ax1.plot(dates, lending_rates, marker='o', color='#ADD8E6', label='Lending Rate')  # Light blue
+        ax1.set_xlabel('Date')
+        ax1.set_ylabel('Lending Rate (%)')
+        ax1.set_title('Lending Rate Over Time')
+        ax1.tick_params(axis='x', rotation=45)
+        ax1.grid(True)
+        ax1.legend(fontsize=12)  # Increase legend font size
+
+        # Second subplot: Borrowing rate
+        ax2.plot(dates, borrowing_rates, marker='o', color='#0056b3', label='Borrowing Rate')  # Dark blue
+        ax2.set_xlabel('Date')
+        ax2.set_ylabel('Borrowing Rate (%)')
+        ax2.set_title('Borrowing Rate Over Time')
+        ax2.tick_params(axis='x', rotation=45)
+        ax2.grid(True)
+        ax2.legend(fontsize=12)  # Increase legend font size
+
+        # Adjust layout and show the plots
+        plt.tight_layout()
+
+        # Display the plot in Streamlit
+        st.pyplot(fig)
+    else:
+        st.error("Failed to fetch data. Please check the URL and try again.")
 
 abi = '''[{"inputs":[{"internalType":"contract IPool","name":"pool","type":"address"}],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"owner","type":"address"},{"indexed":true,"internalType":"address","name":"spender","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"}],"name":"Approval","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"from","type":"address"},{"indexed":true,"internalType":"address","name":"to","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"},{"indexed":false,"internalType":"uint256","name":"index","type":"uint256"}],"name":"BalanceTransfer","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"from","type":"address"},{"indexed":true,"internalType":"address","name":"target","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"},{"indexed":false,"internalType":"uint256","name":"balanceIncrease","type":"uint256"},{"indexed":false,"internalType":"uint256","name":"index","type":"uint256"}],"name":"Burn","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"underlyingAsset","type":"address"},{"indexed":true,"internalType":"address","name":"pool","type":"address"},{"indexed":false,"internalType":"address","name":"treasury","type":"address"},{"indexed":false,"internalType":"address","name":"incentivesController","type":"address"},{"indexed":false,"internalType":"uint8","name":"aTokenDecimals","type":"uint8"},{"indexed":false,"internalType":"string","name":"aTokenName","type":"string"},{"indexed":false,"internalType":"string","name":"aTokenSymbol","type":"string"},{"indexed":false,"internalType":"bytes","name":"params","type":"bytes"}],"name":"Initialized","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"caller","type":"address"},{"indexed":true,"internalType":"address","name":"onBehalfOf","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"},{"indexed":false,"internalType":"uint256","name":"balanceIncrease","type":"uint256"},{"indexed":false,"internalType":"uint256","name":"index","type":"uint256"}],"name":"Mint","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"from","type":"address"},{"indexed":true,"internalType":"address","name":"to","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"}],"name":"Transfer","type":"event"},{"inputs":[],"name":"ATOKEN_REVISION","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"DOMAIN_SEPARATOR","outputs":[{"internalType":"bytes32","name":"","type":"bytes32"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"EIP712_REVISION","outputs":[{"internalType":"bytes","name":"","type":"bytes"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"PERMIT_TYPEHASH","outputs":[{"internalType":"bytes32","name":"","type":"bytes32"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"POOL","outputs":[{"internalType":"contract IPool","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"RESERVE_TREASURY_ADDRESS","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"UNDERLYING_ASSET_ADDRESS","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"owner","type":"address"},{"internalType":"address","name":"spender","type":"address"}],"name":"allowance","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"approve","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"user","type":"address"}],"name":"balanceOf","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"from","type":"address"},{"internalType":"address","name":"receiverOfUnderlying","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"},{"internalType":"uint256","name":"index","type":"uint256"}],"name":"burn","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"decimals","outputs":[{"internalType":"uint8","name":"","type":"uint8"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"subtractedValue","type":"uint256"}],"name":"decreaseAllowance","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"getIncentivesController","outputs":[{"internalType":"contract IAaveIncentivesController","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"user","type":"address"}],"name":"getPreviousIndex","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"user","type":"address"}],"name":"getScaledUserBalanceAndSupply","outputs":[{"internalType":"uint256","name":"","type":"uint256"},{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"user","type":"address"},{"internalType":"address","name":"onBehalfOf","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"handleRepayment","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"addedValue","type":"uint256"}],"name":"increaseAllowance","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"contract IPool","name":"initializingPool","type":"address"},{"internalType":"address","name":"treasury","type":"address"},{"internalType":"address","name":"underlyingAsset","type":"address"},{"internalType":"contract IAaveIncentivesController","name":"incentivesController","type":"address"},{"internalType":"uint8","name":"aTokenDecimals","type":"uint8"},{"internalType":"string","name":"aTokenName","type":"string"},{"internalType":"string","name":"aTokenSymbol","type":"string"},{"internalType":"bytes","name":"params","type":"bytes"}],"name":"initialize","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"caller","type":"address"},{"internalType":"address","name":"onBehalfOf","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"},{"internalType":"uint256","name":"index","type":"uint256"}],"name":"mint","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"amount","type":"uint256"},{"internalType":"uint256","name":"index","type":"uint256"}],"name":"mintToTreasury","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"name","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"owner","type":"address"}],"name":"nonces","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"owner","type":"address"},{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"value","type":"uint256"},{"internalType":"uint256","name":"deadline","type":"uint256"},{"internalType":"uint8","name":"v","type":"uint8"},{"internalType":"bytes32","name":"r","type":"bytes32"},{"internalType":"bytes32","name":"s","type":"bytes32"}],"name":"permit","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"token","type":"address"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"rescueTokens","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"user","type":"address"}],"name":"scaledBalanceOf","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"scaledTotalSupply","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"contract IAaveIncentivesController","name":"controller","type":"address"}],"name":"setIncentivesController","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"symbol","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"totalSupply","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"recipient","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"transfer","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"sender","type":"address"},{"internalType":"address","name":"recipient","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"transferFrom","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"from","type":"address"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"value","type":"uint256"}],"name":"transferOnLiquidation","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"target","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"transferUnderlyingTo","outputs":[],"stateMutability":"nonpayable","type":"function"}]'''  # Use the full ABI provided
 
@@ -572,6 +660,10 @@ if 'selected_asset' in st.session_state:
     name = "debt" + asset["pool_name"]
     plot_bar_chart(debt_holders_data, top_10, top_25, top_75, top_100, name)
 
+    request_url = asset["url"]
+
+    plot_rates(request_url)
+
     symbol = asset["symbol"]
     price_asset = requests.get(f'https://api.coingecko.com/api/v3/simple/price?ids={symbol}&vs_currencies=usd').json()[symbol]['usd']
 
@@ -588,13 +680,15 @@ if 'selected_asset' in st.session_state:
 
     # Call the plot_rate_simulator function with the necessary parameters
 
-    maximum_supply = asset["max_supply"]
+    maximum_supply = asset["max_supply"] - a_token_supply / (price_asset * asset["coef"])
+    LTV = LTV / 100
+    coef = asset["coef"]
 
     plot_rate_simulator(
         asset['base_rate'], asset['s1'], asset['s2'], asset['Uopt'],
         asset['Rf'], utilization_rate_percent, borrow_rate, lending_rate,
-        a_token_supply, debt_token_supply, maximum_supply, LTV, price_asset
+        a_token_supply, debt_token_supply, maximum_supply, LTV, price_asset, coef
     )
 
 else:
-    st.sidebar.write('No matching assets found.')
+    st.sidebar.write('')
