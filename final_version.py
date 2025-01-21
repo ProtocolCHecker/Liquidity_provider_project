@@ -440,32 +440,52 @@ def plot_rates(url):
             total_borrowing_rate = entry['variableBorrowRate_avg'] + entry['stableBorrowRate_avg']
             borrowing_rates.append(total_borrowing_rate * 100)
 
-        # Plotting the Lending Rate
-        fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 6))
+        # Create subplots
+        fig = make_subplots(rows=2, cols=1, subplot_titles=("Lending Rate Over Time", "Borrowing Rate Over Time"), vertical_spacing=0.1)
 
         # First subplot: Lending rate
-        ax1.plot(dates, lending_rates, marker='o', color='#ADD8E6', label='Lending Rate')  # Light blue
-        ax1.set_xlabel('Date')
-        ax1.set_ylabel('Lending Rate (%)')
-        ax1.set_title('Lending Rate Over Time')
-        ax1.tick_params(axis='x', rotation=45)
-        ax1.grid(True)
-        ax1.legend(fontsize=12)  # Increase legend font size
+        fig.add_trace(go.Scatter(
+            x=dates,
+            y=lending_rates,
+            mode='lines+markers',
+            name='Lending Rate',
+            marker=dict(color='#ADD8E6'),  # Light blue
+            line=dict(color='#ADD8E6', width=3)
+        ), row=1, col=1)
+
+        fig.update_xaxes(title_text="Date", row=1, col=1)
+        fig.update_yaxes(title_text="Lending Rate (%)", row=1, col=1)
 
         # Second subplot: Borrowing rate
-        ax2.plot(dates, borrowing_rates, marker='o', color='#0056b3', label='Borrowing Rate')  # Dark blue
-        ax2.set_xlabel('Date')
-        ax2.set_ylabel('Borrowing Rate (%)')
-        ax2.set_title('Borrowing Rate Over Time')
-        ax2.tick_params(axis='x', rotation=45)
-        ax2.grid(True)
-        ax2.legend(fontsize=12)  # Increase legend font size
+        fig.add_trace(go.Scatter(
+            x=dates,
+            y=borrowing_rates,
+            mode='lines+markers',
+            name='Borrowing Rate',
+            marker=dict(color='#0056b3'),  # Dark blue
+            line=dict(color='#0056b3', width=3)
+        ), row=2, col=1)
 
-        # Adjust layout and show the plots
-        plt.tight_layout()
+        fig.update_xaxes(title_text="Date", row=2, col=1)
+        fig.update_yaxes(title_text="Borrowing Rate (%)", row=2, col=1)
+
+        # Update layout
+        fig.update_layout(
+            margin=dict(t=50, l=25, r=25, b=25),
+            height=1200,  # Increased height to accommodate both plots
+            width=800,
+            legend=dict(
+                xanchor='center',
+                yanchor='top',
+                x=0.5,
+                y=1.1,
+                font=dict(size=20),  # Increase the font size of the legend
+                orientation="h"
+            )
+        )
 
         # Display the plot in Streamlit
-        st.pyplot(fig)
+        st.plotly_chart(fig, use_container_width=True)
     else:
         st.error("Failed to fetch data. Please check the URL and try again.")
 
