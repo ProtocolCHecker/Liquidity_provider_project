@@ -17,7 +17,8 @@
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=usd-coin&vs_currencies=usd'",
         "symbol" : "usd-coin",
         "LTV": 0.75,
-        "max_supply": 4800000000
+        "max_supply": 4800000000,
+        "url": "https://aave-api-v2.aave.com/data/rates-history?reserveId=0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb480x2f39d218133AFaB8F2B819B1066c7E434Ad94E9e1&from=1705817399&resolutionInHours=24"
     },
     {
         "pool_name": "WETH",
@@ -37,7 +38,8 @@
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd'",
         "symbol" : "ethereum",
         "LTV": 0.805,
-        "max_supply": 2200000
+        "max_supply": 2200000,
+        "url": "https://aave-api-v2.aave.com/data/rates-history?reserveId=0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc20x2f39d218133AFaB8F2B819B1066c7E434Ad94E9e1&from=1705817469&resolutionInHours=24"
     },
     {
         "pool_name": "wstETH",
@@ -57,7 +59,8 @@
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd'",
         "symbol" : "ethereum",
         "LTV": 0.785,
-        "max_supply": 1600000
+        "max_supply": 1600000,
+        "url": "https://aave-api-v2.aave.com/data/rates-history?reserveId=0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca00x2f39d218133AFaB8F2B819B1066c7E434Ad94E9e1&from=1705817510&resolutionInHours=24"
     },
     {
         "pool_name": "weETH",
@@ -77,7 +80,8 @@
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd'",
         "symbol" : "ethereum",
         "LTV": 0.775,
-        "max_supply": 1400000
+        "max_supply": 1400000,
+        "url": "https://aave-api-v2.aave.com/data/rates-history?reserveId=0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee0x2f39d218133AFaB8F2B819B1066c7E434Ad94E9e1&from=1705817546&resolutionInHours=24"
     },
     {
         "pool_name": "WBTC",
@@ -97,7 +101,8 @@
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd'",
         "symbol" : "bitcoin",
         "LTV": 0.73,
-        "max_supply": 45000
+        "max_supply": 45000,
+        "url": "https://aave-api-v2.aave.com/data/rates-history?reserveId=0x2260fac5e5542a773aa44fbcfedf7c193bc2c5990x2f39d218133AFaB8F2B819B1066c7E434Ad94E9e1&from=1705817570&resolutionInHours=24"
     },
     {
         "pool_name": "USDT",
@@ -117,7 +122,8 @@
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=tether&vs_currencies=usd'",
         "symbol" : "tether",
         "LTV": 0.75,
-        "max_supply": 5240000000
+        "max_supply": 5240000000,
+        "url": "https://aave-api-v2.aave.com/data/rates-history?reserveId=0xdac17f958d2ee523a2206206994597c13d831ec70x2f39d218133AFaB8F2B819B1066c7E434Ad94E9e1&from=1705817601&resolutionInHours=24"
     },
     {
         "pool_name": "WETH",
@@ -137,7 +143,8 @@
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd'",
         "symbol" : "ethereum",
         "LTV": 0.8,
-        "max_supply": 90000
+        "max_supply": 90000,
+        "url": "https://aave-api-v2.aave.com/data/rates-history?reserveId=0x42000000000000000000000000000000000000060xe20fCBdBfFC4Dd138cE8b2E6FBb6CB49777ad64D8453&from=1705817628&resolutionInHours=24"
     },
     {
         "pool_name": "weETH",
@@ -157,7 +164,8 @@
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd'",
         "symbol" : "ethereum",
         "LTV": 0.725,
-        "max_supply": 64000
+        "max_supply": 64000,
+        "url": "https://aave-api-v2.aave.com/data/rates-history?reserveId=0x04c0599ae5a44757c0af6f9ec3b93da8976c150a0xe20fCBdBfFC4Dd138cE8b2E6FBb6CB49777ad64D8453&from=1705817656&resolutionInHours=24"
     },
     {
         "pool_name": "USDC",
@@ -177,7 +185,8 @@
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=usd-coin&vs_currencies=usd'",
         "symbol" : "usd-coin",
         "LTV": 0.75,
-        "max_supply": 240000000 
+        "max_supply": 240000000,
+        "url": "https://aave-api-v2.aave.com/data/rates-history?reserveId=0x833589fcd6edb6e08f4c7c32d4f71b54bda029130xe20fCBdBfFC4Dd138cE8b2E6FBb6CB49777ad64D8453&from=1705817682&resolutionInHours=24" 
     },
     {
         "pool_name": "cbBTC",
@@ -197,7 +206,8 @@
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd'",
         "symbol" : "bitcoin",
         "LTV": 0.73,
-        "max_supply": 5000
+        "max_supply": 5000,
+        "url": "https://aave-api-v2.aave.com/data/rates-history?reserveId=0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf0xe20fCBdBfFC4Dd138cE8b2E6FBb6CB49777ad64D8453&from=1705817706&resolutionInHours=24"
     },
     {
         "pool_name": "wstETH",
@@ -217,7 +227,8 @@
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd'",
         "symbol" : "ethereum",
         "LTV": 0.75,
-        "max_supply": 14000
+        "max_supply": 14000,
+        "url": "https://aave-api-v2.aave.com/data/rates-history?reserveId=0xc1cba3fcea344f92d9239c08c0568f6f2f0ee4520xe20fCBdBfFC4Dd138cE8b2E6FBb6CB49777ad64D8453&from=1705817735&resolutionInHours=24"
     },
     {
         "pool_name": "WETH",
@@ -237,7 +248,8 @@
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd'",
         "symbol" : "ethereum",
         "LTV": 0.8,
-        "max_supply": 170000
+        "max_supply": 170000,
+        "url": "https://aave-api-v2.aave.com/data/rates-history?reserveId=0x82af49447d8a07e3bd95bd0d56f35241523fbab10xa97684ead0e402dC232d5A977953DF7ECBaB3CDb42161&from=1705817756&resolutionInHours=24"
     },
     {
         "pool_name": "weETH",
@@ -257,7 +269,8 @@
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd'",
         "symbol" : "ethereum",
         "LTV": 0.725,
-        "max_supply": 110000
+        "max_supply": 110000,
+        "url": "https://aave-api-v2.aave.com/data/rates-history?reserveId=0x35751007a407ca6feffe80b3cb397736d2cf4dbe0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb42161&from=1705817778&resolutionInHours=24"
     },
     {
         "pool_name": "USDC",
@@ -277,7 +290,8 @@
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=usd-coin&vs_currencies=usd'",
         "symbol" : "usd-coin",
         "LTV": 0.75,
-        "max_supply": 700000000
+        "max_supply": 700000000,
+        "url": "https://aave-api-v2.aave.com/data/rates-history?reserveId=0xaf88d065e77c8cc2239327c5edb3a432268e58310xa97684ead0e402dC232d5A977953DF7ECBaB3CDb42161&from=1705817799&resolutionInHours=24"
     },
     {
         "pool_name": "WBTC",
@@ -297,7 +311,8 @@
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd'",
         "symbol" : "bitcoin",
         "LTV": 0.73,
-        "max_supply": 5000
+        "max_supply": 5000,
+        "url": "https://aave-api-v2.aave.com/data/rates-history?reserveId=0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb42161&from=1705817816&resolutionInHours=24"
     },
     {
         "pool_name": "wstETH",
@@ -317,7 +332,8 @@
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd'",
         "symbol" : "ethereum",
         "LTV": 0.75,
-        "max_supply": 69000
+        "max_supply": 69000,
+        "url": "https://aave-api-v2.aave.com/data/rates-history?reserveId=0x5979d7b546e38e414f7e9822514be443a48005290xa97684ead0e402dC232d5A977953DF7ECBaB3CDb42161&from=1705817833&resolutionInHours=24"
     },
     {
         "pool_name": "wstETH",
@@ -337,7 +353,8 @@
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd'",
         "symbol" : "ethereum",
         "LTV": 0.75,
-        "max_supply": 34500
+        "max_supply": 34500,
+        "url": "https://aave-api-v2.aave.com/data/rates-history?reserveId=0x1f32b1c2345538c0c6f582fcb022739c4a194ebb0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb10&from=1705817850&resolutionInHours=24"
     },
     {
         "pool_name": "WETH",
@@ -357,7 +374,8 @@
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd'",
         "symbol" : "ethereum",
         "LTV": 0.8,
-        "max_supply": 35900
+        "max_supply": 35900,
+        "url": "https://aave-api-v2.aave.com/data/rates-history?reserveId=0x42000000000000000000000000000000000000060xa97684ead0e402dC232d5A977953DF7ECBaB3CDb10&from=1705817877&resolutionInHours=24"
     },
     {
         "pool_name": "USDC",
@@ -377,7 +395,8 @@
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=usd-coin&vs_currencies=usd'",
         "symbol" : "usd-coin",
         "LTV": 0.75,
-        "max_supply": 87500000
+        "max_supply": 87500000,
+        "url": "https://aave-api-v2.aave.com/data/rates-history?reserveId=0x0b2c639c533813f4aa9d7837caf62653d097ff850xa97684ead0e402dC232d5A977953DF7ECBaB3CDb10&from=1705817897&resolutionInHours=24"
     },
     {
         "pool_name": "WBTC",
@@ -397,7 +416,8 @@
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd'",
         "symbol" : "bitcoin",
         "LTV": 0.73,
-        "max_supply": 12000
+        "max_supply": 12000,
+        "url": "https://aave-api-v2.aave.com/data/rates-history?reserveId=0x68f180fcce6836688e9084f035309e29bf0a20950xa97684ead0e402dC232d5A977953DF7ECBaB3CDb10&from=1705817918&resolutionInHours=24"
     },
     {
         "pool_name": "OP",
@@ -417,7 +437,8 @@
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=optimism&vs_currencies=usd'",
         "symbol" : "optimism",
         "LTV": 0.58,
-        "max_supply": 20000000
+        "max_supply": 20000000,
+        "url": "https://aave-api-v2.aave.com/data/rates-history?reserveId=0x42000000000000000000000000000000000000420xa97684ead0e402dC232d5A977953DF7ECBaB3CDb10&from=1705817936&resolutionInHours=24"
     },
     {
         "pool_name": "WBTC",
@@ -437,7 +458,8 @@
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd'",
         "symbol" : "bitcoin",
         "LTV": 0.73,
-        "max_supply": 3100
+        "max_supply": 3100,
+        "url": "https://aave-api-v2.aave.com/data/rates-history?reserveId=0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd60xa97684ead0e402dC232d5A977953DF7ECBaB3CDb137&from=1705817959&resolutionInHours=24"
     },
     {
         "pool_name": "WETH",
@@ -457,7 +479,8 @@
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd'",
         "symbol" : "ethereum",
         "LTV": 0.8,
-        "max_supply": 50000
+        "max_supply": 50000,
+        "url": "https://aave-api-v2.aave.com/data/rates-history?reserveId=0x7ceb23fd6bc0add59e62ac25578270cff1b9f6190xa97684ead0e402dC232d5A977953DF7ECBaB3CDb137&from=1705817992&resolutionInHours=24"
     },
     {
         "pool_name": "USDT",
@@ -477,7 +500,8 @@
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=tether&vs_currencies=usd'",
         "symbol" : "tether",
         "LTV": 0.75,
-        "max_supply": 90000000
+        "max_supply": 90000000,
+        "url": "https://aave-api-v2.aave.com/data/rates-history?reserveId=0xc2132d05d31c914a87c6611c10748aeb04b58e8f0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb137&from=1705818012&resolutionInHours=24"
     },
     {
         "pool_name": "USDC",
@@ -497,7 +521,8 @@
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=usd-coin&vs_currencies=usd'",
         "symbol" : "usd-coin",
         "LTV": 0.75,
-        "max_supply": 100000000
+        "max_supply": 100000000,
+        "url": "https://aave-api-v2.aave.com/data/rates-history?reserveId=0x3c499c542cef5e3811e1192ce70d8cc03d5c33590xa97684ead0e402dC232d5A977953DF7ECBaB3CDb137&from=1705818030&resolutionInHours=24"
     },
     {
         "pool_name": "wstETH",
@@ -517,7 +542,8 @@
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd'",
         "symbol" : "ethereum",
         "LTV": 0.75,
-        "max_supply": 11500
+        "max_supply": 11500,
+        "url": "https://aave-api-v2.aave.com/data/rates-history?reserveId=0x03b54a6e9a984069379fae1a4fc4dbae93b3bccd0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb137&from=1705818059&resolutionInHours=24"
     },
     {
         "pool_name": "WBTC",
@@ -537,7 +563,8 @@
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd'",
         "symbol" : "bitcoin",
         "LTV": 0.72,
-        "max_supply": 10000
+        "max_supply": 10000,
+        "url": "https://aave-api-v2.aave.com/data/rates-history?reserveId=0x2260fac5e5542a773aa44fbcfedf7c193bc2c5990xB53C1a33016B2DC2fF3653530bfF1848a515c8c5&from=1705818085&resolutionInHours=24"
     },
     {
         "pool_name": "WETH",
@@ -557,7 +584,8 @@
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd'",
         "symbol" : "ethereum",
         "LTV": 0.825,
-        "max_supply": 1400000
+        "max_supply": 1400000,
+        "url": "https://aave-api-v2.aave.com/data/rates-history?reserveId=0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc20xB53C1a33016B2DC2fF3653530bfF1848a515c8c5&from=1705818101&resolutionInHours=24"
     },
     {
         "pool_name": "USDC",
@@ -577,7 +605,8 @@
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=usd-coin&vs_currencies=usd'",
         "symbol" : "usd-coin",
         "LTV": 0.75,
-        "max_supply": 100000000
+        "max_supply": 100000000,
+        "url": "https://aave-api-v2.aave.com/data/rates-history?reserveId=0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb480xB53C1a33016B2DC2fF3653530bfF1848a515c8c5&from=1705818122&resolutionInHours=24"
     },
     {
         "pool_name": "USDT",
@@ -597,7 +626,8 @@
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=tether&vs_currencies=usd'",
         "symbol" : "tether",
         "LTV": 0,
-        "max_supply": 100000000
+        "max_supply": 100000000,
+        "url": "https://aave-api-v2.aave.com/data/rates-history?reserveId=0xdac17f958d2ee523a2206206994597c13d831ec70xB53C1a33016B2DC2fF3653530bfF1848a515c8c5&from=1705818145&resolutionInHours=24"
     },
     {
         "pool_name": "WBTC",
@@ -617,7 +647,8 @@
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd'",
         "symbol" : "bitcoin",
         "LTV": 0.7,
-        "max_supply": 10000
+        "max_supply": 10000,
+        "url": "https://aave-api-v2.aave.com/data/rates-history?reserveId=0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd60xd05e3E715d945B59290df0ae8eF85c1BdB684744&from=1705818167&resolutionInHours=24"
     },
     {
         "pool_name": "WETH",
@@ -637,7 +668,8 @@
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd'",
         "symbol" : "ethereum",
         "LTV": 0.8,
-        "max_supply": 140000
+        "max_supply": 140000,
+        "url": "https://aave-api-v2.aave.com/data/rates-history?reserveId=0x7ceb23fd6bc0add59e62ac25578270cff1b9f6190xd05e3E715d945B59290df0ae8eF85c1BdB684744&from=1705818185&resolutionInHours=24"
     },
     {
         "pool_name": "DAI",
@@ -657,7 +689,8 @@
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=dai&vs_currencies=usd'",
         "symbol" : "dai",
         "LTV": 0.63,
-        "max_supply": 50000000
+        "max_supply": 50000000,
+        "url": "https://aave-api-v2.aave.com/data/rates-history?reserveId=0x8f3cf7ad23cd3cadbd9735aff958023239c6a0630xd05e3E715d945B59290df0ae8eF85c1BdB684744&from=1705818200&resolutionInHours=24"
     },
     {
         "pool_name": "USDC",
@@ -677,7 +710,8 @@
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=usd-coin&vs_currencies=usd'",
         "symbol" : "usd-coin",
         "LTV": 0.75,
-        "max_supply": 100000000
+        "max_supply": 100000000,
+        "url": "https://aave-api-v2.aave.com/data/rates-history?reserveId=0x2791bca1f2de4661ed88a30c99a7a9449aa841740xd05e3E715d945B59290df0ae8eF85c1BdB684744&from=1705818249&resolutionInHours=24"
     },
     {
         "pool_name": "USDT",
@@ -697,6 +731,7 @@
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=tether&vs_currencies=usd'",
         "symbol" : "tether",
         "LTV": 0,
-        "max_supply": 100000000
+        "max_supply": 100000000,
+        "url": "https://aave-api-v2.aave.com/data/rates-history?reserveId=0xc2132d05d31c914a87c6611c10748aeb04b58e8f0xd05e3E715d945B59290df0ae8eF85c1BdB684744&from=1705818215&resolutionInHours=24"
     }
 ]
