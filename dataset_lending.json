@@ -456,7 +456,7 @@
         "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd'",
         "symbol" : "bitcoin",
         "LTV": 0.73,
-        "max_supply": 12000,
+        "max_supply": 1200,
         "url": "https://aave-api-v2.aave.com/data/rates-history?reserveId=0x68f180fcce6836688e9084f035309e29bf0a20950xa97684ead0e402dC232d5A977953DF7ECBaB3CDb10&from=1705817918&resolutionInHours=24"
     },
     {
