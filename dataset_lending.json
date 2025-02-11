@@ -158,7 +158,7 @@
         "aWETH": "0xD4a0e0b9149BCee3C920d2E00b5dE09138fd8bb7",
         "debtWETH": "0x24e6e0795b3c7c71D965fCc4f371803d1c1DcA1E",
         "supply_asset": "0xD4a0e0b9149BCee3C920d2E00b5dE09138fd8bb7",
-        "debt_supply": "0x24e6e0795b3c7c71D965fCc4f371803d1c1DcA1E",
+        "debt_asset": "0x24e6e0795b3c7c71D965fCc4f371803d1c1DcA1E",
         "aave_smart_contract": "0xA238Dd80C259a72e81d7e4664a9801593F98d1c5",
         "base_rate": 0,
         "s1": 0.027,
