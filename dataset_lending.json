@@ -873,26 +873,5 @@
         "LTV": 0,
         "max_supply": 100000000,
         "url": "https://aave-api-v2.aave.com/data/rates-history?reserveId=0xc2132d05d31c914a87c6611c10748aeb04b58e8f0xd05e3E715d945B59290df0ae8eF85c1BdB684744&from=1705818215&resolutionInHours=24"
-    },
-    {
-    "pool_id": 36,
-    "pool_name": "HYPE",
-    "protocol": "HYPURR",
-    "version": "v1",
-    "chain": "Hyperliquid_EVM",
-    "hyWHYPE": "0x7C97cd7B57b736c6AD74fAE97C0e21e856251dcf",
-    "variableDebtWHYPE": "0x37E44F3070b5455f1f5d7aaAd9Fc8590229CC5Cb",
-    "supply_asset": "0x7C97cd7B57b736c6AD74fAE97C0e21e856251dcf",
-    "debt_asset": "0x37E44F3070b5455f1f5d7aaAd9Fc8590229CC5Cb",
-    "base_rate": 0,
-    "s1": 0.0316,
-    "Uopt": 0.8,
-    "s2": 8.809,
-    "Rf": 0.2,
-    "coef": 1000000000000000000,
-    "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=hyperliquid&vs_currencies=usd'",
-    "symbol" : "hype",
-    "LTV": 0.3,
-    "max_supply": 110000,
-    }
+    
 ]
