@@ -873,5 +873,5 @@
         "LTV": 0,
         "max_supply": 100000000,
         "url": "https://aave-api-v2.aave.com/data/rates-history?reserveId=0xc2132d05d31c914a87c6611c10748aeb04b58e8f0xd05e3E715d945B59290df0ae8eF85c1BdB684744&from=1705818215&resolutionInHours=24"
-    
+    }
 ]
