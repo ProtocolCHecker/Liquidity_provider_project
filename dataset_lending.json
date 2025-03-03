@@ -955,7 +955,7 @@
     "protocol": "SPARK",
     "version": "v1",
     "chain": "Ethereum",
-    "rETH": "0x9985dF20D7e9103ECBCeb16a84956434B6f06ae8",
+    "arETH": "0x9985dF20D7e9103ECBCeb16a84956434B6f06ae8",
     "debtrETH": "0xBa2C8F2eA5B56690bFb8b709438F049e5Dd76B96",
     "supply_asset": "0x9985dF20D7e9103ECBCeb16a84956434B6f06ae8",
     "debt_asset": "0xBa2C8F2eA5B56690bFb8b709438F049e5Dd76B96",
