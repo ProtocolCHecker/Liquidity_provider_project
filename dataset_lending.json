@@ -923,5 +923,30 @@
     "LTV": 0.79,
     "max_supply": 2000000,
     "url": "https://aave-api-v2.aave.com/data/rates-history?reserveId=0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc20x2f39d218133AFaB8F2B819B1066c7E434Ad94E9e1&from=1705817469&resolutionInHours=24"
+    },
+    {
+    "pool_id": 38,
+    "pool_name": "cbBTC",
+    "protocol": "SPARK",
+    "version": "v1",
+    "chain": "Ethereum",
+    "acbBTC": "0xb3973D459df38ae57797811F2A1fd061DA1BC123",
+    "debtcbBTC": "0x661fE667D2103eb52d3632a3eB2cAbd123F27938",
+    "supply_asset": "0xb3973D459df38ae57797811F2A1fd061DA1BC123",
+    "debt_asset": "0x661fE667D2103eb52d3632a3eB2cAbd123F27938",
+    "aave_smart_contract": "0xC13e21B648A5Ee794902342038FF3aDAB66BE987",
+    "base_rate": 0,
+    "s1": 0.04,
+    "Uopt": 0.6,
+    "s2": 3,
+    "Rf": 0.2,
+    "dune_a_id": 4579093,
+    "dune_debt_id": 4579100,
+    "coef": 100000000,
+    "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=wrapped-steth&vs_currencies=usd'",
+    "symbol" : "ethereum",
+    "LTV": 0.74,
+    "max_supply": 10000,
+    "url": "https://aave-api-v2.aave.com/data/rates-history?reserveId=0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc20x2f39d218133AFaB8F2B819B1066c7E434Ad94E9e1&from=1705817469&resolutionInHours=24"
     }
 ]
