@@ -897,7 +897,7 @@
         "symbol" : "ethereum",
         "LTV": 0.82,
         "max_supply": 2000000,
-        "url": "https://spark-api.blockanalitica.com/v1/ethereum/markets/cbBTC/historic-details/?days_ago=365"
+        "url": "https://aave-api-v2.aave.com/data/rates-history?reserveId=0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc20x2f39d218133AFaB8F2B819B1066c7E434Ad94E9e1&from=1705817469&resolutionInHours=24"
     {
     "pool_id": 37,
     "pool_name": "wstETH",
@@ -921,7 +921,7 @@
     "symbol" : "ethereum",
     "LTV": 0.79,
     "max_supply": 2000000,
-    "url": "https://spark-api.blockanalitica.com/v1/ethereum/markets/wstETH/historic-details/?days_ago=365"
+    "url": "https://aave-api-v2.aave.com/data/rates-history?reserveId=0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca00x2f39d218133AFaB8F2B819B1066c7E434Ad94E9e1&from=1705817510&resolutionInHours=24"
     },
     {
     "pool_id": 38,
@@ -946,7 +946,7 @@
     "symbol" : "bitcoin",
     "LTV": 0.74,
     "max_supply": 10000,
-    "url": "https://spark-api.blockanalitica.com/v1/ethereum/markets/cbBTC/historic-details/?days_ago=365"
+    "url": "https://aave-api-v2.aave.com/data/rates-history?reserveId=0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf0xe20fCBdBfFC4Dd138cE8b2E6FBb6CB49777ad64D8453&from=1705817706&resolutionInHours=24"
     },
     {
     "pool_id": 39,
@@ -971,6 +971,6 @@
     "symbol" : "ethereum",
     "LTV": 0.79,
     "max_supply": 80000,
-    "url": "https://spark-api.blockanalitica.com/v1/ethereum/markets/rETH/historic-details/?days_ago=365"
+    "url": "https://aave-api-v2.aave.com/data/rates-history?reserveId=0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca00x2f39d218133AFaB8F2B819B1066c7E434Ad94E9e1&from=1705817510&resolutionInHours=24"
     }
 ]
