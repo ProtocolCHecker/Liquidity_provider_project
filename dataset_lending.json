@@ -897,7 +897,7 @@
         "symbol" : "ethereum",
         "LTV": 0.82,
         "max_supply": 2000000,
-        "url": "https://aave-api-v2.aave.com/data/rates-history?reserveId=0x68f180fcce6836688e9084f035309e29bf0a20950xa97684ead0e402dC232d5A977953DF7ECBaB3CDb10&from=1705817918&resolutionInHours=24"
+        "url": "https://spark-api.blockanalitica.com/v1/ethereum/markets/cbBTC/historic-details/?days_ago=365"
     },
     {
     "pool_id": 37,
