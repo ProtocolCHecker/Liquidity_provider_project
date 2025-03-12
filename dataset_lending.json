@@ -897,7 +897,7 @@
         "symbol" : "ethereum",
         "LTV": 0.82,
         "max_supply": 2000000,
-        "url": "https://spark-api.blockanalitica.com/v1/ethereum/markets/cbBTC/historic-details/?days_ago=365"
+        "url": "https://spark-api.blockanalitica.com/v1/ethereum/markets/WETH/historic-details/?days_ago=365"
     },
     {
     "pool_id": 37,
