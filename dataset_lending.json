@@ -979,7 +979,7 @@
     "pool_name": "wstETH",
     "protocol": "AAVE",
     "version": "v3",
-    "chain": "Lido_market",
+    "chain": "Lido",
     "awstETH": "0xC035a7cf15375cE2706766804551791aD035E0C2",
     "debtwstETH": "0xE439edd2625772AA635B437C099C607B6eb7d35f",
     "supply_asset": "0xC035a7cf15375cE2706766804551791aD035E0C2",
