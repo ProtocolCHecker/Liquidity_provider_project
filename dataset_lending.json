@@ -973,5 +973,30 @@
     "LTV": 0.79,
     "max_supply": 80000,
     "url": "https://spark-api.blockanalitica.com/v1/ethereum/markets/rETH/historic-details/?days_ago=365"
+    },
+    {
+    "pool_id": 40,
+    "pool_name": "wstETH",
+    "protocol": "AAVE",
+    "version": "v3",
+    "chain": "Lido_market",
+    "awstETH": "0xC035a7cf15375cE2706766804551791aD035E0C2",
+    "debtwstETH": "0xE439edd2625772AA635B437C099C607B6eb7d35f",
+    "supply_asset": "0xC035a7cf15375cE2706766804551791aD035E0C2",
+    "debt_asset": "0xE439edd2625772AA635B437C099C607B6eb7d35f",
+    "aave_smart_contract": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+    "base_rate": 0,
+    "s1": 0.0055,
+    "Uopt": 0.9,
+    "s2": 0.85,
+    "Rf": 0.05,
+    "dune_a_id": 4579059,
+    "dune_debt_id": 4579088,
+    "coef": 1000000000000000000,
+    "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=usd-coin&vs_currencies=usd'",
+    "symbol" : "ethereum",
+    "LTV": 0.8,
+    "max_supply": 650000,
+    "url": "https://aave-api-v2.aave.com/data/rates-history?reserveId=0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca00xcfBf336fe147D643B9Cb705648500e101504B16d1&from=1710951356&resolutionInHours=24"
     }
 ]
