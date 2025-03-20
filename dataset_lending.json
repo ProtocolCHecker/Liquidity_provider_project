@@ -984,7 +984,7 @@
     "debtwstETH": "0xE439edd2625772AA635B437C099C607B6eb7d35f",
     "supply_asset": "0xC035a7cf15375cE2706766804551791aD035E0C2",
     "debt_asset": "0xE439edd2625772AA635B437C099C607B6eb7d35f",
-    "aave_smart_contract": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+    "aave_smart_contract": "0x4e033931ad43597d96D6bcc25c280717730B58B1",
     "base_rate": 0,
     "s1": 0.0055,
     "Uopt": 0.9,
