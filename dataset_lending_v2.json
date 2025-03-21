@@ -1032,7 +1032,7 @@
     "dune_a_id": 4579059,
     "dune_debt_id": 4579088,
     "coef": 1000000000000000000,
-    "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=usd-coin&vs_currencies=usd'",
+    "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd'",
     "symbol" : "ethereum",
     "LTV": 0.8,
     "max_supply": 650000,
