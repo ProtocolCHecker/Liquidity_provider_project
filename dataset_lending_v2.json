@@ -204,7 +204,7 @@
         "symbol" : "ethereum",
         "LTV": 0.725,
         "max_supply": 64000,
-        "url": "https://aave-api-v2.aave.com/data/rates-history?reserveId=0x04c0599ae5a44757c0af6f9ec3b93da8976c150a0xe20fCBdBfFC4Dd138cE8b2E6FBb6CB49777ad64D8453&from=1705817656&resolutionInHours=24"
+        "url": "https://aave-api-v2.aave.com/data/rates-history?reserveId=0x04c0599ae5a44757c0af6f9ec3b93da8976c150a0xe20fCBdBfFC4Dd138cE8b2E6FBb6CB49777ad64D8453&from=1705817656&resolutionInHours=24",
         "underlying": "0x04c0599ae5a44757c0af6f9ec3b93da8976c150a"
     },
     {
