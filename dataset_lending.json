@@ -934,7 +934,7 @@
     "debtcbBTC": "0x661fE667D2103eb52d3632a3eB2cAbd123F27938",
     "supply_asset": "0xb3973D459df38ae57797811F2A1fd061DA1BC123",
     "debt_asset": "0x661fE667D2103eb52d3632a3eB2cAbd123F27938",
-    "aave_smart_contract": "0xC13e21B648A5Ee794902342038FF3aDAB66BE987"
+    "aave_smart_contract": "0xC13e21B648A5Ee794902342038FF3aDAB66BE987",
     "base_rate": 0,
     "s1": 0.04,
     "Uopt": 0.6,
@@ -993,7 +993,7 @@
     "dune_a_id": 4579059,
     "dune_debt_id": 4579088,
     "coef": 1000000000000000000,
-    "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=usd-coin&vs_currencies=usd'",
+    "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd'",
     "symbol" : "ethereum",
     "LTV": 0.8,
     "max_supply": 650000,
