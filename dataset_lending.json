@@ -11,7 +11,7 @@
         "debt_asset": "0x72E95b8931767C79bA4EeE721354d6E99a61D004",
         "aave_smart_contract": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "base_rate": 0,
-        "s1": 0.035,
+        "s1": 0.085,
         "Uopt": 0.92,
         "s2": 0.35,
         "Rf": 0.1,
