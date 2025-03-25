@@ -947,7 +947,7 @@
     "symbol" : "bitcoin",
     "LTV": 0.74,
     "max_supply": 10000,
-    "url": "https://spark-api.blockanalitica.com/v1/ethereum/markets/cbBTC/historic-details/?days_ago=365"
+    "url": "https://yields.llama.fi/chartLendBorrow/00d1e1f8-b3c8-4350-a247-5da693d2d4dd"
     },
     {
     "pool_id": 39,
