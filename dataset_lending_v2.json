@@ -51,4 +51,29 @@
         "url": "https://spark-api.blockanalitica.com/v1/ethereum/markets/WETH/historic-details/?days_ago=365",
         "underlying": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
     },
+    {
+    "pool_id": 41,
+    "pool_name": "USDM",
+    "protocol": "MOUNTAIN",
+    "version": "v1",
+    "chain": "Ethereum",
+    "aUSDM": "0x59d9356e565ab3a36dd77763fc0d87feaf85508c",
+    "debtUSDM": "0x57F5E098CaD7A3D1Eed53991D4d66C45C9AF7812",
+    "supply_asset": "0x59d9356e565ab3a36dd77763fc0d87feaf85508c",
+    "debt_asset": "0x57F5E098CaD7A3D1Eed53991D4d66C45C9AF7812",
+    "aave_smart_contract": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+    "base_rate": 0,
+    "s1": 0.065,
+    "Uopt": 0.92,
+    "s2": 0.35,
+    "Rf": 0.1,
+    "dune_a_id": 4579059,
+    "dune_debt_id": 4579088,
+    "coef": 1000000,
+    "request": "f'https://api.coingecko.com/api/v3/simple/price?ids=usd-coin&vs_currencies=usd'",
+    "symbol" : "usd-coin",
+    "LTV": 0.75,
+    "max_supply": 4800000000,
+    "url": "https://aave-api-v2.aave.com/data/rates-history?reserveId=0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb480x2f39d218133AFaB8F2B819B1066c7E434Ad94E9e1&from=1705817399&resolutionInHours=24"
+}
 ]
