@@ -897,7 +897,7 @@
         "symbol" : "ethereum",
         "LTV": 0.82,
         "max_supply": 2000000,
-        "url": "https://defillama.com/yields/pool/24195b31-d749-445f-bf9e-b65aa025ebdd"
+        "url": "https://yields.llama.fi/chartLendBorrow/24195b31-d749-445f-bf9e-b65aa025ebdd"
     },
     {
     "pool_id": 37,
@@ -922,7 +922,7 @@
     "symbol" : "ethereum",
     "LTV": 0.79,
     "max_supply": 2000000,
-    "url": "https://defillama.com/yields/pool/2fe9d5f4-495f-461d-ad63-69778bb2d0d5"
+    "url": "https://yields.llama.fi/chartLendBorrow/2fe9d5f4-495f-461d-ad63-69778bb2d0d5"
     },
     {
     "pool_id": 38,
@@ -972,7 +972,7 @@
     "symbol" : "ethereum",
     "LTV": 0.79,
     "max_supply": 80000,
-    "url": "https://defillama.com/yields/pool/8751078b-6be1-403b-ac44-9f11fe87d400"
+    "url": "https://yields.llama.fi/chartLendBorrow/8751078b-6be1-403b-ac44-9f11fe87d400"
     },
     {
     "pool_id": 40,
