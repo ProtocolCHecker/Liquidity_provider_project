@@ -22,7 +22,9 @@
         "symbol" : "usd-coin",
         "LTV": 0.75,
         "max_supply": 4800000000,
-        "url": "https://aave-api-v2.aave.com/data/rates-history?reserveId=0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb480x2f39d218133AFaB8F2B819B1066c7E434Ad94E9e1&from=1705817399&resolutionInHours=24"
+        "url": "https://aave-api-v2.aave.com/data/rates-history?reserveId=0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb480x2f39d218133AFaB8F2B819B1066c7E434Ad94E9e1&from=1705817399&resolutionInHours=24",
+        "price_url": "https://www.coingecko.com/price_charts/usdc/usd/365_days.json",
+        "url_defillama": "https://yields.llama.fi/chartLendBorrow/aa70268e-4b52-42bf-a116-608b370f9501"
     },
     {
         "pool_id": 2,
