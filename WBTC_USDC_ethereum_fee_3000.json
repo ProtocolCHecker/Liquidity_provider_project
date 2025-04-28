@@ -1,0 +1,6811 @@
+{
+  "metadata": {
+    "token0": "WBTC",
+    "token1": "USDC",
+    "token0_address": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+    "token1_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+    "contract_address": "0xbd216513d74c8cf14cf4747e6aaa6420ff64ee9e",
+    "network": "ethereum",
+    "fee_tier": 3000,
+    "total_tvl": 4311286.019453243,
+    "num_holders": 409,
+    "num_positions": 635,
+    "total_token0": 24.319797718415067,
+    "total_token1": 4311261.699655524,
+    "total_liquidity": "2181518167269",
+    "active_tick": 68499,
+    "total_liquidity_usd": "7299322.432743018009668024335116882",
+    "data_source": "live"
+  },
+  "apr_data": {
+    "apr": 3.083519263843957,
+    "boosted_apr": 0,
+    "total_apr": 0
+  },
+  "liquidity_distribution": [
+    {
+      "tick": -887220,
+      "liquidity": 6966518951.0
+    },
+    {
+      "tick": -62160,
+      "liquidity": 7075275504.0
+    },
+    {
+      "tick": -58080,
+      "liquidity": 6966518951.0
+    },
+    {
+      "tick": 51960,
+      "liquidity": 6989214866.0
+    },
+    {
+      "tick": 61080,
+      "liquidity": 7226059378.0
+    },
+    {
+      "tick": 62100,
+      "liquidity": 7228022515.0
+    },
+    {
+      "tick": 62940,
+      "liquidity": 7229932911.0
+    },
+    {
+      "tick": 63120,
+      "liquidity": 9716917141.0
+    },
+    {
+      "tick": 63960,
+      "liquidity": 15963483096.0
+    },
+    {
+      "tick": 64140,
+      "liquidity": 20738095402.0
+    },
+    {
+      "tick": 64380,
+      "liquidity": 20739129634.0
+    },
+    {
+      "tick": 64440,
+      "liquidity": 20739129634.0
+    },
+    {
+      "tick": 64740,
+      "liquidity": 20739129634.0
+    },
+    {
+      "tick": 64800,
+      "liquidity": 78803700085.0
+    },
+    {
+      "tick": 64860,
+      "liquidity": 79071483928.0
+    },
+    {
+      "tick": 65040,
+      "liquidity": 79071483928.0
+    },
+    {
+      "tick": 65100,
+      "liquidity": 79079890852.0
+    },
+    {
+      "tick": 65160,
+      "liquidity": 79079890852.0
+    },
+    {
+      "tick": 65220,
+      "liquidity": 79079890852.0
+    },
+    {
+      "tick": 65340,
+      "liquidity": 79082304693.0
+    },
+    {
+      "tick": 65460,
+      "liquidity": 79082304693.0
+    },
+    {
+      "tick": 65520,
+      "liquidity": 82379300664.0
+    },
+    {
+      "tick": 65580,
+      "liquidity": 82442088980.0
+    },
+    {
+      "tick": 65640,
+      "liquidity": 82476431427.0
+    },
+    {
+      "tick": 65760,
+      "liquidity": 262640689300.0
+    },
+    {
+      "tick": 65820,
+      "liquidity": 287854621425.0
+    },
+    {
+      "tick": 65880,
+      "liquidity": 288588612152.0
+    },
+    {
+      "tick": 65940,
+      "liquidity": 288640592621.0
+    },
+    {
+      "tick": 66000,
+      "liquidity": 288640592621.0
+    },
+    {
+      "tick": 66060,
+      "liquidity": 289750140478.0
+    },
+    {
+      "tick": 66120,
+      "liquidity": 289750140478.0
+    },
+    {
+      "tick": 66180,
+      "liquidity": 292166924892.0
+    },
+    {
+      "tick": 66240,
+      "liquidity": 292166924892.0
+    },
+    {
+      "tick": 66300,
+      "liquidity": 292920774878.0
+    },
+    {
+      "tick": 66360,
+      "liquidity": 234948460876.0
+    },
+    {
+      "tick": 66420,
+      "liquidity": 235418767407.0
+    },
+    {
+      "tick": 66480,
+      "liquidity": 240060113184.0
+    },
+    {
+      "tick": 66540,
+      "liquidity": 803417357978.0
+    },
+    {
+      "tick": 66600,
+      "liquidity": 807818475503.0
+    },
+    {
+      "tick": 66660,
+      "liquidity": 807818475503.0
+    },
+    {
+      "tick": 66720,
+      "liquidity": 837696855825.0
+    },
+    {
+      "tick": 66780,
+      "liquidity": 845538535526.0
+    },
+    {
+      "tick": 66840,
+      "liquidity": 867939935493.0
+    },
+    {
+      "tick": 66900,
+      "liquidity": 909783933325.0
+    },
+    {
+      "tick": 66960,
+      "liquidity": 912862787222.0
+    },
+    {
+      "tick": 67020,
+      "liquidity": 943577272317.0
+    },
+    {
+      "tick": 67080,
+      "liquidity": 943598425462.0
+    },
+    {
+      "tick": 67140,
+      "liquidity": 943598425462.0
+    },
+    {
+      "tick": 67200,
+      "liquidity": 943598425462.0
+    },
+    {
+      "tick": 67260,
+      "liquidity": 1020368152899.0
+    },
+    {
+      "tick": 67320,
+      "liquidity": 1020361742937.0
+    },
+    {
+      "tick": 67380,
+      "liquidity": 1590914703766.0
+    },
+    {
+      "tick": 67440,
+      "liquidity": 1626381899143.0
+    },
+    {
+      "tick": 67500,
+      "liquidity": 1628397609923.0
+    },
+    {
+      "tick": 67560,
+      "liquidity": 1628446728848.0
+    },
+    {
+      "tick": 67620,
+      "liquidity": 1604102189920.0
+    },
+    {
+      "tick": 67680,
+      "liquidity": 1608846913529.0
+    },
+    {
+      "tick": 67740,
+      "liquidity": 1610356388492.0
+    },
+    {
+      "tick": 67800,
+      "liquidity": 1611478256257.0
+    },
+    {
+      "tick": 67860,
+      "liquidity": 1611675051915.0
+    },
+    {
+      "tick": 67920,
+      "liquidity": 1615768603657.0
+    },
+    {
+      "tick": 67980,
+      "liquidity": 1616000684359.0
+    },
+    {
+      "tick": 68040,
+      "liquidity": 1615514074313.0
+    },
+    {
+      "tick": 68100,
+      "liquidity": 1616491112425.0
+    },
+    {
+      "tick": 68160,
+      "liquidity": 1600097235591.0
+    },
+    {
+      "tick": 68220,
+      "liquidity": 1557466912449.0
+    },
+    {
+      "tick": 68280,
+      "liquidity": 1557371393368.0
+    },
+    {
+      "tick": 68340,
+      "liquidity": 1436841314940.0
+    },
+    {
+      "tick": 68400,
+      "liquidity": 1433747238758.0
+    },
+    {
+      "tick": 68460,
+      "liquidity": 1443068408623.0
+    },
+    {
+      "tick": 68520,
+      "liquidity": 1445763340140.0
+    },
+    {
+      "tick": 68580,
+      "liquidity": 1428607571943.0
+    },
+    {
+      "tick": 68640,
+      "liquidity": 1436867560538.0
+    },
+    {
+      "tick": 68700,
+      "liquidity": 1436833218091.0
+    },
+    {
+      "tick": 68880,
+      "liquidity": 1431792152529.0
+    },
+    {
+      "tick": 68940,
+      "liquidity": 1430960377947.0
+    },
+    {
+      "tick": 69000,
+      "liquidity": 1429510447403.0
+    },
+    {
+      "tick": 69060,
+      "liquidity": 820953527035.0
+    },
+    {
+      "tick": 69120,
+      "liquidity": 820074946012.0
+    },
+    {
+      "tick": 69180,
+      "liquidity": 815622058412.0
+    },
+    {
+      "tick": 69240,
+      "liquidity": 1238162427973.0
+    },
+    {
+      "tick": 69300,
+      "liquidity": 809165634139.0
+    },
+    {
+      "tick": 69360,
+      "liquidity": 808801984085.0
+    },
+    {
+      "tick": 69480,
+      "liquidity": 238260299837.0
+    },
+    {
+      "tick": 69540,
+      "liquidity": 179048618093.0
+    },
+    {
+      "tick": 69600,
+      "liquidity": 178531171232.0
+    },
+    {
+      "tick": 69720,
+      "liquidity": 176044187002.0
+    },
+    {
+      "tick": 69780,
+      "liquidity": 167796195805.0
+    },
+    {
+      "tick": 69840,
+      "liquidity": 167793781964.0
+    },
+    {
+      "tick": 69960,
+      "liquidity": 165132063797.0
+    },
+    {
+      "tick": 70020,
+      "liquidity": 160827609306.0
+    },
+    {
+      "tick": 70080,
+      "liquidity": 97067266331.0
+    },
+    {
+      "tick": 70140,
+      "liquidity": 96576801812.0
+    },
+    {
+      "tick": 70200,
+      "liquidity": 96568394888.0
+    },
+    {
+      "tick": 70500,
+      "liquidity": 78316519279.0
+    },
+    {
+      "tick": 70920,
+      "liquidity": 46585263606.0
+    },
+    {
+      "tick": 71040,
+      "liquidity": 46583353210.0
+    },
+    {
+      "tick": 71640,
+      "liquidity": 42440487831.0
+    },
+    {
+      "tick": 71700,
+      "liquidity": 42402060193.0
+    },
+    {
+      "tick": 72000,
+      "liquidity": 42117804131.0
+    },
+    {
+      "tick": 72360,
+      "liquidity": 42117804131.0
+    },
+    {
+      "tick": 72480,
+      "liquidity": 12601163712.0
+    },
+    {
+      "tick": 73140,
+      "liquidity": 7965367184.0
+    },
+    {
+      "tick": 75900,
+      "liquidity": 7907005518.0
+    },
+    {
+      "tick": 75960,
+      "liquidity": 7639221675.0
+    },
+    {
+      "tick": 81600,
+      "liquidity": 7616525760.0
+    },
+    {
+      "tick": 91080,
+      "liquidity": 7035602389.0
+    },
+    {
+      "tick": 887220,
+      "liquidity": 0
+    }
+  ],
+  "positions": [
+    {
+      "tokenId": 10983,
+      "owner": "0xFC915b0E43E488516Cc24AC17df4FFfeE30Df8a4",
+      "tickLower": 66540,
+      "tickUpper": 69480,
+      "liquidity": 561882943024,
+      "amount0": 8.747977492047468,
+      "amount1": 1610994.4449847902,
+      "relative_liquidity": 0.25756509913800546
+    },
+    {
+      "tokenId": 13570,
+      "owner": "0xa868FF179240F4d00a0fbEAA66AABA2A17BedC94",
+      "tickLower": 67380,
+      "tickUpper": 69060,
+      "liquidity": 552454667740,
+      "amount0": 4.96707491929777,
+      "amount1": 924026.987263287,
+      "relative_liquidity": 0.2532432120112056
+    },
+    {
+      "tokenId": 1855,
+      "owner": "0xf9C402CDD83e81a68003C7F114A73B6F0cfB8b65",
+      "tickLower": 69240,
+      "tickUpper": 69300,
+      "liquidity": 422540369561,
+      "amount0": 0.3970673499998416,
+      "amount1": 0.0,
+      "relative_liquidity": 0.1936909698487499
+    },
+    {
+      "tokenId": 6716,
+      "owner": "0x3392EF365F255d735a0bD0B83EBcA213BA7b4Fc4",
+      "tickLower": 65760,
+      "tickUpper": 68340,
+      "liquidity": 120530078428,
+      "amount0": 0.0,
+      "amount1": 444492.00064327393,
+      "relative_liquidity": 0.055250549931880354
+    },
+    {
+      "tokenId": 4944,
+      "owner": "0x4679091E5873274E43D5A3599858bbC20E809883",
+      "tickLower": 65760,
+      "tickUpper": 66360,
+      "liquidity": 59634179445,
+      "amount0": 0.0,
+      "amount1": 48642.291698309615,
+      "relative_liquidity": 0.027336091140444118
+    },
+    {
+      "tokenId": 14278,
+      "owner": "0xf625aAbf0C9f527697Ff2D99B30dd794cfD76b93",
+      "tickLower": 64800,
+      "tickUpper": 69540,
+      "liquidity": 57500962854,
+      "amount0": 0.9486247239583102,
+      "amount1": 298290.2006651124,
+      "relative_liquidity": 0.026358232407472607
+    },
+    {
+      "tokenId": 4905,
+      "owner": "0x4e7Cb4CdE22BF9Dd7B8a53188b4e26381D65af9c",
+      "tickLower": 66900,
+      "tickUpper": 68220,
+      "liquidity": 41762182661,
+      "amount0": 0.0,
+      "amount1": 80790.00526382902,
+      "relative_liquidity": 0.019143632763453565
+    },
+    {
+      "tokenId": 15805,
+      "owner": "0x6E57fA0a5cFc306567306d294416d2204FeA0633",
+      "tickLower": 67440,
+      "tickUpper": 69060,
+      "liquidity": 27833124494,
+      "amount0": 0.2502453552712195,
+      "amount1": 44124.52295678291,
+      "relative_liquidity": 0.012758603119424738
+    },
+    {
+      "tokenId": 14316,
+      "owner": "0x8992c1Fc4d87804BAE68d65c8eCB6958a9748488",
+      "tickLower": 67260,
+      "tickUpper": 70080,
+      "liquidity": 27660935696,
+      "amount0": 0.6840532502804911,
+      "amount1": 51070.97402963154,
+      "relative_liquidity": 0.0126796724001745
+    },
+    {
+      "tokenId": 14309,
+      "owner": "0x6724c9b60d13637c13352B2737DdF325F592320e",
+      "tickLower": 67260,
+      "tickUpper": 70080,
+      "liquidity": 27571551141,
+      "amount0": 0.6818427756947935,
+      "amount1": 50905.94142418301,
+      "relative_liquidity": 0.01263869884499577
+    },
+    {
+      "tokenId": 15821,
+      "owner": "0xd768527E3985146E894325D2D5f721E031e234fc",
+      "tickLower": 66720,
+      "tickUpper": 67920,
+      "liquidity": 25388057432,
+      "amount0": 0.0,
+      "amount1": 44114.999999253705,
+      "relative_liquidity": 0.011637793263845616
+    },
+    {
+      "tokenId": 5401,
+      "owner": "0x7966b55262DABC7C8fdd3E0e17Ec7880e4d47207",
+      "tickLower": 65820,
+      "tickUpper": 67620,
+      "liquidity": 24474736011,
+      "amount0": 0.0,
+      "amount1": 61918.341868928335,
+      "relative_liquidity": 0.011219130043569357
+    },
+    {
+      "tokenId": 15633,
+      "owner": "0xBd8f407Fd285784fb08F364a9F031B521Aebb11d",
+      "tickLower": 66840,
+      "tickUpper": 70920,
+      "liquidity": 21728043643,
+      "amount0": 0.8061575450889227,
+      "amount1": 53152.3876262947,
+      "relative_liquidity": 0.009960056243859254
+    },
+    {
+      "tokenId": 15641,
+      "owner": "0xBd8f407Fd285784fb08F364a9F031B521Aebb11d",
+      "tickLower": 67920,
+      "tickUpper": 72420,
+      "liquidity": 20543729575,
+      "amount0": 1.1903750059113745,
+      "amount1": 18032.021890915752,
+      "relative_liquidity": 0.009417170979015175
+    },
+    {
+      "tokenId": 7978,
+      "owner": "0xfc4584c84C8d329dEF80B0E6bE04E77B0a63Aa29",
+      "tickLower": 67380,
+      "tickUpper": 70500,
+      "liquidity": 18098293089,
+      "amount0": 0.5607032631408907,
+      "amount1": 30270.92033822235,
+      "relative_liquidity": 0.00829619178081698
+    },
+    {
+      "tokenId": 6586,
+      "owner": "0x19bF00886946dB790ef573469C28b211DaB610b6",
+      "tickLower": 67020,
+      "tickUpper": 68160,
+      "liquidity": 16474439479,
+      "amount0": 0.0,
+      "amount1": 27564.327153394188,
+      "relative_liquidity": 0.00755182318725497
+    },
+    {
+      "tokenId": 15227,
+      "owner": "0xA6e18E55b542f0B7d4383fE9e847f285Db2F7bD5",
+      "tickLower": 67260,
+      "tickUpper": 68580,
+      "liquidity": 15041214855,
+      "amount0": 0.019583104451757375,
+      "amount1": 27770.914971068632,
+      "relative_liquidity": 0.006894838228108732
+    },
+    {
+      "tokenId": 15353,
+      "owner": "0x64A57804ABC6f62074de659ba78486d27955E74C",
+      "tickLower": 67020,
+      "tickUpper": 69060,
+      "liquidity": 12362450644,
+      "amount0": 0.11114978679801454,
+      "amount1": 27082.219736209026,
+      "relative_liquidity": 0.005666902448709062
+    },
+    {
+      "tokenId": 5238,
+      "owner": "0xd768527E3985146E894325D2D5f721E031e234fc",
+      "tickLower": 68460,
+      "tickUpper": 70920,
+      "liquidity": 9143570280,
+      "amount0": 0.33924628886906516,
+      "amount1": 559.0433862545718,
+      "relative_liquidity": 0.004191379387615487
+    },
+    {
+      "tokenId": 15642,
+      "owner": "0xBd8f407Fd285784fb08F364a9F031B521Aebb11d",
+      "tickLower": 67920,
+      "tickUpper": 72420,
+      "liquidity": 8972910844,
+      "amount0": 0.5199216023543639,
+      "amount1": 7875.869090544302,
+      "relative_liquidity": 0.004113149722348181
+    },
+    {
+      "tokenId": 3022,
+      "owner": "0xf9C402CDD83e81a68003C7F114A73B6F0cfB8b65",
+      "tickLower": 68640,
+      "tickUpper": 70080,
+      "liquidity": 8527231909,
+      "amount0": 0.19149378772557205,
+      "amount1": 0.0,
+      "relative_liquidity": 0.003908852118190276
+    },
+    {
+      "tokenId": 15246,
+      "owner": "0x2F74Af74fB64bFD3799b33B8c10095aAa6CA6e81",
+      "tickLower": 67440,
+      "tickUpper": 69480,
+      "liquidity": 7148541212,
+      "amount0": 0.11129591741473922,
+      "amount1": 11332.754642203367,
+      "relative_liquidity": 0.0032768653129985705
+    },
+    {
+      "tokenId": 12331,
+      "owner": "0xF77E34b8D4E82cf6fea594a5F8E63327310b8A07",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 5986433385,
+      "amount0": 1.9488892917036942,
+      "amount1": 183886.20033780354,
+      "relative_liquidity": 0.0027441593083289786
+    },
+    {
+      "tokenId": 4786,
+      "owner": "0x1Da7d16d90C13826D5c1ea3c6a85fD08d10Bc753",
+      "tickLower": 67260,
+      "tickUpper": 69780,
+      "liquidity": 5761478122,
+      "amount0": 0.11628875262500059,
+      "amount1": 10637.539625367861,
+      "relative_liquidity": 0.002641040633281859
+    },
+    {
+      "tokenId": 1258,
+      "owner": "0x0b57a4352F4c7C4C2c7eAA8c952085B60F4FF355",
+      "tickLower": 68520,
+      "tickUpper": 69300,
+      "liquidity": 5671833671,
+      "amount0": 0.07055163385159988,
+      "amount1": 0.0,
+      "relative_liquidity": 0.002599947942721219
+    },
+    {
+      "tokenId": 15597,
+      "owner": "0x67616D14c2C551818f1c9c762512f8596715DC50",
+      "tickLower": 67680,
+      "tickUpper": 69060,
+      "liquidity": 4686361943,
+      "amount0": 0.04213469851752956,
+      "amount1": 5781.348743331994,
+      "relative_liquidity": 0.002148211283918284
+    },
+    {
+      "tokenId": 4769,
+      "owner": "0x4Ed84EAd4daf43c0Ca926Ef1536e24384e07C5A7",
+      "tickLower": 63960,
+      "tickUpper": 73140,
+      "liquidity": 4635796528,
+      "amount0": 0.31247832146102933,
+      "amount1": 28916.035174765493,
+      "relative_liquidity": 0.002125032281442544
+    },
+    {
+      "tokenId": 4719,
+      "owner": "0x8C9A66c5b517B38CA0B258C08B1a6196E70d4eF0",
+      "tickLower": 66600,
+      "tickUpper": 69180,
+      "liquidity": 4401117525,
+      "amount0": 0.047903954273109735,
+      "amount1": 12250.352300448989,
+      "relative_liquidity": 0.002017456279316561
+    },
+    {
+      "tokenId": 7744,
+      "owner": "0x05e968F97c9C423a66B23EbC8dEb08B15106Aab8",
+      "tickLower": 66720,
+      "tickUpper": 70020,
+      "liquidity": 4304454491,
+      "amount0": 0.1025586471839134,
+      "amount1": 11257.726065253293,
+      "relative_liquidity": 0.0019731462958150208
+    },
+    {
+      "tokenId": 11565,
+      "owner": "0x204397a2aFa6296C54a32C9eF44D54CCF1a54e9c",
+      "tickLower": 64140,
+      "tickUpper": 68400,
+      "liquidity": 4151543309,
+      "amount0": 0.0,
+      "amount1": 24341.69792090749,
+      "relative_liquidity": 0.0019030523656822149
+    },
+    {
+      "tokenId": 15312,
+      "owner": "0x1F030575180AAAd803DB1cafB0739d0964E2f743",
+      "tickLower": 68400,
+      "tickUpper": 69060,
+      "liquidity": 4020650735,
+      "amount0": 0.03614934326968792,
+      "amount1": 615.0238460979059,
+      "relative_liquidity": 0.0018430516854385742
+    },
+    {
+      "tokenId": 3082,
+      "owner": "0x12Bbef5409872C6e9C879FC4929084a85c840F53",
+      "tickLower": 68040,
+      "tickUpper": 69060,
+      "liquidity": 3359549410,
+      "amount0": 0.030205435104416627,
+      "amount1": 2345.5460135997637,
+      "relative_liquidity": 0.0015400052405732446
+    },
+    {
+      "tokenId": 8431,
+      "owner": "0x32cB25E2793E0904291Aa91eAA523608394A5958",
+      "tickLower": 66780,
+      "tickUpper": 68040,
+      "liquidity": 3331067197,
+      "amount0": 0.0,
+      "amount1": 6105.066626601018,
+      "relative_liquidity": 0.0015269490976415282
+    },
+    {
+      "tokenId": 7077,
+      "owner": "0x033CBaFe067eB1e518FBd44980438418cEC716BD",
+      "tickLower": 66480,
+      "tickUpper": 68400,
+      "liquidity": 3093388572,
+      "amount0": 0.0,
+      "amount1": 8654.032291817084,
+      "relative_liquidity": 0.0014179980796917005
+    },
+    {
+      "tokenId": 13072,
+      "owner": "0x9Fc6750516Da967DaD945E5d342b91422b7Ef939",
+      "tickLower": 63120,
+      "tickUpper": 69720,
+      "liquidity": 2486984230,
+      "amount0": 0.047915255307412974,
+      "amount1": 18016.60133054394,
+      "relative_liquidity": 0.00114002453305874
+    },
+    {
+      "tokenId": 15419,
+      "owner": "0x0f65bF724b35b2FC091C261AB89AdC6283BA3eF8",
+      "tickLower": 65520,
+      "tickUpper": 71340,
+      "liquidity": 2379987310,
+      "amount0": 0.10256826019707078,
+      "amount1": 10119.24872602345,
+      "relative_liquidity": 0.001090977533769274
+    },
+    {
+      "tokenId": 7212,
+      "owner": "0x7372011AdE185c8eA3CD887c55104160D088Dfe2",
+      "tickLower": 66780,
+      "tickUpper": 69960,
+      "liquidity": 2294004169,
+      "amount0": 0.05257783641929744,
+      "amount1": 5805.984103277531,
+      "relative_liquidity": 0.001051563174407032
+    },
+    {
+      "tokenId": 14846,
+      "owner": "0x4584025CE132a1db317498c80B5A8dbC0216707A",
+      "tickLower": 66780,
+      "tickUpper": 68520,
+      "liquidity": 1981124743,
+      "amount0": 0.0006494207720249856,
+      "amount1": 5014.105431849276,
+      "relative_liquidity": 0.0009081403825667569
+    },
+    {
+      "tokenId": 7992,
+      "owner": "0x76c58a65aAC8BEa1Ed2dF8dcA3384995328DCa68",
+      "tickLower": 66180,
+      "tickUpper": 71640,
+      "liquidity": 1762878069,
+      "amount0": 0.08338613107022415,
+      "amount1": 5930.19193780935,
+      "relative_liquidity": 0.0008080969003374896
+    },
+    {
+      "tokenId": 6968,
+      "owner": "0x82aC5E19B9237C8E8f1aBDc1e786f61E6e430DC0",
+      "tickLower": 63960,
+      "tickUpper": 68580,
+      "liquidity": 1610769427,
+      "amount0": 0.0020971621136142847,
+      "amount1": 10047.26267174271,
+      "relative_liquidity": 0.0007383708516241654
+    },
+    {
+      "tokenId": 5572,
+      "owner": "0xEf35aE55B4e4b4e8164EB3Ce7b08DaBe490f4C34",
+      "tickLower": 66480,
+      "tickUpper": 68880,
+      "liquidity": 1547957205,
+      "amount0": 0.00948768115832735,
+      "amount1": 4567.334476553412,
+      "relative_liquidity": 0.0007095779573258642
+    },
+    {
+      "tokenId": 15753,
+      "owner": "0x75c19f83037BE20faDb29Af071Aee7e026E1cdFd",
+      "tickLower": 67740,
+      "tickUpper": 69780,
+      "liquidity": 1509474963,
+      "amount0": 0.03046700114952531,
+      "amount1": 1728.4620983526088,
+      "relative_liquidity": 0.0006919378374417492
+    },
+    {
+      "tokenId": 15176,
+      "owner": "0xe52696D4a88079D7d9542967821d03f490d5120f",
+      "tickLower": 67500,
+      "tickUpper": 68760,
+      "liquidity": 1272097734,
+      "amount0": 0.00535167291385849,
+      "amount1": 1905.3502292752987,
+      "relative_liquidity": 0.0005831249783230154
+    },
+    {
+      "tokenId": 15115,
+      "owner": "0xf84A6d185370AbB45D3a9aCF03bB2b048C4F90F7",
+      "tickLower": 66960,
+      "tickUpper": 69060,
+      "liquidity": 1136370429,
+      "amount0": 0.010217013967875407,
+      "amount1": 2586.5275701634264,
+      "relative_liquidity": 0.0005209080749589173
+    },
+    {
+      "tokenId": 12201,
+      "owner": "0x18ab151678410Ea8a5A97A7BdBb5172818Deb169",
+      "tickLower": 66060,
+      "tickUpper": 68040,
+      "liquidity": 1109547857,
+      "amount0": 0.0,
+      "amount1": 3139.325150309103,
+      "relative_liquidity": 0.0005086127054302836
+    },
+    {
+      "tokenId": 5411,
+      "owner": "0x56b2cD5133AF50e9200116D28Af92B340994e979",
+      "tickLower": 67020,
+      "tickUpper": 68520,
+      "liquidity": 1093004370,
+      "amount0": 0.00035829129099523995,
+      "amount1": 2394.4269120575436,
+      "relative_liquidity": 0.0005010292311103284
+    },
+    {
+      "tokenId": 15472,
+      "owner": "0x310e73E41C7fa32C772Bc542692bD6EB8CACC373",
+      "tickLower": 67800,
+      "tickUpper": 69000,
+      "liquidity": 1082849501,
+      "amount0": 0.008705958414325999,
+      "amount1": 1143.7381705037415,
+      "relative_liquidity": 0.0004963742760646354
+    },
+    {
+      "tokenId": 15122,
+      "owner": "0x546b497936154422afBCe82C9ae1cF3D79c09462",
+      "tickLower": 66960,
+      "tickUpper": 69060,
+      "liquidity": 1026274028,
+      "amount0": 0.009227146194019587,
+      "amount1": 2335.9337767180423,
+      "relative_liquidity": 0.0004704402848429048
+    },
+    {
+      "tokenId": 2866,
+      "owner": "0x209E1af2aF67E2082E2B7945Ca3684F566FF9eAC",
+      "tickLower": 68100,
+      "tickUpper": 69780,
+      "liquidity": 977038112,
+      "amount0": 0.01972038093448923,
+      "amount1": 594.0246615031427,
+      "relative_liquidity": 0.0004478707198772197
+    },
+    {
+      "tokenId": 8082,
+      "owner": "0xb76698b7dc4eB8d446afFc08134afB3975320816",
+      "tickLower": 65520,
+      "tickUpper": 69120,
+      "liquidity": 878581023,
+      "amount0": 0.00873232952317487,
+      "amount1": 3735.5576898858044,
+      "relative_liquidity": 0.0004027383480834718
+    },
+    {
+      "tokenId": 11605,
+      "owner": "0xA683041b1f4AA98098d332FEd588599b1b134571",
+      "tickLower": 66540,
+      "tickUpper": 70920,
+      "liquidity": 857678613,
+      "amount0": 0.03182173676064501,
+      "amount1": 2459.0806648961434,
+      "relative_liquidity": 0.0003931567593011206
+    },
+    {
+      "tokenId": 7322,
+      "owner": "0x41988dA5a8bacB0Dd5431ab60647f4515c2Ba7D1",
+      "tickLower": 66360,
+      "tickUpper": 68880,
+      "liquidity": 857575285,
+      "amount0": 0.005256218225581829,
+      "amount1": 2672.7607675337454,
+      "relative_liquidity": 0.00039310939412142586
+    },
+    {
+      "tokenId": 15118,
+      "owner": "0x8adCfaA0720D919B158E469267DA8CFb6A573B3B",
+      "tickLower": 66960,
+      "tickUpper": 69060,
+      "liquidity": 817557436,
+      "amount0": 0.007350592315661536,
+      "amount1": 1860.8675432244293,
+      "relative_liquidity": 0.00037476535756907504
+    },
+    {
+      "tokenId": 9211,
+      "owner": "0x1078E5f0cAc59d74509661309D8Bf423e39c6E13",
+      "tickLower": 66360,
+      "tickUpper": 68880,
+      "liquidity": 804290158,
+      "amount0": 0.004929625026607068,
+      "amount1": 2506.689753793356,
+      "relative_liquidity": 0.00036868368554861735
+    },
+    {
+      "tokenId": 15454,
+      "owner": "0x06e321BD3c4Dceb8b8d9d89e846A56Ec6bC51B01",
+      "tickLower": 67020,
+      "tickUpper": 69300,
+      "liquidity": 784590602,
+      "amount0": 0.010016672281925758,
+      "amount1": 1718.7898822181555,
+      "relative_liquidity": 0.0003596534806685629
+    },
+    {
+      "tokenId": 15250,
+      "owner": "0x322D5cBf216C890C0FcDBf79f3E2593d64471cbb",
+      "tickLower": 67500,
+      "tickUpper": 69420,
+      "liquidity": 746521186,
+      "amount0": 0.010927385672987159,
+      "amount1": 1118.1407488490722,
+      "relative_liquidity": 0.00034220259872259293
+    },
+    {
+      "tokenId": 8109,
+      "owner": "0x5e8F25abDF2F7aA581207657D6B57F06c0fbbf97",
+      "tickLower": 67260,
+      "tickUpper": 68940,
+      "liquidity": 734547623,
+      "amount0": 0.0052049634553748315,
+      "amount1": 1356.2109029878343,
+      "relative_liquidity": 0.00033671396095663316
+    },
+    {
+      "tokenId": 12094,
+      "owner": "0xCff4fF8d4294B86e8f7AbF8c75395894311C22C2",
+      "tickLower": 65880,
+      "tickUpper": 68220,
+      "liquidity": 733990727,
+      "amount0": 0.0,
+      "amount1": 2454.719291201286,
+      "relative_liquidity": 0.00033645868185405427
+    },
+    {
+      "tokenId": 4973,
+      "owner": "0xdA8d516949e7235C4bb5f7CcCC99e2D2B34C0C83",
+      "tickLower": 66180,
+      "tickUpper": 69540,
+      "liquidity": 653906345,
+      "amount0": 0.010787849372109446,
+      "amount1": 2199.6927657061797,
+      "relative_liquidity": 0.0002997482921806755
+    },
+    {
+      "tokenId": 13284,
+      "owner": "0xc2BB88F7c4dC4c940A8c9aA0c2492A9Ae4C67257",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 635196655,
+      "amount0": 0.20678889740213918,
+      "amount1": 19511.43391120065,
+      "relative_liquidity": 0.00029117183827773955
+    },
+    {
+      "tokenId": 11959,
+      "owner": "0xA11401c8Ec7EC99292C82f530Dcb25A8Fb279407",
+      "tickLower": 64140,
+      "tickUpper": 69060,
+      "liquidity": 623068997,
+      "amount0": 0.005601962602019733,
+      "amount1": 3748.542076917511,
+      "relative_liquidity": 0.0002856125639237779
+    },
+    {
+      "tokenId": 6618,
+      "owner": "0xa867fC142F8Bfa59f28C06164F76D196CbD61605",
+      "tickLower": 68040,
+      "tickUpper": 69480,
+      "liquidity": 594455598,
+      "amount0": 0.009255102429944196,
+      "amount1": 415.0327284964574,
+      "relative_liquidity": 0.0002724962858064058
+    },
+    {
+      "tokenId": 12107,
+      "owner": "0x32248847a3aBbB5eADCaFf9a738178668D86B00e",
+      "tickLower": 66540,
+      "tickUpper": 91080,
+      "liquidity": 580923371,
+      "amount0": 0.1279639525861134,
+      "amount1": 1665.585928994581,
+      "relative_liquidity": 0.0002662931621272018
+    },
+    {
+      "tokenId": 7612,
+      "owner": "0xFD50020Ae0318789EfD87B3d3f95ce832E5EAaF8",
+      "tickLower": 64800,
+      "tickUpper": 69540,
+      "liquidity": 563607597,
+      "amount0": 0.009298141710817264,
+      "amount1": 2923.7531836185035,
+      "relative_liquidity": 0.0002583556742530223
+    },
+    {
+      "tokenId": 12860,
+      "owner": "0x05e968F97c9C423a66B23EbC8dEb08B15106Aab8",
+      "tickLower": 66840,
+      "tickUpper": 70140,
+      "liquidity": 490464519,
+      "amount0": 0.012571098409453283,
+      "amount1": 1199.8024607811758,
+      "relative_liquidity": 0.00022482715310778408
+    },
+    {
+      "tokenId": 6565,
+      "owner": "0xb2d701ef796AC6E736DA303A2a89759Df0BE88EB",
+      "tickLower": 67440,
+      "tickUpper": 69600,
+      "liquidity": 485529671,
+      "amount0": 0.008459514447160886,
+      "amount1": 769.7218872734567,
+      "relative_liquidity": 0.00022256503671836257
+    },
+    {
+      "tokenId": 15596,
+      "owner": "0x9BeFF885071e83c7ADb8d516a5d9ED9B6CA8B502",
+      "tickLower": 67980,
+      "tickUpper": 68820,
+      "liquidity": 478582535,
+      "amount0": 0.002474035374968161,
+      "amount1": 377.1662558705624,
+      "relative_liquidity": 0.00021938049482261618
+    },
+    {
+      "tokenId": 14937,
+      "owner": "0xd4c6a7742227e0c323716f76Bf99EAf5eb22787f",
+      "tickLower": 65820,
+      "tickUpper": 69900,
+      "liquidity": 367713998,
+      "amount0": 0.008093556523053758,
+      "amount1": 1416.3811856564341,
+      "relative_liquidity": 0.0001685587603702306
+    },
+    {
+      "tokenId": 1829,
+      "owner": "0x7ACF64fFd848e0b18F25E9D0F9f712F7099433cB",
+      "tickLower": 68460,
+      "tickUpper": 69360,
+      "liquidity": 363650054,
+      "amount0": 0.004983333092849719,
+      "amount1": 22.23378301630093,
+      "relative_liquidity": 0.0001666958632094485
+    },
+    {
+      "tokenId": 5986,
+      "owner": "0xf2F007Cd0385fd10476b693cBd1c724DC8eE6757",
+      "tickLower": 66300,
+      "tickUpper": 69000,
+      "liquidity": 316927886,
+      "amount0": 0.002548055840916208,
+      "amount1": 1013.9543142686736,
+      "relative_liquidity": 0.00014527859119172767
+    },
+    {
+      "tokenId": 10287,
+      "owner": "0xf44dd1CF0106A2FD9729Fd115b7E80a9E16335c8",
+      "tickLower": 66780,
+      "tickUpper": 67980,
+      "liquidity": 298271908,
+      "amount0": 0.0,
+      "amount1": 519.8427388201181,
+      "relative_liquidity": 0.00013672675867439636
+    },
+    {
+      "tokenId": 14917,
+      "owner": "0x48fad695adBC9a7c80bf1c7df638d6f18c815235",
+      "tickLower": 65820,
+      "tickUpper": 69540,
+      "liquidity": 284772726,
+      "amount0": 0.004698050870531002,
+      "amount1": 1096.903390918762,
+      "relative_liquidity": 0.00013053878270310323
+    },
+    {
+      "tokenId": 11948,
+      "owner": "0x4F764c313764d0E9059b17e747D88b4596AdCb7f",
+      "tickLower": 66420,
+      "tickUpper": 72000,
+      "liquidity": 284256062,
+      "amount0": 0.014856523061325334,
+      "amount1": 862.3552492977112,
+      "relative_liquidity": 0.00013030194580311683
+    },
+    {
+      "tokenId": 13411,
+      "owner": "0x58Cd4AA26ad035398d5afB760B47a66F78643eDF",
+      "tickLower": 66300,
+      "tickUpper": 68580,
+      "liquidity": 283339580,
+      "amount0": 0.00036889763519417956,
+      "amount1": 906.4945125847145,
+      "relative_liquidity": 0.00012988183378491287
+    },
+    {
+      "tokenId": 11535,
+      "owner": "0x22F1F205335ca69e655A11B0E8319BfA96F755E6",
+      "tickLower": 64860,
+      "tickUpper": 75960,
+      "liquidity": 267783843,
+      "amount0": 0.02714065193309418,
+      "amount1": 1368.6081101059726,
+      "relative_liquidity": 0.000122751140475366
+    },
+    {
+      "tokenId": 15020,
+      "owner": "0x0f65bF724b35b2FC091C261AB89AdC6283BA3eF8",
+      "tickLower": 57060,
+      "tickUpper": 69060,
+      "liquidity": 236844512,
+      "amount0": 0.002129449716012132,
+      "amount1": 3168.957023631701,
+      "relative_liquidity": 0.00010856866358188574
+    },
+    {
+      "tokenId": 15447,
+      "owner": "0x2Dc530B99867649A7A2EA478650C266cDD48f444",
+      "tickLower": 67860,
+      "tickUpper": 68640,
+      "liquidity": 196795658,
+      "amount0": 0.0004473566508952878,
+      "amount1": 190.32464666301698,
+      "relative_liquidity": 9.021041445021044e-05
+    },
+    {
+      "tokenId": 8296,
+      "owner": "0x7edDB4aC108EDfe6ff7c249A3DC5aEd63c06596E",
+      "tickLower": 66420,
+      "tickUpper": 68460,
+      "liquidity": 186050469,
+      "amount0": 0.0,
+      "amount1": 553.0510668213087,
+      "relative_liquidity": 8.528485886180492e-05
+    },
+    {
+      "tokenId": 15189,
+      "owner": "0x32E1A55A8001feCFB82EFD0662D29C80e243450A",
+      "tickLower": 66300,
+      "tickUpper": 70500,
+      "liquidity": 153582520,
+      "amount0": 0.004758140433571641,
+      "amount1": 491.35991381413135,
+      "relative_liquidity": 7.040166903229001e-05
+    },
+    {
+      "tokenId": 3956,
+      "owner": "0xA1292F36A13E2EBEF0EeB41a4b4F341bcFBA5Cbc",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 146594761,
+      "amount0": 0.04772406900052097,
+      "amount1": 4502.973950610231,
+      "relative_liquidity": 6.719850570097205e-05
+    },
+    {
+      "tokenId": 3855,
+      "owner": "0x3cd1B5424fEbca1EE6B963Ce9B7b11D16C5e5b22",
+      "tickLower": 68400,
+      "tickUpper": 69480,
+      "liquidity": 130204964,
+      "amount0": 0.0020271661714710548,
+      "amount1": 19.916964446383172,
+      "relative_liquidity": 5.9685482318490636e-05
+    },
+    {
+      "tokenId": 15798,
+      "owner": "0xC7Cf06d0d1078feb47BbD20D5208615C4C0F5442",
+      "tickLower": 67620,
+      "tickUpper": 68580,
+      "liquidity": 130197083,
+      "amount0": 0.00016951177815637447,
+      "amount1": 172.1163073771143,
+      "relative_liquidity": 5.9681869696731054e-05
+    },
+    {
+      "tokenId": 7070,
+      "owner": "0x674baDCD76dC9D4Ca9a2fCCba00507339aA121ED",
+      "tickLower": 66840,
+      "tickUpper": 69540,
+      "liquidity": 124551653,
+      "amount0": 0.0020547965039416213,
+      "amount1": 304.685403275345,
+      "relative_liquidity": 5.7094025100842404e-05
+    },
+    {
+      "tokenId": 14451,
+      "owner": "0x776398054F075A6234b5Ad4fB79af887849B233B",
+      "tickLower": 66720,
+      "tickUpper": 68220,
+      "liquidity": 101987830,
+      "amount0": 0.0,
+      "amount1": 223.20753879563927,
+      "relative_liquidity": 4.675085063704813e-05
+    },
+    {
+      "tokenId": 1777,
+      "owner": "0x4aADcC1Ce0f1A8a62e0EBe0F216776E3f3cA6065",
+      "tickLower": 68520,
+      "tickUpper": 68940,
+      "liquidity": 97226959,
+      "amount0": 0.0006570734106681481,
+      "amount1": 0.0,
+      "relative_liquidity": 4.4568484672175126e-05
+    },
+    {
+      "tokenId": 8847,
+      "owner": "0x8d9EEF6C180b2aB4117BF4ab688AF4B559e053f1",
+      "tickLower": 66960,
+      "tickUpper": 68280,
+      "liquidity": 95519081,
+      "amount0": 0.0,
+      "amount1": 185.33925013048997,
+      "relative_liquidity": 4.3785599603590955e-05
+    },
+    {
+      "tokenId": 5864,
+      "owner": "0x9D51773749999cD3aFD1ca8833d653A897605c68",
+      "tickLower": 66720,
+      "tickUpper": 69540,
+      "liquidity": 83880569,
+      "amount0": 0.0013838234642284029,
+      "amount1": 219.37842994367423,
+      "relative_liquidity": 3.845054799841912e-05
+    },
+    {
+      "tokenId": 15395,
+      "owner": "0x8a329Ee74a2F91eDB448b53208dB2392Bd7CD640",
+      "tickLower": 68160,
+      "tickUpper": 68760,
+      "liquidity": 80562645,
+      "amount0": 0.0003389243716043732,
+      "amount1": 41.69330712498656,
+      "relative_liquidity": 3.6929623694518576e-05
+    },
+    {
+      "tokenId": 5383,
+      "owner": "0x23C7601C1e4cd0b8f2C1beB5802A89b6E0cc71f3",
+      "tickLower": 66900,
+      "tickUpper": 68640,
+      "liquidity": 70447656,
+      "amount0": 0.000160141884083557,
+      "amount1": 166.34957308002794,
+      "relative_liquidity": 3.2292949495897185e-05
+    },
+    {
+      "tokenId": 11690,
+      "owner": "0xf44dd1CF0106A2FD9729Fd115b7E80a9E16335c8",
+      "tickLower": 65580,
+      "tickUpper": 66780,
+      "liquidity": 62788316,
+      "amount0": 0.0,
+      "amount1": 103.05809229084049,
+      "relative_liquidity": 2.878193587477819e-05
+    },
+    {
+      "tokenId": 2597,
+      "owner": "0x6841B7Bd44Da1df63a901e681bc62B279157A58b",
+      "tickLower": 67680,
+      "tickUpper": 75900,
+      "liquidity": 58361666,
+      "amount0": 0.005875809661251727,
+      "amount1": 71.99809756304637,
+      "relative_liquidity": 2.675277560170944e-05
+    },
+    {
+      "tokenId": 13533,
+      "owner": "0x251fE070aa31f6ad52C584c22A1d01805212900C",
+      "tickLower": 66840,
+      "tickUpper": 887220,
+      "liquidity": 58340152,
+      "amount0": 0.018992694012774997,
+      "amount1": 142.71502875409388,
+      "relative_liquidity": 2.6742913662293676e-05
+    },
+    {
+      "tokenId": 6957,
+      "owner": "0xe3AB91Ff82811492B8bE90AFc61c01014b81167a",
+      "tickLower": 65820,
+      "tickUpper": 68580,
+      "liquidity": 54547466,
+      "amount0": 7.101877970326248e-05,
+      "amount1": 210.1089569280798,
+      "relative_liquidity": 2.500436018293027e-05
+    },
+    {
+      "tokenId": 15364,
+      "owner": "0xf44dd1CF0106A2FD9729Fd115b7E80a9E16335c8",
+      "tickLower": 67980,
+      "tickUpper": 69180,
+      "liquidity": 51770075,
+      "amount0": 0.0005634912704394235,
+      "amount1": 40.79949418523642,
+      "relative_liquidity": 2.373121424187356e-05
+    },
+    {
+      "tokenId": 9989,
+      "owner": "0xDBd74a2BD4983D21c2d95214Ce7eC2CeA9916440",
+      "tickLower": -62160,
+      "tickUpper": -58080,
+      "liquidity": 49434797,
+      "amount0": 0.0,
+      "amount1": 0.49999999110313853,
+      "relative_liquidity": 2.2660731293329752e-05
+    },
+    {
+      "tokenId": 5862,
+      "owner": "0x92F1eF37c527Ed42F28120a87500A8E7211D1DFb",
+      "tickLower": 67560,
+      "tickUpper": 69000,
+      "liquidity": 49118925,
+      "amount0": 0.00039490928149432436,
+      "amount1": 69.25849381717346,
+      "relative_liquidity": 2.251593671644322e-05
+    },
+    {
+      "tokenId": 15258,
+      "owner": "0x0E42C655246D17D825F8f21e6928c378c9373Ca8",
+      "tickLower": 67800,
+      "tickUpper": 69480,
+      "liquidity": 39018264,
+      "amount0": 0.0006074768766137586,
+      "amount1": 41.21226250035645,
+      "relative_liquidity": 1.7885830420952304e-05
+    },
+    {
+      "tokenId": 181,
+      "owner": "0x92A969074e04cA8275A022E52Cf2Ae362408E480",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 38720100,
+      "amount0": 0.012605366736858161,
+      "amount1": 1189.371301372927,
+      "relative_liquidity": 1.774915312691296e-05
+    },
+    {
+      "tokenId": 10004,
+      "owner": "0x267fE7f6083354a236185E6458d31F34c6C12FC3",
+      "tickLower": 65520,
+      "tickUpper": 71700,
+      "liquidity": 38427638,
+      "amount0": 0.0018496986258968626,
+      "amount1": 163.38693288057505,
+      "relative_liquidity": 1.761508960895192e-05
+    },
+    {
+      "tokenId": 9842,
+      "owner": "0xDb3231297733425e09B122Bc5aF721c97Ae11908",
+      "tickLower": 66540,
+      "tickUpper": 68580,
+      "liquidity": 35699786,
+      "amount0": 4.647979866539747e-05,
+      "amount1": 102.35611820430228,
+      "relative_liquidity": 1.6364652165465055e-05
+    },
+    {
+      "tokenId": 7704,
+      "owner": "0x8a487b81Be516430A27752631D84F59870ad796F",
+      "tickLower": 65940,
+      "tickUpper": 67920,
+      "liquidity": 35031245,
+      "amount0": 0.0,
+      "amount1": 98.52358269605523,
+      "relative_liquidity": 1.605819540061632e-05
+    },
+    {
+      "tokenId": 13279,
+      "owner": "0xb609300dA19B122c45E946f00B81858E3242504f",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 34377867,
+      "amount0": 0.01119174850183584,
+      "amount1": 1055.9902586051019,
+      "relative_liquidity": 1.575868929986358e-05
+    },
+    {
+      "tokenId": 13114,
+      "owner": "0xb609300dA19B122c45E946f00B81858E3242504f",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 34352345,
+      "amount0": 0.011183439789568617,
+      "amount1": 1055.2062953830637,
+      "relative_liquidity": 1.5746990107813328e-05
+    },
+    {
+      "tokenId": 5325,
+      "owner": "0xBAD069a42cee848b0Ae09ACBdd97f59495a84BA9",
+      "tickLower": 65640,
+      "tickUpper": 68700,
+      "liquidity": 34342447,
+      "amount0": 0.00011132226367471501,
+      "amount1": 140.54805868621102,
+      "relative_liquidity": 1.574245290058374e-05
+    },
+    {
+      "tokenId": 7988,
+      "owner": "0xd8752822721705dd598137E8b276D745d5A47316",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 34078095,
+      "amount0": 0.01109415743163092,
+      "amount1": 1046.7821157089015,
+      "relative_liquidity": 1.5621274904467884e-05
+    },
+    {
+      "tokenId": 7341,
+      "owner": "0x32157CbdB83af91673C81c7FBFdf2dc3F942A74E",
+      "tickLower": 65820,
+      "tickUpper": 68220,
+      "liquidity": 32161924,
+      "amount0": 0.0,
+      "amount1": 110.1564979656792,
+      "relative_liquidity": 1.4742909081643306e-05
+    },
+    {
+      "tokenId": 9991,
+      "owner": "0xDBd74a2BD4983D21c2d95214Ce7eC2CeA9916440",
+      "tickLower": -62160,
+      "tickUpper": -58080,
+      "liquidity": 29660878,
+      "amount0": 0.0,
+      "amount1": 0.29999999263901655,
+      "relative_liquidity": 1.3596438684318579e-05
+    },
+    {
+      "tokenId": 9992,
+      "owner": "0xDBd74a2BD4983D21c2d95214Ce7eC2CeA9916440",
+      "tickLower": -62160,
+      "tickUpper": -58080,
+      "liquidity": 29660878,
+      "amount0": 0.0,
+      "amount1": 0.29999999263901655,
+      "relative_liquidity": 1.3596438684318579e-05
+    },
+    {
+      "tokenId": 9920,
+      "owner": "0x28190Ad8cfbbA3C4Af9516cdE0B23064cFfBb0d3",
+      "tickLower": 51960,
+      "tickUpper": 81600,
+      "liquidity": 22695915,
+      "amount0": 0.003550590637798096,
+      "amount1": 392.232220130967,
+      "relative_liquidity": 1.0403724956557466e-05
+    },
+    {
+      "tokenId": 11981,
+      "owner": "0xa243F60b3EdE629A0d7Fb6f1eFf3420CD37DAA0a",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 20440462,
+      "amount0": 0.006654412560422449,
+      "amount1": 627.8728332210884,
+      "relative_liquidity": 9.36983349792086e-06
+    },
+    {
+      "tokenId": 4443,
+      "owner": "0xfA88b42eC22603511070E3591e3A504960451feA",
+      "tickLower": 65940,
+      "tickUpper": 69600,
+      "liquidity": 16949224,
+      "amount0": 0.0002953109024230283,
+      "amount1": 62.54581061581491,
+      "relative_liquidity": 7.769462686262386e-06
+    },
+    {
+      "tokenId": 15494,
+      "owner": "0x4486E4A60bF20e2C5B65FAe8B9CbF37213F75128",
+      "tickLower": 67080,
+      "tickUpper": 69600,
+      "liquidity": 14967966,
+      "amount0": 0.0002607909097724595,
+      "amount1": 31.507271033713327,
+      "relative_liquidity": 6.861261219171099e-06
+    },
+    {
+      "tokenId": 5247,
+      "owner": "0x06Db896f6F71a035Bf934064B15a93Bd33eceaE9",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 13662574,
+      "amount0": 0.004447864438352772,
+      "amount1": 419.6753990429756,
+      "relative_liquidity": 6.262874270308695e-06
+    },
+    {
+      "tokenId": 14832,
+      "owner": "0x0Be8d05b06ba7aa3d3339eD4331C1A503370Ed44",
+      "tickLower": 66900,
+      "tickUpper": 887220,
+      "liquidity": 10743286,
+      "amount0": 0.0034974873512453215,
+      "amount1": 25.368353484701338,
+      "relative_liquidity": 4.9246832601212344e-06
+    },
+    {
+      "tokenId": 5323,
+      "owner": "0x53CfC23eC57369d05Dbd693BB120C2EE01b00e5f",
+      "tickLower": 65100,
+      "tickUpper": 70200,
+      "liquidity": 8406924,
+      "amount0": 0.00022303041029450034,
+      "amount1": 40.36801415562877,
+      "relative_liquidity": 3.853703409916803e-06
+    },
+    {
+      "tokenId": 12394,
+      "owner": "0x70f4C685ee66016DC5b56fB70Be3a7cCf31Fea07",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 7456128,
+      "amount0": 0.0024273498228815724,
+      "amount1": 229.03103717612095,
+      "relative_liquidity": 3.4178619788136724e-06
+    },
+    {
+      "tokenId": 10147,
+      "owner": "0xDBd74a2BD4983D21c2d95214Ce7eC2CeA9916440",
+      "tickLower": 67080,
+      "tickUpper": 67320,
+      "liquidity": 6185179,
+      "amount0": 0.0,
+      "amount1": 2.1363426606673923,
+      "relative_liquidity": 2.8352635759816314e-06
+    },
+    {
+      "tokenId": 10750,
+      "owner": "0x08A4857171233285cE9834CF9075836D6e24eecb",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 4760997,
+      "amount0": 0.0015499472681651518,
+      "amount1": 146.24428133508442,
+      "relative_liquidity": 2.182423722815107e-06
+    },
+    {
+      "tokenId": 248,
+      "owner": "0x34955b22De8A92Ff3C1373c2B5DaC40b8A18740d",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 3562461,
+      "amount0": 0.0011597626914898068,
+      "amount1": 109.42866561967297,
+      "relative_liquidity": 1.6330191760262878e-06
+    },
+    {
+      "tokenId": 7318,
+      "owner": "0xb603D9C5E0a3cf668ADDAD5DA6e4694b9d1B3a84",
+      "tickLower": 66960,
+      "tickUpper": 67500,
+      "liquidity": 2908140,
+      "amount0": 0.0,
+      "amount1": 2.2634893859291756,
+      "relative_liquidity": 1.333080807500514e-06
+    },
+    {
+      "tokenId": 5340,
+      "owner": "0x9aE3FbF918be481fd243a2f8FD8b6F8A0b441779",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 2497348,
+      "amount0": 0.00081301410403277,
+      "amount1": 76.71142483467442,
+      "relative_liquidity": 1.144775247563664e-06
+    },
+    {
+      "tokenId": 5372,
+      "owner": "0xCA3e8aF4784485d1dF06205dc5C7E8f629B085AD",
+      "tickLower": 65340,
+      "tickUpper": 69840,
+      "liquidity": 2413841,
+      "amount0": 5.0928479863076905e-05,
+      "amount1": 10.835528353751235,
+      "relative_liquidity": 1.1064959422372542e-06
+    },
+    {
+      "tokenId": 11603,
+      "owner": "0xA683041b1f4AA98098d332FEd588599b1b134571",
+      "tickLower": 62100,
+      "tickUpper": 70920,
+      "liquidity": 1963137,
+      "amount0": 7.28366405460111e-05,
+      "amount1": 16.512728054591893,
+      "relative_liquidity": 8.998948665449864e-07
+    },
+    {
+      "tokenId": 6981,
+      "owner": "0x5B5f2B16C32414085470be110d9082e4Cb7B19fa",
+      "tickLower": 62940,
+      "tickUpper": 71040,
+      "liquidity": 1910396,
+      "amount0": 7.417608042175342e-05,
+      "amount1": 14.241340792276473,
+      "relative_liquidity": 8.757185838115607e-07
+    },
+    {
+      "tokenId": 5365,
+      "owner": "0xb87B26d661515F0a8351073dc068fEDd6070100c",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 1533471,
+      "amount0": 0.000499222996204468,
+      "amount1": 47.1038659220313,
+      "relative_liquidity": 7.029375335983209e-07
+    },
+    {
+      "tokenId": 3047,
+      "owner": "0x2162F7D21E6f308b1FCC7aEc51F7cD807BBfeb55",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 1518582,
+      "amount0": 0.0004943758675724376,
+      "amount1": 46.64651820582856,
+      "relative_liquidity": 6.961124701065787e-07
+    },
+    {
+      "tokenId": 11523,
+      "owner": "0xFbd9275BF42f21B7CB857E6C00FFCB99443718B5",
+      "tickLower": 64380,
+      "tickUpper": 69000,
+      "liquidity": 1034232,
+      "amount0": 8.315080511603992e-06,
+      "amount1": 5.913814879729589,
+      "relative_liquidity": 4.7408819028756237e-07
+    },
+    {
+      "tokenId": 15769,
+      "owner": "0xc5A389b313E3ca5fd3A293ED909a4e8b2064F104",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 741562,
+      "amount0": 0.00024141624035366676,
+      "amount1": 22.778674667387495,
+      "relative_liquidity": 3.3992932588241837e-07
+    },
+    {
+      "tokenId": 10743,
+      "owner": "0x54D134F54F0EFaeb6D2E4738921396EF5067FDA4",
+      "tickLower": 66900,
+      "tickUpper": 70080,
+      "liquidity": 624229,
+      "amount0": 1.5437145043184106e-05,
+      "amount1": 1.4740054325465812,
+      "relative_liquidity": 2.861443050833998e-07
+    },
+    {
+      "tokenId": 5217,
+      "owner": "0x3158ad4A3ee03090CE4fF563A4107A734e4ED40d",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 588414,
+      "amount0": 0.0001915587579345523,
+      "amount1": 18.074403860683457,
+      "relative_liquidity": 2.6972683923903507e-07
+    },
+    {
+      "tokenId": 10142,
+      "owner": "0xDBd74a2BD4983D21c2d95214Ce7eC2CeA9916440",
+      "tickLower": 66960,
+      "tickUpper": 67320,
+      "liquidity": 224783,
+      "amount0": 0.0,
+      "amount1": 0.11611111646628285,
+      "relative_liquidity": 1.0303971031394226e-07
+    },
+    {
+      "tokenId": 1825,
+      "owner": "0xf68Fb8e8051F2db5964e8B3991c07D0bBc1d8E72",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 3744,
+      "amount0": 1.2188628919552624e-06,
+      "amount1": 0.11500502716522527,
+      "relative_liquidity": 1.7162359938936655e-09
+    },
+    {
+      "tokenId": 80,
+      "owner": "0xc01D581eaD488940d4611c4396028dcC76e26114",
+      "tickLower": 68760,
+      "tickUpper": 69600,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 97,
+      "owner": "0x1BAbC907460E3eC5cD38f2dBC8555bDdEaBcC49b",
+      "tickLower": 69360,
+      "tickUpper": 71100,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 84,
+      "owner": "0x848f81E2024c59c0e097F92A3768eCCeBcD04D69",
+      "tickLower": 69300,
+      "tickUpper": 69780,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 127,
+      "owner": "0x9ff70D71392F8155351e7eC24f525E51D3Cd61c9",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 196,
+      "owner": "0xaddaCFCFc1b720eDfD2Db140e8fF584eE75ea685",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 278,
+      "owner": "0x4347547eB011324118c5D1625FF35eF2F69f6374",
+      "tickLower": -161760,
+      "tickUpper": -161340,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 417,
+      "owner": "0x848f81E2024c59c0e097F92A3768eCCeBcD04D69",
+      "tickLower": 69180,
+      "tickUpper": 69540,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 461,
+      "owner": "0x28955Ab3873062e829acef9e6DA5Bd358eCE1726",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 533,
+      "owner": "0xf925678f9B0FbE349A89F5BCa175C511aB302dCe",
+      "tickLower": 69120,
+      "tickUpper": 69540,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 534,
+      "owner": "0xf925678f9B0FbE349A89F5BCa175C511aB302dCe",
+      "tickLower": 69120,
+      "tickUpper": 69540,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 490,
+      "owner": "0x848f81E2024c59c0e097F92A3768eCCeBcD04D69",
+      "tickLower": 69060,
+      "tickUpper": 69840,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 586,
+      "owner": "0x848f81E2024c59c0e097F92A3768eCCeBcD04D69",
+      "tickLower": 68940,
+      "tickUpper": 69720,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 587,
+      "owner": "0x4Ed84EAd4daf43c0Ca926Ef1536e24384e07C5A7",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 699,
+      "owner": "0x848f81E2024c59c0e097F92A3768eCCeBcD04D69",
+      "tickLower": 68940,
+      "tickUpper": 69720,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 597,
+      "owner": "0x0272Ec6B528511f6D6d10F034dF8eAB8eC2e6feC",
+      "tickLower": 67980,
+      "tickUpper": 69120,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 659,
+      "owner": "0x848f81E2024c59c0e097F92A3768eCCeBcD04D69",
+      "tickLower": 68520,
+      "tickUpper": 69600,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 768,
+      "owner": "0x1306E39a4c2E93c9Bd72d6f454Efb8c63a3c2b91",
+      "tickLower": 67860,
+      "tickUpper": 69960,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 920,
+      "owner": "0x1412080De07C13E22746bcD085a0bA7CbF7B484c",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 819,
+      "owner": "0x2EEDe4aBF46562aFe018Ba106d4fcc908ad2bb4f",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 1054,
+      "owner": "0x848f81E2024c59c0e097F92A3768eCCeBcD04D69",
+      "tickLower": 68700,
+      "tickUpper": 69420,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 1062,
+      "owner": "0x28E582AEf09F24ee7D388352088085B99Bfa43e8",
+      "tickLower": 68160,
+      "tickUpper": 69840,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 1227,
+      "owner": "0x8b7940bC79FFa81f0153b9f0800c0E437Be08FDb",
+      "tickLower": 63960,
+      "tickUpper": 80040,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 1217,
+      "owner": "0xf9C402CDD83e81a68003C7F114A73B6F0cfB8b65",
+      "tickLower": 68940,
+      "tickUpper": 69000,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 1306,
+      "owner": "0xf07C5e77BC6BF3c10315061199aeA208AF97e32B",
+      "tickLower": 68220,
+      "tickUpper": 69780,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 1309,
+      "owner": "0xB73Bf4f5eb8C8640EeE5460e6923279f97adBEBB",
+      "tickLower": -161400,
+      "tickUpper": -159900,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 1422,
+      "owner": "0x3392EF365F255d735a0bD0B83EBcA213BA7b4Fc4",
+      "tickLower": 68340,
+      "tickUpper": 69300,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 1406,
+      "owner": "0xE31235BC3880EB1fBb4c53FD7d882D2F5CBE56f3",
+      "tickLower": 68820,
+      "tickUpper": 68880,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 1472,
+      "owner": "0x27Db38BB00d58B7Ab03b23B19254Aa10CAA2bb6a",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 1514,
+      "owner": "0xf925678f9B0FbE349A89F5BCa175C511aB302dCe",
+      "tickLower": 68760,
+      "tickUpper": 69000,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 1762,
+      "owner": "0xED58e1A757c461E91Ed8c2F72902b0aCBa485428",
+      "tickLower": 68280,
+      "tickUpper": 69420,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 1811,
+      "owner": "0x3204Da410b45AB8ff604338B5b52D80F451E983E",
+      "tickLower": 68220,
+      "tickUpper": 69720,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 1776,
+      "owner": "0xED58e1A757c461E91Ed8c2F72902b0aCBa485428",
+      "tickLower": 67980,
+      "tickUpper": 69240,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 1819,
+      "owner": "0x4cc573D3C276064Cf462eff4E1FC9682Ec8Eb93e",
+      "tickLower": 68820,
+      "tickUpper": 69300,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 1877,
+      "owner": "0xfCFb893D4f8855d598536995f16fB5eAa50B836C",
+      "tickLower": 68100,
+      "tickUpper": 70080,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 1884,
+      "owner": "0x7f0cAf8DDd669b5b0079760080FB3D82bbe02454",
+      "tickLower": 68280,
+      "tickUpper": 69300,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 1882,
+      "owner": "0x1f6F5eA8C18bd9CC0D9280f75A44aCB57332277d",
+      "tickLower": 68580,
+      "tickUpper": 69000,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 2000,
+      "owner": "0x33904ffc0ce681f1Cb45821dA8872C584FfB123e",
+      "tickLower": 68700,
+      "tickUpper": 69000,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 2014,
+      "owner": "0xaafE47f6d3B6c89F486B375CF0463F321E4385a2",
+      "tickLower": 68220,
+      "tickUpper": 69300,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 2041,
+      "owner": "0xa5f8f166CD9416c63fe41f34a4C076FB173C2300",
+      "tickLower": 65940,
+      "tickUpper": 72120,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 2027,
+      "owner": "0xBd8f407Fd285784fb08F364a9F031B521Aebb11d",
+      "tickLower": 68040,
+      "tickUpper": 70020,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 2028,
+      "owner": "0xBd8f407Fd285784fb08F364a9F031B521Aebb11d",
+      "tickLower": 66840,
+      "tickUpper": 70200,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 2043,
+      "owner": "0x3d1D8d4A1A3a3C8bdBa287Ce69F652E71DBa7F0c",
+      "tickLower": 68220,
+      "tickUpper": 69240,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 2122,
+      "owner": "0x848f81E2024c59c0e097F92A3768eCCeBcD04D69",
+      "tickLower": 68580,
+      "tickUpper": 69000,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 2079,
+      "owner": "0x4cc573D3C276064Cf462eff4E1FC9682Ec8Eb93e",
+      "tickLower": 68700,
+      "tickUpper": 69240,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 2293,
+      "owner": "0x65807f23046658adE1c95a429a38A47A700893F7",
+      "tickLower": 68400,
+      "tickUpper": 69120,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 2321,
+      "owner": "0x2fDf6Dd15ebB4A9688319B0fAcc0c3BfC2EC3eab",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 2317,
+      "owner": "0x9A5Df120370A01Bc2a7CdD9340C3e9cDa37EC613",
+      "tickLower": 68220,
+      "tickUpper": 69000,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 2459,
+      "owner": "0xebd583D75a7B952726CDB1F8545532320de48614",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 2482,
+      "owner": "0x198E9dBf61Da9Ee7bDC39F75619b54f2ecB9525C",
+      "tickLower": 68220,
+      "tickUpper": 69660,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 2445,
+      "owner": "0xE5AB3B98fC092B52b3320FE6FE92d7D336A50d04",
+      "tickLower": 67680,
+      "tickUpper": 69660,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 2550,
+      "owner": "0x8a487b81Be516430A27752631D84F59870ad796F",
+      "tickLower": 64920,
+      "tickUpper": 72180,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 2625,
+      "owner": "0xF62C1bF088BBE28ac4ACEB3f1d523E77F17363F4",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 2645,
+      "owner": "0x7a7cB8732321f2B7e7C20bEE14Ca9E83A2f4812E",
+      "tickLower": 68280,
+      "tickUpper": 69960,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 2588,
+      "owner": "0xE8077664D2196f8ff6eFDb570081c2ff1eeba7fC",
+      "tickLower": 68640,
+      "tickUpper": 68940,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 2642,
+      "owner": "0xaB27c5D5eC4F2273f08A1aCbA7806feCc654C25A",
+      "tickLower": 67980,
+      "tickUpper": 70080,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 2646,
+      "owner": "0x0d0d3D0ACabA6B833934C6711A2f7665A8DFDccA",
+      "tickLower": 68700,
+      "tickUpper": 69000,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 2753,
+      "owner": "0xe850e496f16AD3cF5827426357AAf88BEb9af8dd",
+      "tickLower": 68520,
+      "tickUpper": 68940,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 2755,
+      "owner": "0x3204Da410b45AB8ff604338B5b52D80F451E983E",
+      "tickLower": 68460,
+      "tickUpper": 69720,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 2796,
+      "owner": "0x198E9dBf61Da9Ee7bDC39F75619b54f2ecB9525C",
+      "tickLower": 68220,
+      "tickUpper": 69660,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 2943,
+      "owner": "0x27Db38BB00d58B7Ab03b23B19254Aa10CAA2bb6a",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 2964,
+      "owner": "0x127122Ea317f48f52c3843683CE566b16e5d4100",
+      "tickLower": 68760,
+      "tickUpper": 69720,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 2980,
+      "owner": "0x7a7d9eA53964eB4E5E0CDF61Dbb601234e2dda9b",
+      "tickLower": 68280,
+      "tickUpper": 69300,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 3057,
+      "owner": "0x7966b55262DABC7C8fdd3E0e17Ec7880e4d47207",
+      "tickLower": 67920,
+      "tickUpper": 69360,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 3033,
+      "owner": "0xeD465Ad0B59c96a62648C03244064E46C2816534",
+      "tickLower": 68340,
+      "tickUpper": 69300,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 3125,
+      "owner": "0x56f443D00eA92103Ab0fCc52F1a116b8F43ef8aa",
+      "tickLower": 68580,
+      "tickUpper": 69600,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 3179,
+      "owner": "0xF0A3767C0C3E7DECF5433aD9Ac0F3EdbF6A30116",
+      "tickLower": 66900,
+      "tickUpper": 69660,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 3245,
+      "owner": "0x9cBa756d2eA30542EA4D05C911bA1CA16250A65E",
+      "tickLower": 68400,
+      "tickUpper": 68940,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 3170,
+      "owner": "0x2b0A93Bb74Eb137bbF19eD871F71FCFBF0A02086",
+      "tickLower": 68100,
+      "tickUpper": 73140,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 3372,
+      "owner": "0x725A1C9883e9fcCB3bf983Ffd1407B07CA005602",
+      "tickLower": 68220,
+      "tickUpper": 69180,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 3308,
+      "owner": "0xB37E9083D6f73Fbe6c8DD17cfa60c1d9c3774cb3",
+      "tickLower": 68460,
+      "tickUpper": 68820,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 3342,
+      "owner": "0x848f81E2024c59c0e097F92A3768eCCeBcD04D69",
+      "tickLower": 67920,
+      "tickUpper": 68880,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 3397,
+      "owner": "0xAeF3183C2AE943bdE2B9c03311685Ca5622aeaF2",
+      "tickLower": 68400,
+      "tickUpper": 68820,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 3528,
+      "owner": "0x4E28Dee6193035725E993860bF8838D4e5326A9C",
+      "tickLower": 67860,
+      "tickUpper": 69540,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 3574,
+      "owner": "0xFFCd3eEa363bdA61577b97D39C4Bc7811Db95621",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 3499,
+      "owner": "0xF7e0874f53cB4C1113bFD4F7206C0A20127082FA",
+      "tickLower": 67440,
+      "tickUpper": 69540,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 3567,
+      "owner": "0x2208FeddFc9a70D44CEb69F45551455cf92E0B81",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 3670,
+      "owner": "0x50fB96eDF5161d9dC44f6E9C9a833aa881E3BB29",
+      "tickLower": 68460,
+      "tickUpper": 68820,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 3668,
+      "owner": "0xaa2631D49CaE1fE1de6dDc4Ef636b73eCa5AE660",
+      "tickLower": 66180,
+      "tickUpper": 71640,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 3696,
+      "owner": "0x1af305A753C4EF2AEB2E7f9F82D4e1367F0710Db",
+      "tickLower": 68580,
+      "tickUpper": 69300,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 3698,
+      "owner": "0x1af305A753C4EF2AEB2E7f9F82D4e1367F0710Db",
+      "tickLower": 68580,
+      "tickUpper": 69540,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 3730,
+      "owner": "0x431679f7571acB0AC2D8FfF6C5F39a52aEc4b5D8",
+      "tickLower": 68520,
+      "tickUpper": 69120,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 3808,
+      "owner": "0x1BAbC907460E3eC5cD38f2dBC8555bDdEaBcC49b",
+      "tickLower": 68760,
+      "tickUpper": 69660,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 3753,
+      "owner": "0xF765aB5b02694835F9E8EE3FEefADEA98950E94f",
+      "tickLower": 68580,
+      "tickUpper": 68880,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 3896,
+      "owner": "0xc81C1cd053746ED628ee395899E8126AFFb87466",
+      "tickLower": 67620,
+      "tickUpper": 70080,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 3849,
+      "owner": "0x19bF00886946dB790ef573469C28b211DaB610b6",
+      "tickLower": 68040,
+      "tickUpper": 70020,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 3886,
+      "owner": "0x1af305A753C4EF2AEB2E7f9F82D4e1367F0710Db",
+      "tickLower": 68520,
+      "tickUpper": 69540,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 3884,
+      "owner": "0x1af305A753C4EF2AEB2E7f9F82D4e1367F0710Db",
+      "tickLower": 68520,
+      "tickUpper": 69420,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 3929,
+      "owner": "0x50e1CaaD14746cB88727F40f5893120fD9D3471b",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 4105,
+      "owner": "0xE7e84Daa7f94910159190D7eFA026008c11413d5",
+      "tickLower": 67920,
+      "tickUpper": 68940,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 4123,
+      "owner": "0x7a7cB8732321f2B7e7C20bEE14Ca9E83A2f4812E",
+      "tickLower": 68280,
+      "tickUpper": 69720,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 4131,
+      "owner": "0xcc34F1f4C1d265C3e2cb377e4D6Ac9De7e500D40",
+      "tickLower": 67200,
+      "tickUpper": 69960,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 4073,
+      "owner": "0x0315f25E248A7714211a32c94FdBa15FF1Aacb0D",
+      "tickLower": 68580,
+      "tickUpper": 69120,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 4340,
+      "owner": "0xa9EE875E08E5c8F62D402D4Ac4CB75658180F50A",
+      "tickLower": 68160,
+      "tickUpper": 69660,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 4304,
+      "owner": "0x5897c7B1Bed0e5fa441615B827089Aa6d826b456",
+      "tickLower": 68340,
+      "tickUpper": 69060,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 4322,
+      "owner": "0x1af305A753C4EF2AEB2E7f9F82D4e1367F0710Db",
+      "tickLower": 68520,
+      "tickUpper": 68820,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 4414,
+      "owner": "0x0D69A096B2C66310309F0Ead1D6c97c4dFE87086",
+      "tickLower": 65640,
+      "tickUpper": 67320,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 4447,
+      "owner": "0x4679091E5873274E43D5A3599858bbC20E809883",
+      "tickLower": 66720,
+      "tickUpper": 67020,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 4377,
+      "owner": "0x1f2F10D1C40777AE1Da742455c65828FF36Df387",
+      "tickLower": 68100,
+      "tickUpper": 68160,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 4489,
+      "owner": "0x6e3c1A0d3197928E5135C08687522720e275600e",
+      "tickLower": 66840,
+      "tickUpper": 68040,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 4445,
+      "owner": "0x4679091E5873274E43D5A3599858bbC20E809883",
+      "tickLower": 67500,
+      "tickUpper": 67560,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 4584,
+      "owner": "0x28E582AEf09F24ee7D388352088085B99Bfa43e8",
+      "tickLower": 67440,
+      "tickUpper": 69180,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 4621,
+      "owner": "0xa9EE875E08E5c8F62D402D4Ac4CB75658180F50A",
+      "tickLower": 67380,
+      "tickUpper": 68940,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 4629,
+      "owner": "0x848f81E2024c59c0e097F92A3768eCCeBcD04D69",
+      "tickLower": 67140,
+      "tickUpper": 68940,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 4652,
+      "owner": "0x1f2F10D1C40777AE1Da742455c65828FF36Df387",
+      "tickLower": 67380,
+      "tickUpper": 67440,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 4605,
+      "owner": "0x16416fACb2781A287A78cEA36015a83D6745FD46",
+      "tickLower": 66720,
+      "tickUpper": 69060,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 4643,
+      "owner": "0x28E582AEf09F24ee7D388352088085B99Bfa43e8",
+      "tickLower": 66180,
+      "tickUpper": 68640,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 4658,
+      "owner": "0x6724c9b60d13637c13352B2737DdF325F592320e",
+      "tickLower": 67200,
+      "tickUpper": 69600,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 4661,
+      "owner": "0x8992c1Fc4d87804BAE68d65c8eCB6958a9748488",
+      "tickLower": 67200,
+      "tickUpper": 69600,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 4781,
+      "owner": "0x2E36D0a40167CAe511505243066c1be92690539F",
+      "tickLower": -159480,
+      "tickUpper": -159180,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 4821,
+      "owner": "0x8fc2E9254D7ee286B8ce8841A00Ce70a3cd93595",
+      "tickLower": 67680,
+      "tickUpper": 68460,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 4785,
+      "owner": "0xcb22544998E207E6387C977d421F3c42814811e9",
+      "tickLower": 67380,
+      "tickUpper": 69600,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 4793,
+      "owner": "0x0DAaE65Cf609581Ad314c898fe0E59F77C0982B0",
+      "tickLower": 64860,
+      "tickUpper": 70380,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 4864,
+      "owner": "0xE09568554BA1820aF4cf5dbaCBc4dB1575167452",
+      "tickLower": 66180,
+      "tickUpper": 67440,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 4768,
+      "owner": "0x28Fd837fd76C409f8AaCe80C64BCA8A39BD58dd6",
+      "tickLower": 64260,
+      "tickUpper": 69720,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 4804,
+      "owner": "0x28Fd837fd76C409f8AaCe80C64BCA8A39BD58dd6",
+      "tickLower": 65640,
+      "tickUpper": 67560,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 4839,
+      "owner": "0x92137Be9cad72D8C6a0d112eaCC63260e49d46FE",
+      "tickLower": 66360,
+      "tickUpper": 68280,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 4843,
+      "owner": "0xA7D8578517014771be051CD636790A3440Bbd68b",
+      "tickLower": 64980,
+      "tickUpper": 68580,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 4880,
+      "owner": "0xBDE4E15D7a2295f47Ad43F465f085c9cD8CFCe36",
+      "tickLower": 66360,
+      "tickUpper": 67680,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 4883,
+      "owner": "0xfc84CA6128C86b408A9E50955261cB98BbE26408",
+      "tickLower": 65400,
+      "tickUpper": 69420,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 4990,
+      "owner": "0xE7e84Daa7f94910159190D7eFA026008c11413d5",
+      "tickLower": 66720,
+      "tickUpper": 67320,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5025,
+      "owner": "0x4d445805e639D49DbAeB3F4f0d2e4c445938a5Ad",
+      "tickLower": 65880,
+      "tickUpper": 69060,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5031,
+      "owner": "0xE5430fC70B79ca6Aa8b41AE8D8b89EA0984e7185",
+      "tickLower": 63120,
+      "tickUpper": 70020,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5055,
+      "owner": "0xd5Add132b4DAB43C71966F4026f35DB3d00Bef41",
+      "tickLower": 65640,
+      "tickUpper": 69060,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5126,
+      "owner": "0x742251AEFC0961934342782F191D90f6061F8E27",
+      "tickLower": 67200,
+      "tickUpper": 68580,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5151,
+      "owner": "0x5067c3957E46c2676538AC9026BD70747729aEf6",
+      "tickLower": 67200,
+      "tickUpper": 67500,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5156,
+      "owner": "0x03249184e0174f755cD5F79863Ce55f68b3a9847",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5081,
+      "owner": "0x81b79968FB60715AbCaDb96b062A82f215e24a2a",
+      "tickLower": 66480,
+      "tickUpper": 69480,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5179,
+      "owner": "0x53172ddaEbd8D5Ea9b49b1efe97e3D88116c7049",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5185,
+      "owner": "0x9f07Dc88Dc450978e5DDF973f6a0236A7cFBF99a",
+      "tickLower": 68340,
+      "tickUpper": 68760,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5103,
+      "owner": "0x28Fd837fd76C409f8AaCe80C64BCA8A39BD58dd6",
+      "tickLower": 66120,
+      "tickUpper": 68760,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5206,
+      "owner": "0xcAC131c219A51abcCD597c45a766B1928b17a301",
+      "tickLower": 68280,
+      "tickUpper": 70080,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5251,
+      "owner": "0x9A54efb4CE21828EC0267a439589aaDd7053E350",
+      "tickLower": 67080,
+      "tickUpper": 68400,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5274,
+      "owner": "0x4850742279bCB54136e7A8cE782f4ccADED109c1",
+      "tickLower": 67860,
+      "tickUpper": 69180,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5240,
+      "owner": "0x86a053eE559b2Fd69bFD560459A54e8A577938C9",
+      "tickLower": 68580,
+      "tickUpper": 70920,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5296,
+      "owner": "0xbeaeEee6407b031049D3361B77A35dB865522c4C",
+      "tickLower": 67980,
+      "tickUpper": 69060,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5297,
+      "owner": "0x01b94f4f57D816D1Dc6fCC7312cfDCf97Ab2D373",
+      "tickLower": -2220,
+      "tickUpper": 780,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5286,
+      "owner": "0xa314a55F01aAC8Bd34c4fAa3571D967e10bB0065",
+      "tickLower": 67260,
+      "tickUpper": 68880,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5299,
+      "owner": "0x1f2F10D1C40777AE1Da742455c65828FF36Df387",
+      "tickLower": 68280,
+      "tickUpper": 68340,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5306,
+      "owner": "0x8a329Ee74a2F91eDB448b53208dB2392Bd7CD640",
+      "tickLower": 67740,
+      "tickUpper": 69120,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5245,
+      "owner": "0xe52696D4a88079D7d9542967821d03f490d5120f",
+      "tickLower": 66840,
+      "tickUpper": 69780,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5317,
+      "owner": "0x29990feF7290b0276edb273a968405A019D29d89",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5321,
+      "owner": "0x4C6f1E2836Ff3c33701E0aaA04D19bbFF6911A8e",
+      "tickLower": 67440,
+      "tickUpper": 69540,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5315,
+      "owner": "0x73D1aB76b3cA228e11F2A844d2ddd17E562e274c",
+      "tickLower": 67440,
+      "tickUpper": 69240,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5346,
+      "owner": "0xCDE5869677eC175D5aBfd296CBa70f8601109e52",
+      "tickLower": 66720,
+      "tickUpper": 68460,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5348,
+      "owner": "0xcAC131c219A51abcCD597c45a766B1928b17a301",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5357,
+      "owner": "0xEe9acD37902C6e8083D06C3Fe9f6415B5F431F93",
+      "tickLower": 66300,
+      "tickUpper": 68580,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5382,
+      "owner": "0x09bbE4f6EFCd0251E6aE56a7425F6d19Ab0fd80A",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5384,
+      "owner": "0x6AA378802494A088275cFEBcFB9fB7ff68b5ecD7",
+      "tickLower": 67200,
+      "tickUpper": 68880,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5416,
+      "owner": "0x32157CbdB83af91673C81c7FBFdf2dc3F942A74E",
+      "tickLower": 66300,
+      "tickUpper": 67860,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5428,
+      "owner": "0xf2344DA19127A7AC910D8c7bEe0e4E9f46fa3702",
+      "tickLower": 61080,
+      "tickUpper": 67260,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5448,
+      "owner": "0x411B32A25b87AD45183c94dCeAdeb544CceC0b3b",
+      "tickLower": 65820,
+      "tickUpper": 68520,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5450,
+      "owner": "0xA6e18E55b542f0B7d4383fE9e847f285Db2F7bD5",
+      "tickLower": 66840,
+      "tickUpper": 68580,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5463,
+      "owner": "0x4BF419634bBcfBbA096F780cFf10858Ac2cb6DDa",
+      "tickLower": 67200,
+      "tickUpper": 69060,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5514,
+      "owner": "0xCDE5869677eC175D5aBfd296CBa70f8601109e52",
+      "tickLower": 66900,
+      "tickUpper": 68640,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5522,
+      "owner": "0x0DAaE65Cf609581Ad314c898fe0E59F77C0982B0",
+      "tickLower": 66720,
+      "tickUpper": 68880,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5544,
+      "owner": "0x67b05ABC6fD57aD064Fa255F285e530C8F65f92F",
+      "tickLower": 65940,
+      "tickUpper": 69480,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5524,
+      "owner": "0x32248847a3aBbB5eADCaFf9a738178668D86B00e",
+      "tickLower": 67620,
+      "tickUpper": 69000,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5634,
+      "owner": "0xf82Ec3d837777D5BF2FB4698142C7B213ed921C9",
+      "tickLower": 67200,
+      "tickUpper": 68580,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5636,
+      "owner": "0x0b85D0C3fA68A21c10e15d0B7FEDac08FdC3508e",
+      "tickLower": 67260,
+      "tickUpper": 69120,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5652,
+      "owner": "0x9c690Ef099376bF54711B03F69C4e4808B749751",
+      "tickLower": 66420,
+      "tickUpper": 69000,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5642,
+      "owner": "0x8c0CdA63e508f3590408068D8dC491B2a71cE00d",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5746,
+      "owner": "0x1f2F10D1C40777AE1Da742455c65828FF36Df387",
+      "tickLower": 68160,
+      "tickUpper": 68220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5805,
+      "owner": "0x50dE15E751091736b8104517E9308969652147B7",
+      "tickLower": 68100,
+      "tickUpper": 69000,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5801,
+      "owner": "0x66d1559f5695C3b266e7Ff413b46Ed50A0A9feA2",
+      "tickLower": 69060,
+      "tickUpper": 70260,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5802,
+      "owner": "0x66d1559f5695C3b266e7Ff413b46Ed50A0A9feA2",
+      "tickLower": 67200,
+      "tickUpper": 68100,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5863,
+      "owner": "0xE31235BC3880EB1fBb4c53FD7d882D2F5CBE56f3",
+      "tickLower": 66840,
+      "tickUpper": 69120,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5876,
+      "owner": "0x3c0aeC136E95be8D79cC3dcBd024d79f270CF1Db",
+      "tickLower": 67380,
+      "tickUpper": 68100,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5871,
+      "owner": "0x32248847a3aBbB5eADCaFf9a738178668D86B00e",
+      "tickLower": 66840,
+      "tickUpper": 67860,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5915,
+      "owner": "0xC49feE109dB4CEbB434466fec79864dC234d2d97",
+      "tickLower": 67980,
+      "tickUpper": 887220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5907,
+      "owner": "0x32248847a3aBbB5eADCaFf9a738178668D86B00e",
+      "tickLower": 66840,
+      "tickUpper": 68040,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5878,
+      "owner": "0x0D69A096B2C66310309F0Ead1D6c97c4dFE87086",
+      "tickLower": 64800,
+      "tickUpper": 72780,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5921,
+      "owner": "0x1f261F198985E9ACd9e74D1bd5b641D34F5AdbCb",
+      "tickLower": 67680,
+      "tickUpper": 68460,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 6008,
+      "owner": "0x03657Fe86dBd048E796C7bEfDaE5bf8B902be90C",
+      "tickLower": 66960,
+      "tickUpper": 68520,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 5965,
+      "owner": "0xECA3eaf3F956Ddf19901C49736e3EE6FCd0e0EB0",
+      "tickLower": 67080,
+      "tickUpper": 68580,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 6136,
+      "owner": "0x8a329Ee74a2F91eDB448b53208dB2392Bd7CD640",
+      "tickLower": 67440,
+      "tickUpper": 68880,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 6055,
+      "owner": "0x32248847a3aBbB5eADCaFf9a738178668D86B00e",
+      "tickLower": 67740,
+      "tickUpper": 69660,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 6121,
+      "owner": "0x76c58a65aAC8BEa1Ed2dF8dcA3384995328DCa68",
+      "tickLower": 66120,
+      "tickUpper": 69060,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 6042,
+      "owner": "0xbBaFc5E0c88161C69bBCaBb12E955e567a046bB9",
+      "tickLower": 67560,
+      "tickUpper": 68220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 6163,
+      "owner": "0x32248847a3aBbB5eADCaFf9a738178668D86B00e",
+      "tickLower": 67500,
+      "tickUpper": 69120,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 6228,
+      "owner": "0xd966FDA1179089E0E32Fa55C571BDDC6a8d14a5c",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 6164,
+      "owner": "0xA9eEDD7f70A0C121f6D7a9e73684233d30ce81B9",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 6223,
+      "owner": "0xd966FDA1179089E0E32Fa55C571BDDC6a8d14a5c",
+      "tickLower": 67380,
+      "tickUpper": 67920,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 6233,
+      "owner": "0xd966FDA1179089E0E32Fa55C571BDDC6a8d14a5c",
+      "tickLower": -1740,
+      "tickUpper": -1260,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 6317,
+      "owner": "0x05e968F97c9C423a66B23EbC8dEb08B15106Aab8",
+      "tickLower": 66840,
+      "tickUpper": 69060,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 6353,
+      "owner": "0x2B98379E0d7cf430a3db599991685B95EefF0EE0",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 6266,
+      "owner": "0xaa2631D49CaE1fE1de6dDc4Ef636b73eCa5AE660",
+      "tickLower": 67380,
+      "tickUpper": 69000,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 6264,
+      "owner": "0xaa2631D49CaE1fE1de6dDc4Ef636b73eCa5AE660",
+      "tickLower": 66840,
+      "tickUpper": 69000,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 6400,
+      "owner": "0x8e2e546506c1f97220AA9c557aF7cc0Fff9896E2",
+      "tickLower": 64800,
+      "tickUpper": 68040,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 6450,
+      "owner": "0x9373B05a2DfB21E4d91c3Bf8a444139E047bcDA2",
+      "tickLower": 66840,
+      "tickUpper": 68100,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 6402,
+      "owner": "0x8e2e546506c1f97220AA9c557aF7cc0Fff9896E2",
+      "tickLower": 63960,
+      "tickUpper": 68040,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 6495,
+      "owner": "0xFC915b0E43E488516Cc24AC17df4FFfeE30Df8a4",
+      "tickLower": 65100,
+      "tickUpper": 68160,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 6403,
+      "owner": "0x8e2e546506c1f97220AA9c557aF7cc0Fff9896E2",
+      "tickLower": 64800,
+      "tickUpper": 68040,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 6472,
+      "owner": "0x1eb01771Cb7e9f2839be2AD1B7d34583A23fe345",
+      "tickLower": 65220,
+      "tickUpper": 68280,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 6468,
+      "owner": "0x5E25FF57cfb5338DEE45f34Fe4C7b3C449dDFDb3",
+      "tickLower": 64440,
+      "tickUpper": 72360,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 6483,
+      "owner": "0x2AbD04E7B12dee67B621d3ca8945918e7E44CeA0",
+      "tickLower": 66720,
+      "tickUpper": 68220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 6498,
+      "owner": "0x2F74Af74fB64bFD3799b33B8c10095aAa6CA6e81",
+      "tickLower": 65940,
+      "tickUpper": 68100,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 6532,
+      "owner": "0x35bC9234aB22E3bED864bd49FaAf31026c1B9ee0",
+      "tickLower": 65820,
+      "tickUpper": 67680,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 6504,
+      "owner": "0x742251AEFC0961934342782F191D90f6061F8E27",
+      "tickLower": 66780,
+      "tickUpper": 67800,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 6456,
+      "owner": "0x5efd4A1d53F0dB5a7099731034254B632c0768ab",
+      "tickLower": 66120,
+      "tickUpper": 68160,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 6563,
+      "owner": "0x6e38C8Cd0F82a1d9f633C3c266b15950cdB4ABF3",
+      "tickLower": 66360,
+      "tickUpper": 67620,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 6600,
+      "owner": "0x8a329Ee74a2F91eDB448b53208dB2392Bd7CD640",
+      "tickLower": 66720,
+      "tickUpper": 67560,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 6648,
+      "owner": "0x3E4ec5506c648bEA88bD0d8685f428f74B09891C",
+      "tickLower": 67200,
+      "tickUpper": 70140,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 6658,
+      "owner": "0x1A1e1D429c275C71D886E932066050eF5cd92603",
+      "tickLower": 62160,
+      "tickUpper": 68460,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 6698,
+      "owner": "0x7873bBc4eF6a75867Fd3CEd23710A2eDF4A47E4A",
+      "tickLower": 66600,
+      "tickUpper": 68280,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 6711,
+      "owner": "0xFD853aAa4B67324c70e5c5439FfC448dB25700Fe",
+      "tickLower": 66480,
+      "tickUpper": 67920,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 6709,
+      "owner": "0xcf0e30f1ed302A95f04b2a0ad344Be94d1c54875",
+      "tickLower": 66000,
+      "tickUpper": 68160,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 6764,
+      "owner": "0xCb1CE4C1903b8715e34FF7484E0542a47316dB32",
+      "tickLower": 66180,
+      "tickUpper": 68580,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 6812,
+      "owner": "0xdfD138c683D3f252e36ac40cc8362dA3A3F4267F",
+      "tickLower": 66420,
+      "tickUpper": 68400,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 6872,
+      "owner": "0x09981eA8281FDbC0746f4EB070C32bec91684c09",
+      "tickLower": 66420,
+      "tickUpper": 68340,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 6922,
+      "owner": "0xe236012b0C57ABbF04aF65659c6BB06eBe2f4b17",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 6920,
+      "owner": "0xA078c0f03e461676C16700349bEA3b8d776e9f6D",
+      "tickLower": 66480,
+      "tickUpper": 67440,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 6934,
+      "owner": "0x0f65bF724b35b2FC091C261AB89AdC6283BA3eF8",
+      "tickLower": 66000,
+      "tickUpper": 67740,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 6937,
+      "owner": "0x3E4ec5506c648bEA88bD0d8685f428f74B09891C",
+      "tickLower": 66180,
+      "tickUpper": 70020,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 6980,
+      "owner": "0x32248847a3aBbB5eADCaFf9a738178668D86B00e",
+      "tickLower": 67020,
+      "tickUpper": 69060,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 7072,
+      "owner": "0xfAde52D7A916E43E667f6827bc1524DA61399a5D",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 7066,
+      "owner": "0xcAC131c219A51abcCD597c45a766B1928b17a301",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 7091,
+      "owner": "0x794EbF88bc15ba64E0802dbb095320dC2e1B3c03",
+      "tickLower": 65100,
+      "tickUpper": 68100,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 7087,
+      "owner": "0x188881E317A96b2467424fa0A3A7d1C7Cfac6c51",
+      "tickLower": 62160,
+      "tickUpper": 71340,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 7169,
+      "owner": "0xf2dF350d2F36d712806AECe475F19Dfdea6e889C",
+      "tickLower": 66240,
+      "tickUpper": 68040,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 7152,
+      "owner": "0xA078c0f03e461676C16700349bEA3b8d776e9f6D",
+      "tickLower": 66900,
+      "tickUpper": 67620,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 7163,
+      "owner": "0x9975526E66EC12dea5Fd087Db10Dd77a44366c7C",
+      "tickLower": 66420,
+      "tickUpper": 68280,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 7252,
+      "owner": "0xb3Fbc1BdFc96E408e2D96a5b5827fa839316B4CE",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 7239,
+      "owner": "0x551e3ED3062afc484d3c0691D0028BAA18756Cc6",
+      "tickLower": 67140,
+      "tickUpper": 67500,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 7199,
+      "owner": "0x3686F74E9bD81321AAA96702e52208bf135A81E9",
+      "tickLower": 66180,
+      "tickUpper": 68340,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 7254,
+      "owner": "0x25701eD53e5CB582B7FFFeffb1E2a6E6EBAF7b2B",
+      "tickLower": 66480,
+      "tickUpper": 70080,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 7267,
+      "owner": "0x8a329Ee74a2F91eDB448b53208dB2392Bd7CD640",
+      "tickLower": 67320,
+      "tickUpper": 67980,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 7213,
+      "owner": "0x2AbD04E7B12dee67B621d3ca8945918e7E44CeA0",
+      "tickLower": 66420,
+      "tickUpper": 68820,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 7229,
+      "owner": "0x32cB25E2793E0904291Aa91eAA523608394A5958",
+      "tickLower": 66720,
+      "tickUpper": 69060,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 7361,
+      "owner": "0x1c944F4ccbF652aa245F90eb10d4E35c1F13ceA7",
+      "tickLower": 67140,
+      "tickUpper": 68040,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 7317,
+      "owner": "0xb603D9C5E0a3cf668ADDAD5DA6e4694b9d1B3a84",
+      "tickLower": 66900,
+      "tickUpper": 67560,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 7331,
+      "owner": "0x3E4ec5506c648bEA88bD0d8685f428f74B09891C",
+      "tickLower": 66000,
+      "tickUpper": 68280,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 7339,
+      "owner": "0x4f5E91B4a589f61416A85f001CBAaD1115e10aD9",
+      "tickLower": 66180,
+      "tickUpper": 68220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 7419,
+      "owner": "0x6cF8fAde4D8C44Ff016649B8C32cADb469e51cF9",
+      "tickLower": 66360,
+      "tickUpper": 68340,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 7423,
+      "owner": "0x53C4ca0C107c66CE10EEC9e504D42cf7B71fA660",
+      "tickLower": 66540,
+      "tickUpper": 67800,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 7443,
+      "owner": "0xbf6eF450220CC8DA468E75019605B487E1F2ae52",
+      "tickLower": 66600,
+      "tickUpper": 67860,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 7388,
+      "owner": "0x711B64E43E4Fe1c9E824F3cF10Bf8521A69cA5f1",
+      "tickLower": 66840,
+      "tickUpper": 68040,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 7392,
+      "owner": "0x8a329Ee74a2F91eDB448b53208dB2392Bd7CD640",
+      "tickLower": 67140,
+      "tickUpper": 68040,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 7491,
+      "owner": "0x8adCfaA0720D919B158E469267DA8CFb6A573B3B",
+      "tickLower": 65700,
+      "tickUpper": 67680,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 7525,
+      "owner": "0x9e061445eB46f57aB27Dffcd394AB78bAc2cE5ed",
+      "tickLower": 66660,
+      "tickUpper": 67620,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 7737,
+      "owner": "0x310e73E41C7fa32C772Bc542692bD6EB8CACC373",
+      "tickLower": 60300,
+      "tickUpper": 70140,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 7646,
+      "owner": "0x527F91dc5515fa21784d0CFf1991d7A88bcd66a3",
+      "tickLower": 66660,
+      "tickUpper": 68400,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 7687,
+      "owner": "0xFC915b0E43E488516Cc24AC17df4FFfeE30Df8a4",
+      "tickLower": 66720,
+      "tickUpper": 69360,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 7720,
+      "owner": "0x24AE5275dBF9295e35868689309Caf7d7D12640F",
+      "tickLower": 67020,
+      "tickUpper": 67980,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 7904,
+      "owner": "0x310e73E41C7fa32C772Bc542692bD6EB8CACC373",
+      "tickLower": 66840,
+      "tickUpper": 67920,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 7917,
+      "owner": "0xa9EE875E08E5c8F62D402D4Ac4CB75658180F50A",
+      "tickLower": 66840,
+      "tickUpper": 68100,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 7872,
+      "owner": "0xE1Ae6a648F3906BEB3B567714243401E6FD984CB",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 7887,
+      "owner": "0xB812B3Dd62C8Ee38F0A7C76B9c8bC9Dad638d069",
+      "tickLower": 66060,
+      "tickUpper": 67500,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 7969,
+      "owner": "0xb99C28E8f0aFe4989380cE4fa97EFBaA8Da87b29",
+      "tickLower": 66180,
+      "tickUpper": 68580,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 7924,
+      "owner": "0xA212363aF4719f2B9056C53807fF84D79E379d9d",
+      "tickLower": 67080,
+      "tickUpper": 67800,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 8096,
+      "owner": "0xe09d09fc60c6DB3A28467b9D2AAd00f6f0928205",
+      "tickLower": 63960,
+      "tickUpper": 68580,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 8071,
+      "owner": "0x28fd4cCd3771F6F4724dC55a80966968c3095FeB",
+      "tickLower": 67260,
+      "tickUpper": 67620,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 8235,
+      "owner": "0x24A22e38f54b9B0e80dcBE2f7568D0db1FcbF2DC",
+      "tickLower": 66240,
+      "tickUpper": 68520,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 8254,
+      "owner": "0xbf6eF450220CC8DA468E75019605B487E1F2ae52",
+      "tickLower": 67020,
+      "tickUpper": 67680,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 8358,
+      "owner": "0xcf0e30f1ed302A95f04b2a0ad344Be94d1c54875",
+      "tickLower": 66420,
+      "tickUpper": 68220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 8357,
+      "owner": "0xCDE5869677eC175D5aBfd296CBa70f8601109e52",
+      "tickLower": 66420,
+      "tickUpper": 68220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 8492,
+      "owner": "0x45151671d3725e555BF2A01B6A13E51b6e20c8c4",
+      "tickLower": 66180,
+      "tickUpper": 67440,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 8519,
+      "owner": "0x0A9aaAF3A6ea9c8445126e5dC9A62793690dF97a",
+      "tickLower": 66360,
+      "tickUpper": 67440,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 8518,
+      "owner": "0x5AaD79e598643C3EDb60b752DD89022b5914d1f9",
+      "tickLower": 64800,
+      "tickUpper": 69060,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 8541,
+      "owner": "0xe09d09fc60c6DB3A28467b9D2AAd00f6f0928205",
+      "tickLower": 66900,
+      "tickUpper": 68280,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 8534,
+      "owner": "0xe09d09fc60c6DB3A28467b9D2AAd00f6f0928205",
+      "tickLower": -91380,
+      "tickUpper": -89340,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 8531,
+      "owner": "0xe09d09fc60c6DB3A28467b9D2AAd00f6f0928205",
+      "tickLower": -91260,
+      "tickUpper": -89340,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 8536,
+      "owner": "0x08461a1cc8746461BD4a106de647881e2Dff7CFd",
+      "tickLower": 65760,
+      "tickUpper": 68100,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 8557,
+      "owner": "0xd4bC53434C5e12cb41381A556c3c47e1a86e80E3",
+      "tickLower": 67620,
+      "tickUpper": 67680,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 8543,
+      "owner": "0x01dF1BC7c694a12254aDb8285DfD5D214Da0CB21",
+      "tickLower": 66840,
+      "tickUpper": 68280,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 8611,
+      "owner": "0x90Cd03a2dC6bDBD6D24eeB69F3fdebADDd1459af",
+      "tickLower": 67080,
+      "tickUpper": 67920,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 8718,
+      "owner": "0x6724c9b60d13637c13352B2737DdF325F592320e",
+      "tickLower": 67440,
+      "tickUpper": 70080,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 8671,
+      "owner": "0x4277f3224a8d3E4A8Acea3ec23388aD5B8e050D7",
+      "tickLower": 67500,
+      "tickUpper": 68160,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 8722,
+      "owner": "0xA212363aF4719f2B9056C53807fF84D79E379d9d",
+      "tickLower": 67320,
+      "tickUpper": 68220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 8733,
+      "owner": "0xe09d09fc60c6DB3A28467b9D2AAd00f6f0928205",
+      "tickLower": -94320,
+      "tickUpper": -46140,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 8737,
+      "owner": "0xe09d09fc60c6DB3A28467b9D2AAd00f6f0928205",
+      "tickLower": -96780,
+      "tickUpper": -93960,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 8723,
+      "owner": "0x8992c1Fc4d87804BAE68d65c8eCB6958a9748488",
+      "tickLower": 67440,
+      "tickUpper": 70080,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 8731,
+      "owner": "0xe09d09fc60c6DB3A28467b9D2AAd00f6f0928205",
+      "tickLower": -91260,
+      "tickUpper": -89880,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 8753,
+      "owner": "0xd4bC53434C5e12cb41381A556c3c47e1a86e80E3",
+      "tickLower": 67680,
+      "tickUpper": 67740,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 8840,
+      "owner": "0x8a329Ee74a2F91eDB448b53208dB2392Bd7CD640",
+      "tickLower": 67620,
+      "tickUpper": 68520,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 8904,
+      "owner": "0x9Dfd0fB16dE61F11caF4EFBA76AeEd67e182f4A8",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 9019,
+      "owner": "0xe09d09fc60c6DB3A28467b9D2AAd00f6f0928205",
+      "tickLower": 67080,
+      "tickUpper": 68460,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 8939,
+      "owner": "0xd4bC53434C5e12cb41381A556c3c47e1a86e80E3",
+      "tickLower": 67740,
+      "tickUpper": 67800,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 8992,
+      "owner": "0x847c2487d7C23FA6462ff2550dDda1af6739AA10",
+      "tickLower": 66840,
+      "tickUpper": 69120,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 8978,
+      "owner": "0x093DA96B0ACEC391b15e27a3Afe2cc06277afE10",
+      "tickLower": 66840,
+      "tickUpper": 68700,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 9067,
+      "owner": "0xC5b4c8DE7aF8f9e861A6A9E2c5F492757E572e73",
+      "tickLower": 67020,
+      "tickUpper": 68400,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 9127,
+      "owner": "0x1f2F10D1C40777AE1Da742455c65828FF36Df387",
+      "tickLower": 67620,
+      "tickUpper": 67680,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 9098,
+      "owner": "0xf7FaCeeb08B82484Fe4F918bB6cfceF66795e1ae",
+      "tickLower": 67080,
+      "tickUpper": 68400,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 9240,
+      "owner": "0xd4bC53434C5e12cb41381A556c3c47e1a86e80E3",
+      "tickLower": 67680,
+      "tickUpper": 67740,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 9379,
+      "owner": "0x552702e9e7969eaB6518426A94ab2813D4f36c86",
+      "tickLower": 64740,
+      "tickUpper": 71040,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 9415,
+      "owner": "0xd4bC53434C5e12cb41381A556c3c47e1a86e80E3",
+      "tickLower": 67680,
+      "tickUpper": 67740,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 9389,
+      "owner": "0xA212363aF4719f2B9056C53807fF84D79E379d9d",
+      "tickLower": 67440,
+      "tickUpper": 68220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 9404,
+      "owner": "0x1f2F10D1C40777AE1Da742455c65828FF36Df387",
+      "tickLower": 67680,
+      "tickUpper": 67740,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 9505,
+      "owner": "0x97299636FA02c35B35f3A8e3B40d51AA8544fCd6",
+      "tickLower": 67440,
+      "tickUpper": 67560,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 9547,
+      "owner": "0x9019c93b139a1bcFe3A3818b66fD888909bd905e",
+      "tickLower": 67080,
+      "tickUpper": 68040,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 9623,
+      "owner": "0x4679091E5873274E43D5A3599858bbC20E809883",
+      "tickLower": 67200,
+      "tickUpper": 67260,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 9632,
+      "owner": "0x7873bBc4eF6a75867Fd3CEd23710A2eDF4A47E4A",
+      "tickLower": 67320,
+      "tickUpper": 67380,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 9575,
+      "owner": "0xfAde52D7A916E43E667f6827bc1524DA61399a5D",
+      "tickLower": -160860,
+      "tickUpper": -157020,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 9762,
+      "owner": "0x1F0deEF5Cb772a07c3B0a145466F220F3b7612CD",
+      "tickLower": 66660,
+      "tickUpper": 67920,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 9668,
+      "owner": "0x1f2F10D1C40777AE1Da742455c65828FF36Df387",
+      "tickLower": 67260,
+      "tickUpper": 67320,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 9795,
+      "owner": "0x35E927eC4de4F5946c6D74cAEcdF3F050752fb03",
+      "tickLower": 66720,
+      "tickUpper": 67260,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 9749,
+      "owner": "0x4679091E5873274E43D5A3599858bbC20E809883",
+      "tickLower": 66960,
+      "tickUpper": 67260,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 9833,
+      "owner": "0x2240E2dda6e32D2F7F1A755149a301C1A3ac6343",
+      "tickLower": 65160,
+      "tickUpper": 68580,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 9767,
+      "owner": "0x9B7874A1eB2a06059084A3886899005F68353926",
+      "tickLower": 67140,
+      "tickUpper": 70020,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 9778,
+      "owner": "0xCD88431107B72b1a1aa13DE27Ab894e27C7D1a61",
+      "tickLower": 66240,
+      "tickUpper": 67920,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 10159,
+      "owner": "0xa89C00c2Ce0907928411b0C6758234b1c52438D5",
+      "tickLower": 66420,
+      "tickUpper": 68580,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 10075,
+      "owner": "0x1f2F10D1C40777AE1Da742455c65828FF36Df387",
+      "tickLower": 67020,
+      "tickUpper": 67080,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 10123,
+      "owner": "0xd966FDA1179089E0E32Fa55C571BDDC6a8d14a5c",
+      "tickLower": 67200,
+      "tickUpper": 67500,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 10138,
+      "owner": "0xDcbb8Ef262a0FC9eaC7586A6a8bbd32FBfd1AE00",
+      "tickLower": 66480,
+      "tickUpper": 68040,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 10132,
+      "owner": "0x730bE8a96329926857FE4d2F9CD38a098E6B9786",
+      "tickLower": 66660,
+      "tickUpper": 67980,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 10239,
+      "owner": "0x4615d4c2e868bC9f5E57EF372e3274619d869f57",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 10265,
+      "owner": "0xD42793C5cf4FE5295F48207916b67A3C9F753515",
+      "tickLower": 67020,
+      "tickUpper": 67320,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 10311,
+      "owner": "0x1F0deEF5Cb772a07c3B0a145466F220F3b7612CD",
+      "tickLower": 67020,
+      "tickUpper": 67920,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 10361,
+      "owner": "0xf60b7F99fe313B63037AFAA64398053980220074",
+      "tickLower": 66480,
+      "tickUpper": 68220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 10586,
+      "owner": "0x496813Af400A3b8B8f044F269314b93e959C84bf",
+      "tickLower": 65940,
+      "tickUpper": 68160,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 10611,
+      "owner": "0x1f2F10D1C40777AE1Da742455c65828FF36Df387",
+      "tickLower": 67260,
+      "tickUpper": 67320,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 10562,
+      "owner": "0xbF202CE351d77d816b505E27535AEb22b823c469",
+      "tickLower": 66120,
+      "tickUpper": 67620,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 10760,
+      "owner": "0x0cf92a21414aE18393bdD9d7Eb1Fb9ee5BC63133",
+      "tickLower": 66660,
+      "tickUpper": 68220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 10729,
+      "owner": "0x7f336Ae0CbBd852E559725365B67d2AaACEEBaA9",
+      "tickLower": 66600,
+      "tickUpper": 67680,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 10778,
+      "owner": "0xa868FF179240F4d00a0fbEAA66AABA2A17BedC94",
+      "tickLower": 66120,
+      "tickUpper": 68580,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 10872,
+      "owner": "0x1f2F10D1C40777AE1Da742455c65828FF36Df387",
+      "tickLower": 67200,
+      "tickUpper": 67260,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 10876,
+      "owner": "0x8a329Ee74a2F91eDB448b53208dB2392Bd7CD640",
+      "tickLower": 67320,
+      "tickUpper": 68340,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 10947,
+      "owner": "0x51A56768DD4D255e9c9993d03100D3D10541F4E7",
+      "tickLower": 66240,
+      "tickUpper": 67140,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 10999,
+      "owner": "0x85aA9d81895BF9Ac5E7aFb7F4f243eA3A0C37a1D",
+      "tickLower": 66600,
+      "tickUpper": 68160,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 11011,
+      "owner": "0xd1271a01c87240d599a0Bd98E3310943c8391Ec6",
+      "tickLower": 66180,
+      "tickUpper": 68340,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 10969,
+      "owner": "0xBa045C711bb8f7e6739210790695612dF176Dfc5",
+      "tickLower": 67140,
+      "tickUpper": 67260,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 10951,
+      "owner": "0xbC18597690B5A52054eab86FC6799BE858a20A74",
+      "tickLower": 66180,
+      "tickUpper": 68160,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 11073,
+      "owner": "0x55dBAec5e20F68408F577EE3d7134adC02174942",
+      "tickLower": 67020,
+      "tickUpper": 67860,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 11100,
+      "owner": "0x98aE8d7F079cA44dD065534b0ba7E1083B6D3d32",
+      "tickLower": 66900,
+      "tickUpper": 67620,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 11042,
+      "owner": "0xA212363aF4719f2B9056C53807fF84D79E379d9d",
+      "tickLower": 66960,
+      "tickUpper": 68040,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 11161,
+      "owner": "0x7118d0D39500d701452005Cf653DFD11f673594D",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 11168,
+      "owner": "0x7118d0D39500d701452005Cf653DFD11f673594D",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 11184,
+      "owner": "0xA212363aF4719f2B9056C53807fF84D79E379d9d",
+      "tickLower": 66840,
+      "tickUpper": 68040,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 11250,
+      "owner": "0xB37E9083D6f73Fbe6c8DD17cfa60c1d9c3774cb3",
+      "tickLower": 66780,
+      "tickUpper": 68940,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 11420,
+      "owner": "0xa867fC142F8Bfa59f28C06164F76D196CbD61605",
+      "tickLower": 66720,
+      "tickUpper": 68040,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 11389,
+      "owner": "0x46e084946E2FF6544bF7EED8667Deae36299409f",
+      "tickLower": 65220,
+      "tickUpper": 66600,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 11423,
+      "owner": "0x4F43Ff39595729498664cc77Bcb2bA92efC3808c",
+      "tickLower": 65760,
+      "tickUpper": 66780,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 11454,
+      "owner": "0xA6e18E55b542f0B7d4383fE9e847f285Db2F7bD5",
+      "tickLower": 66180,
+      "tickUpper": 67860,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 11483,
+      "owner": "0x35E927eC4de4F5946c6D74cAEcdF3F050752fb03",
+      "tickLower": 66360,
+      "tickUpper": 67800,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 11537,
+      "owner": "0x1f2F10D1C40777AE1Da742455c65828FF36Df387",
+      "tickLower": 66360,
+      "tickUpper": 66420,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 11570,
+      "owner": "0xb27665c1B9b3A4073Acbb64Bcb6bD1a7718E70Fe",
+      "tickLower": 66180,
+      "tickUpper": 66840,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 11585,
+      "owner": "0x7De84C5e1989d50288E1fdA88aAf05ce5006ADce",
+      "tickLower": 66000,
+      "tickUpper": 66840,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 11598,
+      "owner": "0xA87cB885eE667466c9551Deb4fBcA0F0598b2fB4",
+      "tickLower": 66000,
+      "tickUpper": 69840,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 11606,
+      "owner": "0x0d241c0fD4ceE2dae20949D3397cCf0FBBEa39F7",
+      "tickLower": -158580,
+      "tickUpper": -157620,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 11619,
+      "owner": "0x46e084946E2FF6544bF7EED8667Deae36299409f",
+      "tickLower": 65940,
+      "tickUpper": 67380,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 11626,
+      "owner": "0x93bA7771C1548E389538567E458B3C9bE595aad8",
+      "tickLower": 66000,
+      "tickUpper": 68280,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 11638,
+      "owner": "0xD7837508c7A246326F8F7584674495CBe4AFD56e",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 11618,
+      "owner": "0x5603922774DfBAD65022FE4B56E986F1282772E3",
+      "tickLower": 66120,
+      "tickUpper": 66600,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 11635,
+      "owner": "0xf84A6d185370AbB45D3a9aCF03bB2b048C4F90F7",
+      "tickLower": 63120,
+      "tickUpper": 67320,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 11637,
+      "owner": "0x7De84C5e1989d50288E1fdA88aAf05ce5006ADce",
+      "tickLower": 66000,
+      "tickUpper": 67080,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 11640,
+      "owner": "0xD7837508c7A246326F8F7584674495CBe4AFD56e",
+      "tickLower": 66300,
+      "tickUpper": 66960,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 11630,
+      "owner": "0x8a329Ee74a2F91eDB448b53208dB2392Bd7CD640",
+      "tickLower": 66600,
+      "tickUpper": 67440,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 11655,
+      "owner": "0x9019c93b139a1bcFe3A3818b66fD888909bd905e",
+      "tickLower": 66060,
+      "tickUpper": 67680,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 11662,
+      "owner": "0xa868FF179240F4d00a0fbEAA66AABA2A17BedC94",
+      "tickLower": 66660,
+      "tickUpper": 68340,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 11717,
+      "owner": "0xd4bC53434C5e12cb41381A556c3c47e1a86e80E3",
+      "tickLower": 66720,
+      "tickUpper": 66780,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 11726,
+      "owner": "0x1f2F10D1C40777AE1Da742455c65828FF36Df387",
+      "tickLower": 66720,
+      "tickUpper": 66780,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 11722,
+      "owner": "0xD7837508c7A246326F8F7584674495CBe4AFD56e",
+      "tickLower": 66240,
+      "tickUpper": 67260,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 11751,
+      "owner": "0x35E927eC4de4F5946c6D74cAEcdF3F050752fb03",
+      "tickLower": 66120,
+      "tickUpper": 68040,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 11752,
+      "owner": "0x724126Ac70F66A0d39ACB7ABE899E091039dA0a0",
+      "tickLower": 66360,
+      "tickUpper": 67680,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 11769,
+      "owner": "0xd1271a01c87240d599a0Bd98E3310943c8391Ec6",
+      "tickLower": 66180,
+      "tickUpper": 68340,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 11777,
+      "owner": "0x1f2F10D1C40777AE1Da742455c65828FF36Df387",
+      "tickLower": 66720,
+      "tickUpper": 66780,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 11775,
+      "owner": "0x72086fB8c8d3Efa725918B9023a63164E17FaC39",
+      "tickLower": 66540,
+      "tickUpper": 67740,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 11828,
+      "owner": "0xD5bcb6DDB9ef8d891dC125D24eF52E330A653e2c",
+      "tickLower": 66060,
+      "tickUpper": 67560,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 11826,
+      "owner": "0x99Ec8778b2a740A047ab60CED024004F06C80512",
+      "tickLower": 66060,
+      "tickUpper": 66780,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 11817,
+      "owner": "0x92173184b95178a33E0240b89526149596362Be2",
+      "tickLower": 66120,
+      "tickUpper": 67680,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 11824,
+      "owner": "0x99Ec8778b2a740A047ab60CED024004F06C80512",
+      "tickLower": -158940,
+      "tickUpper": -158160,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 11864,
+      "owner": "0x80dc99eD23aeA7AEB7577e2991016CF03ec97310",
+      "tickLower": 66180,
+      "tickUpper": 66960,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 11861,
+      "owner": "0x6D8de9d75aD7e25ffd7f329BAFF7907339E99eE7",
+      "tickLower": 66300,
+      "tickUpper": 67380,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 11871,
+      "owner": "0xCDE5869677eC175D5aBfd296CBa70f8601109e52",
+      "tickLower": 65700,
+      "tickUpper": 67380,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 11870,
+      "owner": "0xcf0e30f1ed302A95f04b2a0ad344Be94d1c54875",
+      "tickLower": 65940,
+      "tickUpper": 67320,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 11894,
+      "owner": "0x64A57804ABC6f62074de659ba78486d27955E74C",
+      "tickLower": 65220,
+      "tickUpper": 68820,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 11895,
+      "owner": "0x6A3d2f26034b5fDa68ff72a0711d002Bd517baec",
+      "tickLower": 66180,
+      "tickUpper": 67380,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 11896,
+      "owner": "0x8adCfaA0720D919B158E469267DA8CFb6A573B3B",
+      "tickLower": 65700,
+      "tickUpper": 67320,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 11962,
+      "owner": "0xF2fbf522632a9424439D2A872583214CDc873619",
+      "tickLower": 64740,
+      "tickUpper": 67140,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 11991,
+      "owner": "0x1f2F10D1C40777AE1Da742455c65828FF36Df387",
+      "tickLower": 66300,
+      "tickUpper": 66360,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 11992,
+      "owner": "0xa89C00c2Ce0907928411b0C6758234b1c52438D5",
+      "tickLower": 62160,
+      "tickUpper": 68040,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 11990,
+      "owner": "0xd4bC53434C5e12cb41381A556c3c47e1a86e80E3",
+      "tickLower": 66300,
+      "tickUpper": 66360,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 12016,
+      "owner": "0xfA7afEF73f3203dC319910d7E8c2Dc82F0808249",
+      "tickLower": 65040,
+      "tickUpper": 68100,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 12046,
+      "owner": "0x1f2F10D1C40777AE1Da742455c65828FF36Df387",
+      "tickLower": 66420,
+      "tickUpper": 66480,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 12048,
+      "owner": "0xa868FF179240F4d00a0fbEAA66AABA2A17BedC94",
+      "tickLower": 66480,
+      "tickUpper": 90840,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 12054,
+      "owner": "0x6237D12C2121cc81b763f431b337F20e84F37950",
+      "tickLower": 65580,
+      "tickUpper": 67980,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 12077,
+      "owner": "0x1f2F10D1C40777AE1Da742455c65828FF36Df387",
+      "tickLower": 66300,
+      "tickUpper": 66360,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 12070,
+      "owner": "0xe52696D4a88079D7d9542967821d03f490d5120f",
+      "tickLower": 66000,
+      "tickUpper": 66960,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 12111,
+      "owner": "0xa868FF179240F4d00a0fbEAA66AABA2A17BedC94",
+      "tickLower": 67020,
+      "tickUpper": 68580,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 12113,
+      "owner": "0x1f2F10D1C40777AE1Da742455c65828FF36Df387",
+      "tickLower": 67020,
+      "tickUpper": 67080,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 12128,
+      "owner": "0xd4bC53434C5e12cb41381A556c3c47e1a86e80E3",
+      "tickLower": 67080,
+      "tickUpper": 67140,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 12144,
+      "owner": "0x9f07Dc88Dc450978e5DDF973f6a0236A7cFBF99a",
+      "tickLower": 65520,
+      "tickUpper": 67260,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 12174,
+      "owner": "0xe52696D4a88079D7d9542967821d03f490d5120f",
+      "tickLower": 66720,
+      "tickUpper": 67680,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 12203,
+      "owner": "0x414369312D3528d9F81eA4671AeB81eD03759207",
+      "tickLower": 66420,
+      "tickUpper": 67200,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 12259,
+      "owner": "0xE31235BC3880EB1fBb4c53FD7d882D2F5CBE56f3",
+      "tickLower": 65460,
+      "tickUpper": 70920,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 12361,
+      "owner": "0x7d044C65B4B29C701AFDca16907E760848507c90",
+      "tickLower": 66360,
+      "tickUpper": 67260,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 12370,
+      "owner": "0xa868FF179240F4d00a0fbEAA66AABA2A17BedC94",
+      "tickLower": 66720,
+      "tickUpper": 68280,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 12376,
+      "owner": "0xFaf811238Eba0aA49f1211300fb7a401B474D497",
+      "tickLower": 66000,
+      "tickUpper": 67680,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 12375,
+      "owner": "0x85aA9d81895BF9Ac5E7aFb7F4f243eA3A0C37a1D",
+      "tickLower": -886980,
+      "tickUpper": 886980,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 12463,
+      "owner": "0x6B4c8b9096cD22259AF097dC76CE167B4eeC50d0",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 12522,
+      "owner": "0x4C252425e7Ce17b5A3a0511510b8A741480ab05e",
+      "tickLower": 66420,
+      "tickUpper": 67800,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 12526,
+      "owner": "0x99Ec8778b2a740A047ab60CED024004F06C80512",
+      "tickLower": 66540,
+      "tickUpper": 67500,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 12536,
+      "owner": "0x9f07Dc88Dc450978e5DDF973f6a0236A7cFBF99a",
+      "tickLower": 66060,
+      "tickUpper": 67380,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 12553,
+      "owner": "0xddc4EF623E5362C6015D82511Aa44e7863A27dF0",
+      "tickLower": 66120,
+      "tickUpper": 68460,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 12578,
+      "owner": "0xcf0e30f1ed302A95f04b2a0ad344Be94d1c54875",
+      "tickLower": 66120,
+      "tickUpper": 67920,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 12605,
+      "owner": "0xd4bC53434C5e12cb41381A556c3c47e1a86e80E3",
+      "tickLower": 67080,
+      "tickUpper": 67140,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 12611,
+      "owner": "0xe49B88Dc1a7aA49255E20cCa9855479e877191e0",
+      "tickLower": 65760,
+      "tickUpper": 69780,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 12629,
+      "owner": "0xa868FF179240F4d00a0fbEAA66AABA2A17BedC94",
+      "tickLower": 66120,
+      "tickUpper": 69240,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 12626,
+      "owner": "0xd4bC53434C5e12cb41381A556c3c47e1a86e80E3",
+      "tickLower": 67260,
+      "tickUpper": 67320,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 12664,
+      "owner": "0x8adCfaA0720D919B158E469267DA8CFb6A573B3B",
+      "tickLower": 65640,
+      "tickUpper": 67920,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 12667,
+      "owner": "0xf84A6d185370AbB45D3a9aCF03bB2b048C4F90F7",
+      "tickLower": 65880,
+      "tickUpper": 67920,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 12696,
+      "owner": "0x9407B7540b310bE643c194054DF59985CF652E40",
+      "tickLower": 66600,
+      "tickUpper": 67920,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 12719,
+      "owner": "0xe09d09fc60c6DB3A28467b9D2AAd00f6f0928205",
+      "tickLower": 66960,
+      "tickUpper": 67860,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 12721,
+      "owner": "0xaEC13450aE4CCF18e1Ff61BE60eF3547018D740B",
+      "tickLower": 66960,
+      "tickUpper": 67440,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 12802,
+      "owner": "0xB9240a115146817Df1A8Eb58B336138745484EBe",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 12809,
+      "owner": "0x3aDF7B4323fbc664064253934478653cD4b4c88b",
+      "tickLower": 65640,
+      "tickUpper": 68040,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 12899,
+      "owner": "0xaEC13450aE4CCF18e1Ff61BE60eF3547018D740B",
+      "tickLower": 67200,
+      "tickUpper": 67860,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 12902,
+      "owner": "0x8E884089f642ee9ED63c5eA457E40f20eAD73d89",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 12926,
+      "owner": "0x93A256F8C3bb8e8D30CA84613f037e6cf29F4230",
+      "tickLower": 66240,
+      "tickUpper": 68640,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 12947,
+      "owner": "0x3853E299123773f03DE12F571e9Ba37A85c14343",
+      "tickLower": 66780,
+      "tickUpper": 68160,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 12987,
+      "owner": "0xde3b7ce4c0545Eadf7436ec6f651da1fa3B46f5a",
+      "tickLower": 66720,
+      "tickUpper": 67860,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 13031,
+      "owner": "0x29DA15D061F345eBAc19a418FD0E376Fd9Ac39Be",
+      "tickLower": 67260,
+      "tickUpper": 67800,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 13065,
+      "owner": "0xfA7afEF73f3203dC319910d7E8c2Dc82F0808249",
+      "tickLower": 65640,
+      "tickUpper": 69120,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 13069,
+      "owner": "0x1f2F10D1C40777AE1Da742455c65828FF36Df387",
+      "tickLower": 67320,
+      "tickUpper": 67380,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 13174,
+      "owner": "0xfb72E82aB5F51379378AFCA29f99dF6Cd9394e2c",
+      "tickLower": 67140,
+      "tickUpper": 67620,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 13127,
+      "owner": "0xA212363aF4719f2B9056C53807fF84D79E379d9d",
+      "tickLower": 66660,
+      "tickUpper": 68040,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 13236,
+      "owner": "0x8a329Ee74a2F91eDB448b53208dB2392Bd7CD640",
+      "tickLower": 67200,
+      "tickUpper": 68040,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 13305,
+      "owner": "0x1f2F10D1C40777AE1Da742455c65828FF36Df387",
+      "tickLower": 67380,
+      "tickUpper": 67440,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 13375,
+      "owner": "0x4Feb579cFdD29B92503E7232Fe304cd9Ca0C4ba1",
+      "tickLower": 67260,
+      "tickUpper": 67560,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 13308,
+      "owner": "0x75c19f83037BE20faDb29Af071Aee7e026E1cdFd",
+      "tickLower": 66840,
+      "tickUpper": 68280,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 13295,
+      "owner": "0x610622b11db8eCd89896E01aC0f6cE0AeAbDE8E6",
+      "tickLower": 66060,
+      "tickUpper": 72480,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 13406,
+      "owner": "0x41Ce31cbD5b29F988Aa4F686B77B6D8FE87A7804",
+      "tickLower": 67320,
+      "tickUpper": 67680,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 13318,
+      "owner": "0x742251AEFC0961934342782F191D90f6061F8E27",
+      "tickLower": 67320,
+      "tickUpper": 67560,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 13423,
+      "owner": "0xfb72E82aB5F51379378AFCA29f99dF6Cd9394e2c",
+      "tickLower": 66840,
+      "tickUpper": 68160,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 13473,
+      "owner": "0x32c0C9b37729A47C1C03A0F06aaEf095E002Fd54",
+      "tickLower": 63960,
+      "tickUpper": 73140,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 13392,
+      "owner": "0x4Feb579cFdD29B92503E7232Fe304cd9Ca0C4ba1",
+      "tickLower": 67380,
+      "tickUpper": 67560,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 13494,
+      "owner": "0x255199E79164E07eBb03e79ff66bF00FCB6C67e5",
+      "tickLower": 66840,
+      "tickUpper": 68040,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 13525,
+      "owner": "0xeb9191d780c0aB6Ab320C5F05E41ebF81f14255f",
+      "tickLower": 66660,
+      "tickUpper": 67920,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 13492,
+      "owner": "0x255199E79164E07eBb03e79ff66bF00FCB6C67e5",
+      "tickLower": 63960,
+      "tickUpper": 70020,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 13589,
+      "owner": "0x8274Ad4Bc324Eb590eA99A0f27e91CCe07726d98",
+      "tickLower": 66120,
+      "tickUpper": 68340,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 13585,
+      "owner": "0x32248847a3aBbB5eADCaFf9a738178668D86B00e",
+      "tickLower": 66180,
+      "tickUpper": 67380,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 13623,
+      "owner": "0xC18EC7362e7a38aD859E57d9bC7fD25EAD6Bc336",
+      "tickLower": 66660,
+      "tickUpper": 67920,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 13708,
+      "owner": "0x64A57804ABC6f62074de659ba78486d27955E74C",
+      "tickLower": 66360,
+      "tickUpper": 67800,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 13638,
+      "owner": "0x0e99e08d9877f07540c35fCA8379608d76741975",
+      "tickLower": 66600,
+      "tickUpper": 67920,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 13660,
+      "owner": "0x09268F231058cAb0e952c39378AAC4F5A5A51014",
+      "tickLower": 67020,
+      "tickUpper": 67500,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 13754,
+      "owner": "0xEe223D17a727211b79636dDef40111128a98C31B",
+      "tickLower": 65640,
+      "tickUpper": 68880,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 13825,
+      "owner": "0x6A3d2f26034b5fDa68ff72a0711d002Bd517baec",
+      "tickLower": 66600,
+      "tickUpper": 68040,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 13885,
+      "owner": "0x097550ac11f46e7620a79FBea4aD2495f8B0962E",
+      "tickLower": 66720,
+      "tickUpper": 67980,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 13889,
+      "owner": "0xc1350d05250280660D1b4e51351f0f915eBcbf08",
+      "tickLower": 65580,
+      "tickUpper": 69180,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 13961,
+      "owner": "0x2dF636796BEF8Ad6e16308fFa6Be45c611Cc6CF8",
+      "tickLower": 66660,
+      "tickUpper": 67860,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 13999,
+      "owner": "0x6c46cd1f119e61860FE59e48B926231D216541ff",
+      "tickLower": 66720,
+      "tickUpper": 67860,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 13939,
+      "owner": "0xfECD04f558fdD08C17b252888d1120151b198189",
+      "tickLower": 67020,
+      "tickUpper": 67860,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 14035,
+      "owner": "0x7B4401839d0f0E668Ae72D57A74Dd1881cbc1BE3",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 14074,
+      "owner": "0x666514436DF03775eaD70C6dd4DE6C0Af8b3A1e1",
+      "tickLower": 67200,
+      "tickUpper": 67620,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 14099,
+      "owner": "0xe09d09fc60c6DB3A28467b9D2AAd00f6f0928205",
+      "tickLower": 66120,
+      "tickUpper": 67860,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 14097,
+      "owner": "0xe09d09fc60c6DB3A28467b9D2AAd00f6f0928205",
+      "tickLower": -1740,
+      "tickUpper": -1080,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 14116,
+      "owner": "0x265936cb49dB9Aea4Cb0780153f43981B0F003b9",
+      "tickLower": 67380,
+      "tickUpper": 67440,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 14134,
+      "owner": "0xadAE5d8034D8177Ca15a352207C2bf80B3ef8e3E",
+      "tickLower": 66720,
+      "tickUpper": 68040,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 14225,
+      "owner": "0x1f2F10D1C40777AE1Da742455c65828FF36Df387",
+      "tickLower": 67380,
+      "tickUpper": 67440,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 14248,
+      "owner": "0xb988e0E37660f0C88A5479074E42be7856B37340",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 14279,
+      "owner": "0xb988e0E37660f0C88A5479074E42be7856B37340",
+      "tickLower": 66840,
+      "tickUpper": 67800,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 14308,
+      "owner": "0x6724c9b60d13637c13352B2737DdF325F592320e",
+      "tickLower": 67260,
+      "tickUpper": 70080,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 14347,
+      "owner": "0xa441F1DA6A38dCb48c7f68654585C227A433B377",
+      "tickLower": 66780,
+      "tickUpper": 67980,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 14284,
+      "owner": "0xb988e0E37660f0C88A5479074E42be7856B37340",
+      "tickLower": 67200,
+      "tickUpper": 67620,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 14386,
+      "owner": "0xaEC13450aE4CCF18e1Ff61BE60eF3547018D740B",
+      "tickLower": 67140,
+      "tickUpper": 67740,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 14429,
+      "owner": "0xa4047f39FfA37Db63BDcBf477b6d5D0F58A3D57b",
+      "tickLower": 66300,
+      "tickUpper": 68580,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 14434,
+      "owner": "0x1f2F10D1C40777AE1Da742455c65828FF36Df387",
+      "tickLower": 67440,
+      "tickUpper": 67500,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 14452,
+      "owner": "0x5A7880E6e09F0CB3267ACc6491ba771046972f31",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 14658,
+      "owner": "0x3Dc12C2892A11Ed60Ea0Ca9F7C3Ca8851fEE97e6",
+      "tickLower": 67260,
+      "tickUpper": 67680,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 14719,
+      "owner": "0xC8A7aA9460325E4D0D6a9644Bc4C71E455053e54",
+      "tickLower": 66660,
+      "tickUpper": 68820,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 14740,
+      "owner": "0xd54C7DfDC6870404e9d93261ebC8601843538763",
+      "tickLower": 66840,
+      "tickUpper": 68580,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 14751,
+      "owner": "0xfb72E82aB5F51379378AFCA29f99dF6Cd9394e2c",
+      "tickLower": 67500,
+      "tickUpper": 68040,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 14704,
+      "owner": "0xaEC13450aE4CCF18e1Ff61BE60eF3547018D740B",
+      "tickLower": 67500,
+      "tickUpper": 67980,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 14721,
+      "owner": "0xde6b1551E5681bF3E3913240825781a89523D25C",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 14723,
+      "owner": "0x81D30c4f4884210172b5451A510F1dfE3a538F40",
+      "tickLower": 67080,
+      "tickUpper": 67860,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 14758,
+      "owner": "0xC5CD2Abfe6F6cca99F714E4290B04C3FC92Cf5d2",
+      "tickLower": 66900,
+      "tickUpper": 68520,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 14862,
+      "owner": "0x71c7B38b299A5555cC7F0074b09d0feD85655fA9",
+      "tickLower": 66960,
+      "tickUpper": 68100,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 14868,
+      "owner": "0x7BD7e568decb5bf758F9c6C0c6076669215C8Dd2",
+      "tickLower": 67200,
+      "tickUpper": 67980,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 14813,
+      "owner": "0xFaf811238Eba0aA49f1211300fb7a401B474D497",
+      "tickLower": 67020,
+      "tickUpper": 68460,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 14934,
+      "owner": "0x593DC6De82cBd2706028AD735A5d43e8685435F2",
+      "tickLower": 66840,
+      "tickUpper": 68700,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 14911,
+      "owner": "0xC5ea6D1f7cE80dC17bF968cA1862536f8e88080B",
+      "tickLower": 66840,
+      "tickUpper": 68040,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 14933,
+      "owner": "0x9BeFF885071e83c7ADb8d516a5d9ED9B6CA8B502",
+      "tickLower": 67440,
+      "tickUpper": 68160,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 15128,
+      "owner": "0xcf0e30f1ed302A95f04b2a0ad344Be94d1c54875",
+      "tickLower": 66480,
+      "tickUpper": 68700,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 15059,
+      "owner": "0x2Dc530B99867649A7A2EA478650C266cDD48f444",
+      "tickLower": 67380,
+      "tickUpper": 68100,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 15166,
+      "owner": "0x2Dc530B99867649A7A2EA478650C266cDD48f444",
+      "tickLower": 67680,
+      "tickUpper": 68220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 15162,
+      "owner": "0x576b55a3D4Da64376E4B9dc5126194871322881d",
+      "tickLower": 67140,
+      "tickUpper": 68400,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 15185,
+      "owner": "0x9C0b60332D7d3cA2c1E6FE99fC7e0Ad67dabE2C2",
+      "tickLower": 66480,
+      "tickUpper": 70140,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 15186,
+      "owner": "0x75c19f83037BE20faDb29Af071Aee7e026E1cdFd",
+      "tickLower": 67620,
+      "tickUpper": 68760,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 15196,
+      "owner": "0xFE737E088D85FC02F9603022a4cE5fcE1ca29c21",
+      "tickLower": 67860,
+      "tickUpper": 68580,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 15211,
+      "owner": "0x1f2F10D1C40777AE1Da742455c65828FF36Df387",
+      "tickLower": 68160,
+      "tickUpper": 68220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 15230,
+      "owner": "0x71c7B38b299A5555cC7F0074b09d0feD85655fA9",
+      "tickLower": 66960,
+      "tickUpper": 68280,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 15253,
+      "owner": "0xfb72E82aB5F51379378AFCA29f99dF6Cd9394e2c",
+      "tickLower": 68160,
+      "tickUpper": 68520,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 15248,
+      "owner": "0xe5713295F19a336B2E21FbB461d54d06f9bBeE69",
+      "tickLower": 66720,
+      "tickUpper": 69780,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 15285,
+      "owner": "0x1f2F10D1C40777AE1Da742455c65828FF36Df387",
+      "tickLower": 68340,
+      "tickUpper": 68400,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 15304,
+      "owner": "0xcCB0c4DF656aeaE038A246dd9D82B626a8a5cA8C",
+      "tickLower": 67560,
+      "tickUpper": 69480,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 15360,
+      "owner": "0x71c7B38b299A5555cC7F0074b09d0feD85655fA9",
+      "tickLower": 67140,
+      "tickUpper": 68520,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 15471,
+      "owner": "0x310e73E41C7fa32C772Bc542692bD6EB8CACC373",
+      "tickLower": -161040,
+      "tickUpper": -160020,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 15458,
+      "owner": "0x50657A4Eb94A404bF623B4533313B259725bEc70",
+      "tickLower": 67200,
+      "tickUpper": 75960,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 15459,
+      "owner": "0x50657A4Eb94A404bF623B4533313B259725bEc70",
+      "tickLower": 67440,
+      "tickUpper": 76020,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 15482,
+      "owner": "0x50dE15E751091736b8104517E9308969652147B7",
+      "tickLower": 67740,
+      "tickUpper": 91860,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 15545,
+      "owner": "0x3725c284aeF8191035785d30B593762c1d45E745",
+      "tickLower": 66540,
+      "tickUpper": 72060,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 15484,
+      "owner": "0xe09d09fc60c6DB3A28467b9D2AAd00f6f0928205",
+      "tickLower": -840,
+      "tickUpper": 69480,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 15481,
+      "owner": "0xe09d09fc60c6DB3A28467b9D2AAd00f6f0928205",
+      "tickLower": -1260,
+      "tickUpper": -120,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 15493,
+      "owner": "0xad63886E494639bE9Bb0FcE9A9E49a8dE7a6133f",
+      "tickLower": 67320,
+      "tickUpper": 69000,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 15500,
+      "owner": "0x9c641268042eb75425c870f0243cF1af588E9244",
+      "tickLower": 68220,
+      "tickUpper": 68640,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 15575,
+      "owner": "0x2cb1dD861422aac50d3F88a653fFe6c27024195A",
+      "tickLower": 66840,
+      "tickUpper": 70020,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 15576,
+      "owner": "0x32248847a3aBbB5eADCaFf9a738178668D86B00e",
+      "tickLower": 67320,
+      "tickUpper": 68400,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 15563,
+      "owner": "0xCc16f04C3609d8b29FAa61A02E6A1ba7f73b6457",
+      "tickLower": 67260,
+      "tickUpper": 68760,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 15631,
+      "owner": "0x041f0cDAd21CB5512BaD95FF9618712AF28479f5",
+      "tickLower": 66060,
+      "tickUpper": 68580,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 15637,
+      "owner": "0xBd8f407Fd285784fb08F364a9F031B521Aebb11d",
+      "tickLower": 68040,
+      "tickUpper": 70020,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 15700,
+      "owner": "0xe4Aed08832aA1CA3B48d55D609B834DD04Bd0F2e",
+      "tickLower": 65040,
+      "tickUpper": 69660,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 15702,
+      "owner": "0xfBBA8fc4278558f6115d0b842A83f86A56FC9349",
+      "tickLower": -887220,
+      "tickUpper": 887220,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 15748,
+      "owner": "0xCE5544d1d2c256a73a73C36e505D96e5577F7FC8",
+      "tickLower": 67680,
+      "tickUpper": 68880,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    },
+    {
+      "tokenId": 15838,
+      "owner": "0xfA4FbA8a2954dFcE13577D6E07FDAc35151a7c93",
+      "tickLower": 67260,
+      "tickUpper": 69120,
+      "liquidity": 0,
+      "amount0": 0.0,
+      "amount1": 0.0,
+      "relative_liquidity": 0.0
+    }
+  ]
+}
